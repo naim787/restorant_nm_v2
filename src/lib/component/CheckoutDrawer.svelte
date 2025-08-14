@@ -53,7 +53,7 @@
         <div class="w-full h-[50vh] md:h-[70vh] flex flex-col flex-wrap justify-start items-center overflow-scroll">
           {#each checkoutData as item, index}
             <div class="w-150 h-15 bg-black flex justify-between items-center rounded-full m-1 ">
-              <img src={`http://${base}/${item.products.image_url}`} alt="" class="w-20 h-20 object-cover ">
+              <img src={`http://${base}/${item.products.image_url}`} alt="" class="w-20 h-20 object-cover rounded-full">
                 <div class="w-full">
                   <h1>{item.products.name}</h1>
                 </div>
