@@ -32,7 +32,7 @@
 </script>
 
 {#if checkoutData.length >= 1}
-  <div class="drawer drawer-end ml-10 ">
+  <div class="drawer drawer-end ml-10">
     <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
     <div class="drawer-content">
       <label for="my-drawer-4" class="drawer-button btn btn-primary indicator">
