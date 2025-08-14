@@ -50,14 +50,14 @@
         if (drawer) drawer.checked = false;}}> <ArrowLeft /> </button>
         <h1 class="m-auto text-3xl">CheckOut</h1></div>
 
-        <div class="w-full h-[50vh] md:h-[70vh] flex flex-col flex-wrap justify-start items-center overflow-scroll">
+        <div class="w-full h-[50vh] bg-md:h-[70vh] flex flex-col flex-wrap justify-start items-center overflow-scroll">
           {#each checkoutData as item, index}
             <div class="w-100 h-15 bg-black flex justify-between items-center rounded-full m-1 ">
               <img src={`http://${base}/${item.products.image_url}`} alt="" class="w-16 h-16 object-cover rounded-full">
                 <div class="w-full px-2">
                   <h1>{item.products.name}</h1>
                 </div>
-                <div class="w-full text-cy">
+                <div class="w-full text-cyan-400">
                   <h1>{item.subtotal}</h1>
                 </div>
                 <div class="w-full">
