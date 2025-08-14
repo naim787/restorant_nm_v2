@@ -53,7 +53,7 @@
         <div class="w-full h-[50vh] md:h-[70vh] flex flex-col flex-wrap justify-start items-center overflow-scroll">
           {#each checkoutData as item, index}
             <div class="w-150 h-15 bg-black flex justify-between items-center rounded-full m-1 ">
-              ig
+              img
                 <div class="w-full">
                   <h1>{item.products.name}</h1>
                 </div>
