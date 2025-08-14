@@ -41,7 +41,7 @@
       </label>
     </div>
 
-    <div class="drawer-side back">
+    <div class="drawer-side backdrop-blur">
       <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
       <ul class="menu bg-base-200 text-base-content h-[95vh] w-[90vw] md:w-[30vw] mt-15 flex flex-col justify-center items-center">
 
@@ -53,7 +53,7 @@
 
         <!-- list pesanan -->
         <div class="w-full md:w-[20vw] h-[60vh] flex flex-col justify-start items-center overflow-scroll">
-          {#each checkoutData as item, index}
+          {#each checkoutData. as item, index}
             <div class="w-100 h-15 bg-black flex justify-between items-center rounded-full m-1 ">
               <img src={`http://${base}/${item.products.image_url}`} alt="" class="w-16 h-16 object-cover rounded-full">
                 <div class="w-full px-2">
