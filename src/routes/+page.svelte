@@ -14,7 +14,7 @@
 		const result = await res.json();
 		alert(result.message || result.error);
 		if (res.ok) {
-			window.location.href = '/dashboard'; // redirect setelah login
+			window.location.href = '/dashboard';
 		}
 	};
 </script>
