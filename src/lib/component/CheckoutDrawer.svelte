@@ -52,7 +52,7 @@
         <h1 class="m-auto text-3xl">CheckOut</h1></div>
 
         <!-- list pesanan -->
-        <div class="w-[] h-[60vh] flex flex-col flex-wrap justify-start items-center overflow-scroll">
+        <div class="w-[50vw] h-[60vh] flex flex-col flex-wrap justify-start items-center overflow-scroll">
           {#each checkoutData as item, index}
             <div class="w-100 h-15 bg-black flex justify-between items-center rounded-full m-1 ">
               <img src={`http://${base}/${item.products.image_url}`} alt="" class="w-16 h-16 object-cover rounded-full">
