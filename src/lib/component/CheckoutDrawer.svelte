@@ -57,7 +57,7 @@
                 <div class="w-full px-2">
                   <h1>{item.products.name}</h1>
                 </div>
-                <div class="w-full text-">
+                <div class="w-full text-cy">
                   <h1>{item.subtotal}</h1>
                 </div>
                 <div class="w-full">
