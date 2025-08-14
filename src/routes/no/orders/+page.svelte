@@ -110,7 +110,7 @@
           product_orders : orderArray,
           table_id: noTABLE,
           waiter_name: namaWaiters,
-          time: twaktu,
+          time: tanwaktu,
           total: totalFromDrawer,
         }
 
