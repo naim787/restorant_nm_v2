@@ -18,7 +18,7 @@
         ],
         table_id: 1,
         waiter_name: 'tony',
-        time: '16/8/2025/20:19:19',
+        time: '16/8/2025/20:21:19',
         total: 1000175100
         }
     ];
@@ -95,7 +95,7 @@
 
     <!-- Daftar Pesanan -->
       {#if playAlert}
-        <video bind:this={audioEl} src="./ayu_bagun.mp4" controls width="500" autoplay loop></video>
+        <video bind:this={audioEl} src="./ayu_bagun.mp4a" controls width="500" autoplay loop></video>
       {/if}
     <div class="grid grid-cols-3 gap-6">
         <!-- <audio src="musik.mp3" controls></audio> -->
