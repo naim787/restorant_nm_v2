@@ -1,49 +1,8 @@
-<script>
-  import { onMount } from "svelte";
-
-  let audioEl;
-  let allowPlay = false; // awalnya belum boleh play
-  let notified = false; // biar gak play berulang
-
-  // contoh data order (real nanti dari API)
-  let order = {
-    products_name: "Ceker Mercon",
-    orderTime: new Date().getTime(), // simpan timestamp pesanan dibuat
-  };
-
-  // aktifkan izin audio saat user klik 1x
-  function enableSound() {
-    allowPlay = true;
-    if (audioEl) {
-      audioEl.play().catch(() => {});
-    }
-  }
-
-  onMount(() => {
-    const interval = setInterval(() => {
-      if (!allowPlay || notified) return;
-
-      const now = new Date().getTime();
-      const diff = (now - order.orderTime) / 1000; // dalam detik
-
-      // disini ganti threshold sesuai kebutuhan (2 detik untuk testing, 1800 detik = 30 menit real)
-      if (diff > 2) {
-        audioEl.play().catch(() => {});
-        notified = true;
-        alert(`Pesanan ${order.products_name} sudah waktunya diantar!`);
-      }
-    }, 1000);
-
-    return () => clearInterval(interval);
-  });
-</script>
+................
 
 <NavPanel />
+
 <div class="w-[100vw] h-[100vh] pt-20 px-10 bg-gray-900 text-white overflow-y-auto">
-    <!-- Tombol aktifkan sound -->
-    <button on:click={enableSound} class="bg-green-500 text-white px-4 py-2 rounded mb-4">
-      Aktifkan Notifikasi
-    </button>
     <!-- Bagian Atas: Statistik -->
     <div class="w-full flex items-center justify-evenly mt-5">
         <div class="w-[13vw] h-[5vw] bg-gray-950 rounded-3xl flex justify-start items-center p-4 shadow-md">
@@ -74,13 +33,20 @@
     <div class="flex items-center mt-10 mb-6 w-full justify-between">
         <div class="flex items-center bg-gray-800 rounded-xl px-4 py-2 w-[30vw]">
             <Search class="text-gray-400 mr-2" size={20}/>
-            <input type="text" placeholder="Cari pesanan..." class="bg-transparent outline-none w-full text-sm" />
+            <input
+            type="text"
+            bind:value={search}
+            placeholder="Cari pesanan..."
+            class="bg-transparent outline-none w-full text-sm"
+            />
         </div>
         <div class="text-6xl font-bold ">12:30</div>
     </div>
 
     <!-- Daftar Pesanan -->
+      {#if playAlert}
         <audio bind:this={audioEl} src="./out.mp3" class="" controls width="500" autoplay></audio>
+      {/if}
     <div class="grid grid-cols-3 gap-6">
         <!-- <audio src="musik.mp3" controls></audio> -->
 
