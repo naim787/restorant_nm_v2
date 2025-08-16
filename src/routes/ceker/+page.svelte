@@ -1,66 +1,61 @@
 <script>
-  import NavPanel from '$lib/component/Nav_Panel.svelte';
-  import { Search, Clock, ClockAlert, UtensilsCrossed, Check } from "@lucide/svelte";
-  import { onMount } from "svelte";
+    import "../../app.css";
+    import NavPanel from '$lib/component/Nav_Panel.svelte';
+    import { Search, Clock, ClockAlert, CircleAlert, UtensilsCrossed, Check } from "@lucide/svelte";
+     import { onMount, tick } from "svelte";
 
-  let audioEl;
-  let search = "";
+    let audioEl;
+    let search = "";
 
-  let orders = [
-    {
-      product_orders: [
-        { products_id: '5115', products_name: 'dagig wahyu', value: 5, status: "pending" },
-        { products_id: '4550', products_name: 'pop ice', value: 2, status: "pending" }
-      ],
-      table_id: 1,
-      waiter_name: 'tony',
-      time: '16/8/2025/20:21:19',
-      total: 1000175100,
-      notified: false
-    },
-    {
-      product_orders: [
-        { products_id: '5115', products_name: 'dagig wahyu', value: 5, status: "pending" },
-        { products_id: '4550', products_name: 'pop ice', value: 2, status: "pending" }
-      ],
-      table_id: 1,
-      waiter_name: 'tony',
-      time: '16/8/2025/23:36:00',
-      total: 1000175100,
-      notified: false
-    }
-  ];
-
-  function parseTime(timeStr) {
-    let [day, month, year, hms] = timeStr.split("/");
-    let [h, m, s] = hms.split(":");
-    return new Date(year, month - 1, day, h, m, s);
-  }
-
-  onMount(() => {
-    const interval = setInterval(() => {
-      let now = new Date();
-      orders.forEach(order => {
-        let orderTime = parseTime(order.time);
-        let diff = (now - orderTime) / 1000;
-        if (diff > 5 && !order.notified) {
-          order.notified = true;
-          audioEl.play().catch(() => {});
+    let orders = [
+        {
+        product_orders: [
+            { products_id: '5115', products_name: 'dagig wahyu', product_price: '5000', value: 5, total: 25000 , status : "pending"},
+            { products_id: '4550', products_name: 'pop ice', product_price: '9000', value: 2, total: 18000, status : "pending" },
+            { products_id: '7501', products_name: 'sapo tahu', product_price: '16000', value: 8, total: 128000, status : "pending" },
+            { products_id: '6059', products_name: 'rahel', product_price: '600', value: 7, total: 4200, status : "pending" },
+            { products_id: '8140', products_name: 'CHAIRUN NAIM ABDULLAH', product_price: '9999999', value: 100, total: 999999900, status : "pending"}
+        ],
+        table_id: 1,
+        waiter_name: 'tony',
+        time: '16/8/2025/20:21:19',
+        total: 1000175100
         }
-      });
-    }, 1000);
+    ];
 
-    return () => clearInterval(interval);
-  });
+    let playAlert = false;
+     let alreadyPlayed = false; // ✅ biar hanya sekali
+
+    function parseTime(timeStr) {
+        let [day, month, year, hms] = timeStr.split("/");
+        let [h, m, s] = hms.split(":");
+        return new Date(year, month - 1, day, h, m, s);
+    }
+
+    onMount(() => {
+        const interval = setInterval(() => {
+            if (alreadyPlayed) return; // ✅ kalau sudah play, jangan cek lagi
+            let now = new Date();
+            orders.forEach(order => {
+                let orderTime = parseTime(order.time);
+                let diff = (now - orderTime) / 1000; // dalam detik
+                if (diff > 5) {
+                    playAlert = true;
+                    alreadyPlayed = true; // ✅ tandai sudah play
+                    if (audioEl) {
+                        audioEl.play();
+                    }
+                }
+            });
+        }, 1000); // cek tiap 5 detik
+
+        return () => clearInterval(interval);
+    });
 </script>
 
 <NavPanel />
 
 <div class="w-[100vw] h-[100vh] pt-20 px-10 bg-gray-900 text-white overflow-y-auto">
-    <!-- Aktifkan notifikasi manual -->
-<button on:click={() => audioEl.play().catch(()=>{})} class="bg-green-500 px-4 py-2 rounded mb-4">
-  Aktifkan Notifikasi
-</button>
     <!-- Bagian Atas: Statistik -->
     <div class="w-full flex items-center justify-evenly mt-5">
         <div class="w-[13vw] h-[5vw] bg-gray-950 rounded-3xl flex justify-start items-center p-4 shadow-md">
@@ -93,6 +88,7 @@
             <Search class="text-gray-400 mr-2" size={20}/>
             <input
             type="text"
+            bind:value={search}
             placeholder="Cari pesanan..."
             class="bg-transparent outline-none w-full text-sm"
             />
@@ -101,10 +97,9 @@
     </div>
 
     <!-- Daftar Pesanan -->
-      <!-- {#if playAlert}
+      {#if playAlert}
         <audio bind:this={audioEl} src="./out.mp3" class="" controls width="500" autoplay></audio>
-      {/if} -->
-      <audio bind:this={audioEl} src="./out.mp3"></audio>
+      {/if}
     <div class="grid grid-cols-3 gap-6">
         <!-- <audio src="musik.mp3" controls></audio> -->
 
