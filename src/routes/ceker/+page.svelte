@@ -57,17 +57,16 @@
             <div class="bg-gray-800 rounded-2xl p-6 shadow-md hover:scale-[1.02] transition">
                 <div class="flex justify-between items-center mb-3">
                     <h2 class="text-xl font-bold flex items-center gap-2">
-                        <UtensilsCrossed size={22}/> Meja {order.meja}
+                        <UtensilsCrossed size={22}/> Meja 1
                     </h2>
-                    <span class="text-sm px-3 py-1 rounded-full
-                        {order.status === 'Menunggu' ? 'bg-yellow-500/20 text-yellow-400' :
+                    <span class="text-sm px-3 py-1 rounded-fullbg-yellow-500/20 text-yellow-400' :
                         order.status === 'Check' ? 'bg-blue-500/20 text-blue-400' :
-                        'bg-red-500/20 text-red-400'}">
+                        'bg-red-500/20 text-red-400">
                         {order.status}
                     </span>
                 </div>
                 <p class="text-lg">🍗 Ceker</p>
-                <p class="mt-2 text-gray-400">Jumlah: <span class="font-semibold">{order.jumlah}</span></p>
+                <p class="mt-2 text-gray-400">Jumlah: <span class="font-semibold">1</span></p>
 
                 <div class="flex gap-3 mt-4">
                     <button class="flex-1 bg-green-600 hover:bg-green-700 rounded-xl py-2 text-sm">Sajikan</button>
