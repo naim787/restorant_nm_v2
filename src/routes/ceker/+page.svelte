@@ -1,7 +1,7 @@
 <script>
     import "../../app.css"
     import NavPanel from '$lib/component/Nav_Panel.svelte';
-    import { Search, Clock, ClockAlert } from "@lucide/svelte";
+    import { Search, Clock, ClockAlert, <CircleAlert } from "@lucide/svelte";
 </script>
 
 <NavPanel />
@@ -20,7 +20,7 @@
             <ClockAlert class="p-2 text-red-500 bg-red-500/20 rounded-xl" size={40}/>
             <div class="flex flex-col">
                 <h1 class="text-3xl font-bold">1</h1>
-                <p class="">P</p>
+                <p class="">Pesanan Check...</p>
             </div>
         </div>
     </div>
