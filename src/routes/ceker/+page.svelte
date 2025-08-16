@@ -42,7 +42,7 @@
             </div>
         </div>
         <div class="w-[13vw] h-[5vw] bg-gray-950 rounded-3xl flex justify-start items-center p-4 shadow-md">
-            <CircleAlert class="p-2 text-red-500 bg-red-500/20 rounded-xl mr-3" size={40}/>
+            <CircleAlert class="p-2 text-green-500 bg-red-500/20 rounded-xl mr-3" size={40}/>
             <div class="flex flex-col">
                 <h1 class="text-3xl font-bold">1</h1>
                 <p class="text-sm">Butuh Perhatian</p>
@@ -80,7 +80,8 @@
                 <div class="flex w-[50%] justify-between">
                   <p class="text-lg">{d.products_name}</p>
                   <p class="text-lg">{d.value}</p>  
-                  <p class="p-2 bg-yellow-500/20 text-green-500 rounded-full m-1">{d.status}</p>
+                  <p class="p-2 bg-yellow-500/20 text-yellow-500 rounded-full m-1">{d.status}</p>
+                  <p class="p-2 bg-green-500 rounded-full m-1">Sajikan</p>
                 </div>
                 {/each}
                 <div class="flex gap-3 mt-4">
