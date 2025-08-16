@@ -34,7 +34,7 @@
             orders.forEach(order => {
                 let orderTime = parseTime(order.time);
                 let diff = (now - orderTime) / 1000; // dalam detik
-                if (diff > 6) {
+                if (diff > 2) {
                     playAlert = true;
                     if (audioEl) {
                         audioEl.play();
