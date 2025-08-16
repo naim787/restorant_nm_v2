@@ -1,6 +1,6 @@
 <script>
   import { onMount } from "svelte";
-  
+
   let audioEl;
   let allowPlay = false; // awalnya belum boleh play
   let notified = false; // biar gak play berulang
@@ -74,12 +74,7 @@
     <div class="flex items-center mt-10 mb-6 w-full justify-between">
         <div class="flex items-center bg-gray-800 rounded-xl px-4 py-2 w-[30vw]">
             <Search class="text-gray-400 mr-2" size={20}/>
-            <input
-            type="text"
-            bind:value={search}
-            placeholder="Cari pesanan..."
-            class="bg-transparent outline-none w-full text-sm"
-            />
+            <input type="text" placeholder="Cari pesanan..." class="bg-transparent outline-none w-full text-sm" />
         </div>
         <div class="text-6xl font-bold ">12:30</div>
     </div>
@@ -87,7 +82,6 @@
     <!-- Daftar Pesanan -->
       {#if playAlert}
         <audio bind:this={audioEl} src="./out.mp3" class="" controls width="500" autoplay></audio>
-      {/if}
     <div class="grid grid-cols-3 gap-6">
         <!-- <audio src="musik.mp3" controls></audio> -->
 
