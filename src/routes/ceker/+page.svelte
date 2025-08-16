@@ -80,7 +80,7 @@
                 <div class="flex w-[50%] justify-between">
                   <p class="text-lg">{d.products_name}</p>
                   <p class="text-lg">{d.value}</p>  
-                  <p class="p">{d.status}</p>
+                  <p class="p-2 bg-">{d.status}</p>
                 </div>
                 {/each}
                 <div class="flex gap-3 mt-4">
