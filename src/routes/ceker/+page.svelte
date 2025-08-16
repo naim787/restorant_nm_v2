@@ -7,7 +7,7 @@
 
 <div class="w-[100vw] h-[100vh] pt-15">
 
-    <div class="w-full h-52 border">
+    <div class="w-full h- border">
        
     </div>
 
