@@ -67,14 +67,11 @@
     <div class="grid grid-cols-3 gap-6">
 
         {#each orders as data, index}
-            <div class="bg-gray-950 rounded-2xl p-6 shadow-md hover:scale-[1.02] transition">
+            <div class="bg-gray-800 rounded-2xl p-6 shadow-md hover:scale-[1.02] transition">
                 <div class="flex justify-between items-center mb-3">
                     <h2 class="text-xl font-bold flex items-center gap-2">
                         <UtensilsCrossed size={22}/> Meja {data.table_id}
                     </h2>
-                    <span class="text-sm px-3 py-1 rounded-full bg-yellow-500/20 text-yellow-400">makanan</span>
-                    <span class="text-sm px-3 py-1 rounded-full bg-yellow-500/20 text-yellow-400">minuman</span>
-                    <span class="text-sm px-3 py-1 rounded-full bg-yellow-500/20 text-yellow-400">lainnya..</span>
                     <span class="text-sm px-3 py-1 rounded-full bg-yellow-500/20 text-yellow-400">menuggu..</span>
                 </div>
                 {#each data.product_orders as d, i}
