@@ -80,7 +80,6 @@
     </div>
 
     <!-- Daftar Pesanan -->
-      {#if playAlert}
         <audio bind:this={audioEl} src="./out.mp3" class="" controls width="500" autoplay></audio>
     <div class="grid grid-cols-3 gap-6">
         <!-- <audio src="musik.mp3" controls></audio> -->
