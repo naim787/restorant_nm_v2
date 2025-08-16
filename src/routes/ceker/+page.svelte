@@ -65,7 +65,9 @@
 
     <!-- Daftar Pesanan -->
     <div class="grid grid-cols-3 gap-6">
-            <div class="bg-gray-800 rounded-2xl p-6 shadow-md hover:scale-[1.02] transition border">
+
+        {#each orders as data, index}
+            <div class="bg-gray-800 rounded-2xl p-6 shadow-md hover:scale-[1.02] transition">
                 <div class="flex justify-between items-center mb-3">
                     <h2 class="text-xl font-bold flex items-center gap-2">
                         <UtensilsCrossed size={22}/> Meja 1
@@ -80,5 +82,8 @@
                     <button class="flex-1 bg-red-600 hover:bg-red-700 rounded-xl py-2 text-sm">Batal</button>
                 </div>
             </div>
+        {/each}
+
     </div>
+
 </div>
