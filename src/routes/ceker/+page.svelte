@@ -17,7 +17,7 @@
       time: '16/8/2025/20:21:19',
       total: 1000175100,
       notified: false
-    }
+    },
     {
       product_orders: [
         { products_id: '5115', products_name: 'dagig wahyu', value: 5, status: "pending" },
@@ -25,7 +25,7 @@
       ],
       table_id: 1,
       waiter_name: 'tony',
-      time: '16/8/2025/20:21:19',
+      time: '16/8/2025/23:36:00',
       total: 1000175100,
       notified: false
     }
@@ -46,7 +46,6 @@
         if (diff > 5 && !order.notified) {
           order.notified = true;
           audioEl.play().catch(() => {});
-          alert(`Pesanan meja ${order.table_id} sudah waktunya diantar!`);
         }
       });
     }, 1000);
