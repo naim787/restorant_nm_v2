@@ -14,6 +14,7 @@
             <Search />
             <input type="text" name="" id="" class="w-[30%]" />
         </div>
+        
        </div>
     </div>
 
