@@ -24,7 +24,7 @@
             <input type="search" class="grow" placeholder="Search" />
             <kbd class="kbd kbd-sm">⌘</kbd>
             <kbd class="kbd kbd-sm">K</kbd>
-            </label>
+        </label>
     </div>
 
 </div>
