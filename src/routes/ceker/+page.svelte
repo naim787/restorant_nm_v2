@@ -2,7 +2,8 @@
     import "../../app.css";
     import NavPanel from '$lib/component/Nav_Panel.svelte';
     import { Search, Clock, ClockAlert, CircleAlert, UtensilsCrossed, Check } from "@lucide/svelte";
-
+     import { onMount, tick } from "svelte";
+     
     let audioEl;
     let search = "";
 
