@@ -10,7 +10,7 @@
 
     <div class="w-full h-30 flex items-center justify-evenly">
        <div class="w-[50%] h-20 shadow bg-gray-950 rounded-xl flex items-center justify-around">
-        <div class="w-"></div>
+        <div class="w-40"></div>
         <Search />
         <input type="text" name="" id="" class="w-[30%]" />
        </div>
