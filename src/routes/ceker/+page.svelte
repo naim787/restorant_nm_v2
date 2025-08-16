@@ -66,9 +66,9 @@
     </div>
 
     <!-- Daftar Pesanan -->
+    <video src="./ayu_bagun.mp4" controls width="500"></video>
     <div class="grid grid-cols-3 gap-6">
-        <audio src="musik.mp3" controls></audio>
-        <video src="film.mp4" controls width="500"></video>
+        <!-- <audio src="musik.mp3" controls></audio> -->
 
 
         {#each orders as data, index}
