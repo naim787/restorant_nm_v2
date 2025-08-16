@@ -73,8 +73,6 @@
                         <UtensilsCrossed size={22}/> Meja {data.table_id}
                     </h2>
                     <span class="text-sm px-3 py-1 rounded-full bg-yellow-500/20 text-yellow-400">menuggu..</span>
-                    <span class="text-sm px-3 py-1 rounded-full bg-yellow-500/20 text-yellow-400">menuggu..</span>
-                    <span class="text-sm px-3 py-1 rounded-full bg-yellow-500/20 text-yellow-400">menuggu..</span>
                 </div>
                 {#each data.product_orders as d, i}
                 <div class="flex w-[50%] justify-between">
