@@ -20,77 +20,61 @@
         total: 1000175100
         }
     ];
+
+    // Fungsi untuk ubah status 1 produk
+    function updateStatus(orderIndex, productIndex, newStatus) {
+        orders[orderIndex].product_orders[productIndex].status = newStatus;
+        orders = [...orders]; // trigger reactivity di Svelte
+    }
 </script>
 
 <NavPanel />
 
 <div class="w-[100vw] h-[100vh] pt-20 px-10 bg-gray-900 text-white overflow-y-auto">
-    <!-- Bagian Atas: Statistik -->
-    <div class="w-full flex items-center justify-evenly mt-5">
-        <div class="w-[13vw] h-[5vw] bg-gray-950 rounded-3xl flex justify-start items-center p-4 shadow-md">
-            <Clock class="p-2 text-yellow-500 bg-yellow-500/20 rounded-xl mr-3" size={40}/>
-            <div class="flex flex-col">
-                <h1 class="text-3xl font-bold">1</h1>
-                <p class="text-sm">Menunggu...</p>
-            </div>
-        </div>
-        <div class="w-[13vw] h-[5vw] bg-gray-950 rounded-3xl flex justify-start items-center p-4 shadow-md">
-            <ClockAlert class="p-2 text-red-500 bg-red-500/20 rounded-xl mr-3" size={40}/>
-            <div class="flex flex-col">
-                <h1 class="text-3xl font-bold">1</h1>
-                <p class="text-sm">Pesanan Check</p>
-            </div>
-        </div>
-        <div class="w-[13vw] h-[5vw] bg-gray-950 rounded-3xl flex justify-start items-center p-4 shadow-md">
-            <Check class="p-2 text-green-500 bg-green-500/20 rounded-xl mr-3" size={40}/>
-            <div class="flex flex-col">
-                <h1 class="text-3xl font-bold">1</h1>
-                <p class="text-sm">Selesai</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Bagian Cari Pesanan -->
-    <div class="flex items-center mt-10 mb-6">
-        <div class="flex items-center bg-gray-800 rounded-xl px-4 py-2 w-[30vw]">
-            <Search class="text-gray-400 mr-2" size={20}/>
-            <input
-                type="text"
-                bind:value={search}
-                placeholder="Cari pesanan..."
-                class="bg-transparent outline-none w-full text-sm"
-            />
-        </div>
-    </div>
 
     <!-- Daftar Pesanan -->
     <div class="grid grid-cols-3 gap-6">
-
-        {#each orders as data, index}
+        {#each orders as data, orderIndex}
             <div class="bg-gray-800 rounded-2xl p-6 shadow-md hover:scale-[1.02] transition">
                 <div class="flex justify-between items-center mb-3">
                     <h2 class="text-xl font-bold flex items-center gap-2">
                         <UtensilsCrossed size={22}/> Meja {data.table_id}
                     </h2>
-                    <span class="text-sm px-3 py-1 rounded-full bg-yellow-500/20 text-red-400">
-                        Lorem, ipsum.
-                    </span>
                 </div>
-                {#each data.product_orders as d, i}
-                <div class="flex w-[50%] justify-between">
-                  <p class="text-lg">{d.products_name}</p>
-                  <p class="text-lg">{d.value}</p>  
-                  <p class="p-2 bg-yellow-500/20 text-yellow-500 rounded-full m-1">{d.status}</p>
-                  <p class="p-2 bg-green-500 rounded-full m-1">Sajikan</p>
+
+                <!-- Produk per meja -->
+                {#each data.product_orders as d, productIndex}
+                <div class="flex justify-between items-center bg-gray-900 p-3 rounded-xl mb-2">
+                  <div>
+                    <p class="text-lg font-semibold">{d.products_name}</p>
+                    <p class="text-sm text-gray-400">Jumlah: {d.value}</p>
+                  </div>
+
+                  <div class="flex gap-2 items-center">
+                    <!-- Badge status -->
+                    <p class="px-3 py-1 text-xs rounded-full
+                        {d.status === 'pending' ? 'bg-yellow-500/20 text-yellow-400' :
+                         d.status === 'check' ? 'bg-blue-500/20 text-blue-400' :
+                         'bg-green-500/20 text-green-400'}">
+                        {d.status}
+                    </p>
+
+                    <!-- Tombol ubah status -->
+                    {#if d.status === "pending"}
+                        <button class="px-3 py-1 bg-blue-600 hover:bg-blue-700 rounded-lg text-sm"
+                            on:click={() => updateStatus(orderIndex, productIndex, "proses")}>
+                            Proses
+                        </button>
+                    {:else if d.status === "proses"}
+                        <button class="px-3 py-1 bg-green-600 hover:bg-green-700 rounded-lg text-sm"
+                            on:click={() => updateStatus(orderIndex, productIndex, "Antar")}>
+                            Selesai
+                        </button>
+                    {/if}
+                  </div>
                 </div>
                 {/each}
-                <div class="flex gap-3 mt-4">
-                    <button class="flex-1 bg-green-600 hover:bg-green-700 rounded-xl py-2 text-sm">Selesai</button>
-                    <button class="flex-1 bg-red-600 hover:bg-red-700 rounded-xl py-2 text-sm">Batal</button>
-                </div>
             </div>
         {/each}
-
     </div>
-
 </div>
