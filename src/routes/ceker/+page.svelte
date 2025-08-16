@@ -67,6 +67,7 @@
 
     <!-- Daftar Pesanan -->
     <div class="grid grid-cols-3 gap-6">
+        <audio src=""></audio>
 
         {#each orders as data, index}
             <div class="bg-gray-950 rounded-2xl p-6 shadow-md hover:scale-[1.02] transition">
