@@ -5,19 +5,19 @@
 
     let search = "";
 
-let order = {
-    product_orders: [
-      { products_id: '5115', products_name: 'dagig wahyu', product_price: '5000', value: 5, total: 25000 },
-      { products_id: '4550', products_name: 'pop ice', product_price: '9000', value: 2, total: 18000 },
-      { products_id: '7501', products_name: 'sapo tahu', product_price: '16000', value: 8, total: 128000 },
-      { products_id: '6059', products_name: 'rahel', product_price: '600', value: 7, total: 4200 },
-      { products_id: '8140', products_name: 'CHAIRUN NAIM ABDULLAH', product_price: '9999999', value: 100, total: 999999900 }
-    ],
-    table_id: 1,
-    waiter_name: 'tony',
-    time: '16/8/2025/15:58:40',
-    total: 1000175100
-  };
+    let order = {
+        product_orders: [
+        { products_id: '5115', products_name: 'dagig wahyu', product_price: '5000', value: 5, total: 25000 },
+        { products_id: '4550', products_name: 'pop ice', product_price: '9000', value: 2, total: 18000 },
+        { products_id: '7501', products_name: 'sapo tahu', product_price: '16000', value: 8, total: 128000 },
+        { products_id: '6059', products_name: 'rahel', product_price: '600', value: 7, total: 4200 },
+        { products_id: '8140', products_name: 'CHAIRUN NAIM ABDULLAH', product_price: '9999999', value: 100, total: 999999900 }
+        ],
+        table_id: 1,
+        waiter_name: 'tony',
+        time: '16/8/2025/15:58:40',
+        total: 1000175100
+    };
 </script>
 
 <NavPanel />
