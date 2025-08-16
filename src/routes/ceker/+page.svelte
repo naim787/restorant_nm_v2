@@ -12,7 +12,7 @@
        <div class="w-[50%] h-20 shadow bg-gray-950 rounded-xl flex items-center justify-around">
         <div class="w-[40%] h-13 bg-gray-900 flex items-center p-3 rounded-xl">
             <Search />
-            <input type="text" name="" id="" class="w-full" placeholder="Cari Pesanan" class=""/>
+            <input type="text" name="" id="" class="w-full" placeholder="Cari Pesanan" class="px"/>
         </div>
         <select class="select">
             <option disabled selected>Pick a color</option>
