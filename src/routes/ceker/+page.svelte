@@ -4,11 +4,7 @@
     import { Search, Clock, ClockAlert, CircleAlert, UtensilsCrossed } from "@lucide/svelte";
 
     let search = "";
-    let orders = [
-        { id: 1, meja: "1", jumlah: 2, status: "Menunggu" },
-        { id: 2, meja: "3", jumlah: 1, status: "Check" },
-        { id: 3, meja: "2", jumlah: 4, status: "Check" },
-    ];
+    
 </script>
 
 <NavPanel />
@@ -59,10 +55,8 @@
                     <h2 class="text-xl font-bold flex items-center gap-2">
                         <UtensilsCrossed size={22}/> Meja 1
                     </h2>
-                    <span class="text-sm px-3 py-1 rounded-full **:bg-yellow-500/20 text-yellow-400' :
-                        order.status === 'Check' ? 'bg-blue-500/20 text-blue-400' :
-                        'bg-red-500/20 text-red-400">
-                        {order.status}
+                    <span class="text-sm px-3 py-1 rounded-full bg-yellow-500/20 text-red-400">
+                        Lorem, ipsum.
                     </span>
                 </div>
                 <p class="text-lg">🍗 Ceker</p>
