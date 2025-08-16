@@ -8,7 +8,10 @@
     let orders = [
         {
         product_orders: [
-            { products_id: '5115', products_name: 'dagig wahyu', product_price: '5000', value: 5, total: 25000 , },
+            { products_id: '5115', products_name: 'dagig wahyu', product_price: '5000', value: 5, total: 25000 , 
+status
+: 
+"pending"},
             { products_id: '4550', products_name: 'pop ice', product_price: '9000', value: 2, total: 18000 },
             { products_id: '7501', products_name: 'sapo tahu', product_price: '16000', value: 8, total: 128000 },
             { products_id: '6059', products_name: 'rahel', product_price: '600', value: 7, total: 4200 },
