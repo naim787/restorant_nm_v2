@@ -72,7 +72,7 @@
             <div class="bg-gray-950 rounded-2xl p-6 shadow-md hover:scale-[1.02] transition">
                 <div class="flex justify-between items-center mb-3">
                     <h2 class="text-xl font-bold flex items-center gap-2">
-                        <UtensilsCrossed size={22}/> Meja <span class="text-4xl">{data.table_id}</span>
+                        <UtensilsCrossed size={22}/> Meja : <span class="text-4xl">{data.table_id}</span>
                     </h2>
                     <div class="flex items-center justify-center">
                         <span class="text-sm px-3 py-1 rounded-full bg-yellow-500/20 text-yellow-400"><Clock /></span>
@@ -82,7 +82,7 @@
                 {#each data.product_orders as d, i}
                 <div class="flex w-[50%] justify-between">
                   <p class="text-lg">{d.products_name}</p>
-                  <p class="text-lg">{d.value}</p>  
+                  <p class="text-5xl">{d.value}</p>  
                 </div>
                 {/each}
                 <div class="flex gap-3 mt-4">
