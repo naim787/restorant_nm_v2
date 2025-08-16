@@ -39,8 +39,11 @@
 </script>
 
 <NavPanel />
-
 <div class="w-[100vw] h-[100vh] pt-20 px-10 bg-gray-900 text-white overflow-y-auto">
+    <!-- Tombol aktifkan sound -->
+    <button on:click={enableSound} class="bg-green-500 text-white px-4 py-2 rounded mb-4">
+      Aktifkan Notifikasi
+    </button>
     <!-- Bagian Atas: Statistik -->
     <div class="w-full flex items-center justify-evenly mt-5">
         <div class="w-[13vw] h-[5vw] bg-gray-950 rounded-3xl flex justify-start items-center p-4 shadow-md">
