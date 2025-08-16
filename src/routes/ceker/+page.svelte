@@ -6,8 +6,8 @@
     let search = "";
     let orders = [
         { id: 1, meja: "1", jumlah: 2, status: "Menunggu" },
-        { id: 2, meja: "B3", jumlah: 1, status: "Check" },
-        { id: 3, meja: "C2", jumlah: 4, status: "Check" },
+        { id: 2, meja: "3", jumlah: 1, status: "Check" },
+        { id: 3, meja: "2", jumlah: 4, status: "Check" },
     ];
 </script>
 
