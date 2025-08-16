@@ -47,6 +47,10 @@
 <NavPanel />
 
 <div class="w-[100vw] h-[100vh] pt-20 px-10 bg-gray-900 text-white overflow-y-auto">
+    <!-- Aktifkan notifikasi manual -->
+<button on:click={() => audioEl.play().catch(()=>{})} class="bg-green-500 px-4 py-2 rounded mb-4">
+  Aktifkan Notifikasi
+</button>
     <!-- Bagian Atas: Statistik -->
     <div class="w-full flex items-center justify-evenly mt-5">
         <div class="w-[13vw] h-[5vw] bg-gray-950 rounded-3xl flex justify-start items-center p-4 shadow-md">
@@ -79,7 +83,6 @@
             <Search class="text-gray-400 mr-2" size={20}/>
             <input
             type="text"
-            bind:value={search}
             placeholder="Cari pesanan..."
             class="bg-transparent outline-none w-full text-sm"
             />
@@ -88,9 +91,10 @@
     </div>
 
     <!-- Daftar Pesanan -->
-      {#if playAlert}
+      <!-- {#if playAlert}
         <audio bind:this={audioEl} src="./out.mp3" class="" controls width="500" autoplay></audio>
-      {/if}
+      {/if} -->
+      <audio bind:this={audioEl} src="./out.mp3"></audio>
     <div class="grid grid-cols-3 gap-6">
         <!-- <audio src="musik.mp3" controls></audio> -->
 
