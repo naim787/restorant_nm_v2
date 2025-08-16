@@ -77,7 +77,9 @@
                     </span>
                 </div>
                 {#each data.product_orders as d, i}
-                  <p class="text-lg">{d.products_name}</p>  
+                <div class="flex">
+                  <p class="text-lg">{d.products_name}</p>  <p class="text-lg">{d.value}</p>  
+                </div>
                 {/each}
                 <div class="flex gap-3 mt-4">
                     <button class="flex-1 bg-green-600 hover:bg-green-700 rounded-xl py-2 text-sm">Sajikan</button>
