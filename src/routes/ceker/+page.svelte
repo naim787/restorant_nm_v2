@@ -16,7 +16,7 @@
         ],
         table_id: 1,
         waiter_name: 'tony',
-        time: '16/8/2025/15:58:40',
+        time: '16/8/2025/15:5:40',
         total: 1000175100
         }
     ];
@@ -66,7 +66,6 @@
     </div>
 
     <!-- Daftar Pesanan -->
-     {#if }
     <video src="./ayu_bagun.mp4" controls width="500"></video>
     <div class="grid grid-cols-3 gap-6">
         <!-- <audio src="musik.mp3" controls></audio> -->
