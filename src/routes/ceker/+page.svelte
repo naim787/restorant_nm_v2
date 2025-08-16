@@ -1,4 +1,5 @@
 <script>
+    
   import { onMount } from "svelte";
 
   let table_id = 1;
