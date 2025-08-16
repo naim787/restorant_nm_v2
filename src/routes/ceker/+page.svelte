@@ -76,7 +76,7 @@
                         Lorem, ipsum.
                     </span>
                 </div>
-                <p class="text-lg">{}</p>
+                <p class="text-lg">{data.}</p>
                 <div class="flex gap-3 mt-4">
                     <button class="flex-1 bg-green-600 hover:bg-green-700 rounded-xl py-2 text-sm">Sajikan</button>
                     <button class="flex-1 bg-red-600 hover:bg-red-700 rounded-xl py-2 text-sm">Batal</button>
