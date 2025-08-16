@@ -9,7 +9,7 @@
 <div class="w-[100vw] h-[100vh] pt-15">
 
     <div class="w-full h-30 flex items-center justify-evenly">
-       <div class="w-[50%] h-20 shadow bg-gray-950 rounded-xl flex items-center  p-2">
+       <div class="w-[50%] h-20 shadow bg-gray-950 rounded-xl flex items-center p-2">
         <div class="w-[40%] h-13 bg-gray-900 flex items-center p-3 rounded-xl">
             <Search />
             <input type="text" name="" id="" class="w-full px-1 outline-0" placeholder="Cari Pesanan"/>
