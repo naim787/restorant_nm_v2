@@ -1,6 +1,6 @@
 <script>
   import { onMount } from "svelte";
-
+  
   let audioEl;
   let allowPlay = false; // awalnya belum boleh play
   let notified = false; // biar gak play berulang
