@@ -6,10 +6,10 @@
 
 <NavPanel />
 
-<div class="w-[100vw] h-[100vh] pt-18">
+<div class="w-[100vw] h-[100vh] pt-16">
 
-    <div class="w-full h-30 flex items-center justify-evenly">
-        <div class="w-[18vw] h-[15vw] bg-black rounded-xl"></div>
+    <div class="w-full h-30 flex items-center justify-evenly mt-15">
+        <div class="w-[18vw] h-[10vw] bg-black rounded-xl"></div>
     </div>
 
 </div>
