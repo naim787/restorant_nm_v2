@@ -9,7 +9,9 @@
 <div class="w-[100vw] h-[100vh] pt-15">
 
     <div class="w-full h-30 flex items-center justify-evenly mt-5">
-        <div class="w-[13vw] h-[5vw] bg-black rounded-xl"></div>
+        <div class="w-[13vw] h-[5vw] bg-gray-950 rounded-2xl">
+
+        </div>
     </div>
 
 </div>
