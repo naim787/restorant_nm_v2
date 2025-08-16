@@ -1,5 +1,5 @@
 <script>
-    import "..//app.css"
+    import "../../app.css"
     import NavPanel from '$lib/component/Nav_Panel.svelte';
 </script>
 
