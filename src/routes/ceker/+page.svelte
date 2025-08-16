@@ -24,6 +24,7 @@
     ];
 
     let playAlert = false;
+     let alreadyPlayed = false; // ✅ biar hanya sekali
 
     function parseTime(timeStr) {
         let [day, month, year, hms] = timeStr.split("/");
