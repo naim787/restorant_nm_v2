@@ -17,7 +17,7 @@
             </div>
         </div>
         <div class="w-[13vw] h-[5vw] bg-gray-950 rounded-3xl flex justify-start items-center p-4">
-            <Clock class="p-2 bg-yellow-500/30 rounded-xl" size={40}/>
+            <ClockAlert class="p-2 text-red-500 bg-red-500/20 rounded-xl" size={40}/>
             <div class="flex flex-col">
                 <h1 class="text-3xl font-bold">1</h1>
                 <p class="">Lorem ipsum dolor sit amet.</p>
