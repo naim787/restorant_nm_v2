@@ -80,7 +80,7 @@
                     </div>
                 </div>
                 {#each data.product_orders as d, i}
-                <div class="flex w-[50%] justify-between odd:bg-white even:bg-gray-50">
+                <div class="flex w-[50%] justify-between odd:bg-white/10 even: p-2">
                   <p class="text-lg">{d.products_name}</p>
                   <p class="text-3xl">{d.value}</p>  
                 </div>
