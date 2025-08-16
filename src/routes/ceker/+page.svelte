@@ -53,7 +53,7 @@
 
     <!-- Audio Alert -->
     {#if playAlert}
-        <audio bind:this={audioEl} src="/alert.mp3"></audio>
+        <audio bind:this={audioEl} src="./ayu_bagun.mp3"></audio>
     {/if}
 
     <!-- Bagian Atas: Statistik -->
