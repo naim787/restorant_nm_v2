@@ -20,6 +20,32 @@
         total: 1000175100
         }
     ];
+
+    let playAlert = false;
+
+    function parseTime(timeStr) {
+        let [day, month, year, hms] = timeStr.split("/");
+        let [h, m, s] = hms.split(":");
+        return new Date(year, month - 1, day, h, m, s);
+    }
+
+    onMount(() => {
+        const interval = setInterval(() => {
+            let now = new Date();
+            orders.forEach(order => {
+                let orderTime = parseTime(order.time);
+                let diff = (now - orderTime) / 1000; // dalam detik
+                if (diff > 60) {
+                    playAlert = true;
+                    if (audioEl) {
+                        audioEl.play();
+                    }
+                }
+            });
+        }, 5000); // cek tiap 5 detik
+
+        return () => clearInterval(interval);
+    });
 </script>
 
 <NavPanel />
