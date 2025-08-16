@@ -6,6 +6,9 @@
 <NavPanel />
 
 <div class="w-[100vw] h-[100vh]">
-    div.
-    
+
+    <div class="w-full h-52 bg-black">
+        
+    </div>
+
 </div>
