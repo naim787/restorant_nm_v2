@@ -50,6 +50,8 @@
         </div>
     </div>
 
+    <div class=""></div>
+
     <!-- Bagian Cari Pesanan -->
     <div class="flex items-center mt-10 mb-6">
         <div class="flex items-center bg-gray-800 rounded-xl px-4 py-2 w-[30vw]">
@@ -72,7 +74,7 @@
                     <h2 class="text-xl font-bold flex items-center gap-2">
                         <UtensilsCrossed size={22}/> Meja {data.table_id}
                     </h2>
-                    <span class="text-sm px-3 py-1 rounded-full bg-yellow-500/20 text-yellow-400"><Clock </span>
+                    <span class="text-sm px-3 py-1 rounded-full bg-yellow-500/20 text-yellow-400"><Clock /></span>
                 </div>
                 {#each data.product_orders as d, i}
                 <div class="flex w-[50%] justify-between">
