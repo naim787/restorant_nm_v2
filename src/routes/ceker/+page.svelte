@@ -59,7 +59,7 @@
                     <h2 class="text-xl font-bold flex items-center gap-2">
                         <UtensilsCrossed size={22}/> Meja 1
                     </h2>
-                    <span class="text-sm px-3 py-1 rounded-fullbg-yellow-500/20 text-yellow-400' :
+                    <span class="text-sm px-3 py-1 rounded-full **:bg-yellow-500/20 text-yellow-400' :
                         order.status === 'Check' ? 'bg-blue-500/20 text-blue-400' :
                         'bg-red-500/20 text-red-400">
                         {order.status}
