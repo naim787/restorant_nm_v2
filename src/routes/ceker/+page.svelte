@@ -62,7 +62,7 @@
                     <!-- Tombol ubah status -->
                     {#if d.status === "pending"}
                         <button class="px-3 py-1 bg-blue-600 hover:bg-blue-700 rounded-lg text-sm"
-                            on:click={() => updateStatus(orderIndex, productIndex, "check")}>
+                            on:click={() => updateStatus(orderIndex, productIndex, "")}>
                             Check
                         </button>
                     {:else if d.status === "check"}
