@@ -1,4 +1,48 @@
+<script>
+  import NavPanel from '$lib/component/Nav_Panel.svelte';
+  import { Search, Clock, ClockAlert, UtensilsCrossed, Check } from "@lucide/svelte";
+  import { onMount } from "svelte";
 
+  let audioEl;
+  let search = "";
+
+  let orders = [
+    {
+      product_orders: [
+        { products_id: '5115', products_name: 'dagig wahyu', value: 5, status: "pending" },
+        { products_id: '4550', products_name: 'pop ice', value: 2, status: "pending" }
+      ],
+      table_id: 1,
+      waiter_name: 'tony',
+      time: '16/8/2025/20:21:19',
+      total: 1000175100,
+      notified: false
+    }
+  ];
+
+  function parseTime(timeStr) {
+    let [day, month, year, hms] = timeStr.split("/");
+    let [h, m, s] = hms.split(":");
+    return new Date(year, month - 1, day, h, m, s);
+  }
+
+  onMount(() => {
+    const interval = setInterval(() => {
+      let now = new Date();
+      orders.forEach(order => {
+        let orderTime = parseTime(order.time);
+        let diff = (now - orderTime) / 1000;
+        if (diff > 5 && !order.notified) {
+          order.notified = true;
+          audioEl.play().catch(() => {});
+          alert(`Pesanan meja ${order.table_id} sudah waktunya diantar!`);
+        }
+      });
+    }, 1000);
+
+    return () => clearInterval(interval);
+  });
+</script>
 
 <NavPanel />
 
