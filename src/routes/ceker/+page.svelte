@@ -52,7 +52,7 @@
 
     
     <!-- Bagian Cari Pesanan -->
-    <div class="flex items-center mt-10 mb-6 w-full">
+    <div class="flex items-center mt-10 mb-6 w-full justify-between">
         <div class="flex items-center bg-gray-800 rounded-xl px-4 py-2 w-[30vw]">
             <Search class="text-gray-400 mr-2" size={20}/>
             <input
@@ -62,7 +62,7 @@
             class="bg-transparent outline-none w-full text-sm"
             />
         </div>
-        <div class="text-2xl font-bold ">12:30</div>
+        <div class="text-6xl font-bold ">12:30</div>
     </div>
 
     <!-- Daftar Pesanan -->
@@ -75,6 +75,7 @@
                         <UtensilsCrossed size={22}/> Meja {data.table_id}
                     </h2>
                     <span class="text-sm px-3 py-1 rounded-full bg-yellow-500/20 text-yellow-400"><Clock /></span>
+                    
                 </div>
                 {#each data.product_orders as d, i}
                 <div class="flex w-[50%] justify-between">
