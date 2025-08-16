@@ -45,7 +45,7 @@
             <Check class="p-2 text-green-500 bg-green-500/20 rounded-xl mr-3" size={40}/>
             <div class="flex flex-col">
                 <h1 class="text-3xl font-bold">1</h1>
-                <p class="text-sm"></p>
+                <p class="text-sm">Selesai</p>
             </div>
         </div>
     </div>
