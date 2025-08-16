@@ -72,7 +72,7 @@
                     <h2 class="text-xl font-bold flex items-center gap-2">
                         <UtensilsCrossed size={22}/> Meja {data.table_id}
                     </h2>
-                    <span class="text-sm px-3 py-1 rounded-full bg-yellow-500/20 text-red-400">
+                    <span class="text-sm px-3 py-1 rounded-full bg-yellow-500/20 text-yellow-400">
                         Lorem, ipsum.
                     </span>
                 </div>
@@ -80,8 +80,6 @@
                 <div class="flex w-[50%] justify-between">
                   <p class="text-lg">{d.products_name}</p>
                   <p class="text-lg">{d.value}</p>  
-                  <p class="p-2 bg-yellow-500/20 text-yellow-500 rounded-full m-1">{d.status}</p>
-                  <p class="p-2 bg-green-500 rounded-full m-1">Sajikan</p>
                 </div>
                 {/each}
                 <div class="flex gap-3 mt-4">
