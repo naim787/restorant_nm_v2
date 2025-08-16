@@ -10,7 +10,7 @@
 
     <div class="w-full h-30 flex items-center justify-evenly mt-5">
         <div class="w-[13vw] h-[5vw] bg-gray-950 rounded-3xl flex justify-start items-center">
-
+            <Clock />
         </div>
     </div>
 
