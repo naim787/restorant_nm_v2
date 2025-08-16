@@ -115,7 +115,7 @@
         }
 
       
-      // socket.send(JSON.stringify(ordersArray));
+      socket.send(JSON.stringify(ordersDone));
       console.log("📤 Sent orders:", ordersDone);
       // checkoutData = [];
     } else {
