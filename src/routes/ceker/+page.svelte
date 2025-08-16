@@ -68,7 +68,7 @@
     <!-- Daftar Pesanan -->
     <div class="grid grid-cols-3 gap-6">
         <audio src="musik.mp3" controls></audio>
-<video src="film.mp4" controls width="500"></video>
+        <video src="film.mp4" controls width="500"></video>
 
 
         {#each orders as data, index}
