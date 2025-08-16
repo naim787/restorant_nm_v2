@@ -14,7 +14,12 @@
             <Search />
             <input type="text" name="" id="" class="w-[30%]" />
         </div>
-        
+        <select class="select">
+  <option disabled selected>Pick a color</option>
+  <option>Crimson</option>
+  <option>Amber</option>
+  <option>Velvet</option>
+</select>
        </div>
     </div>
 
