@@ -3,6 +3,7 @@
     import NavPanel from '$lib/component/Nav_Panel.svelte';
     import { Search, Clock, ClockAlert, CircleAlert, UtensilsCrossed, Check } from "@lucide/svelte";
 
+    let audioEl;
     let search = "";
 
     let orders = [
@@ -92,7 +93,9 @@
     </div>
 
     <!-- Daftar Pesanan -->
-    <video src="./ayu_bagun.mp4" controls width="500"></video>
+      {#if playAlert}
+      <video src="./ayu_bagun.mp4" controls width="500"></video>
+      {/if}
     <div class="grid grid-cols-3 gap-6">
         <!-- <audio src="musik.mp3" controls></audio> -->
 
