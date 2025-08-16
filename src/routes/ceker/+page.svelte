@@ -9,7 +9,7 @@
 <div class="w-[100vw] h-[100vh] pt-15">
 
     <div class="w-full h-30 flex items-center justify-evenly">
-        <div class="w-[20vw] h-[]"></div>
+        <div class="w-[20vw] h-[30vw]"></div>
     </div>
 
 </div>
