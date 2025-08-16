@@ -36,14 +36,14 @@
             orders.forEach(order => {
                 let orderTime = parseTime(order.time);
                 let diff = (now - orderTime) / 1000; // dalam detik
-                if (diff > 60) {
+                if (diff > 5) {
                     playAlert = true;
                     if (audioEl) {
                         audioEl.play();
                     }
                 }
             });
-        }, 5000); // cek tiap 5 detik
+        }, 1000); // cek tiap 5 detik
 
         return () => clearInterval(interval);
     });
@@ -94,7 +94,7 @@
 
     <!-- Daftar Pesanan -->
       {#if playAlert}
-        <video src="./ayu_bagun.mp4" controls width="500"></video>
+        <video bind:this={audioEl} src="./ayu_bagun.mp4" controls width="500" />
       {/if}
     <div class="grid grid-cols-3 gap-6">
         <!-- <audio src="musik.mp3" controls></audio> -->
