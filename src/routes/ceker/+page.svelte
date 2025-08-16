@@ -78,7 +78,7 @@
                 </div>
                 {#each data.product_orders as d, i}
                 <div class="flex">
-                  <p class="text-lg">{d.products_name}</p>  <p class="text-lg">{d.value}</p>  
+                  <p class="text-lg">{d.products_name}</p> : <p class="text-lg">{d.value}</p>  
                 </div>
                 {/each}
                 <div class="flex gap-3 mt-4">
