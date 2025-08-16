@@ -34,14 +34,14 @@
             orders.forEach(order => {
                 let orderTime = parseTime(order.time);
                 let diff = (now - orderTime) / 1000; // dalam detik
-                if (diff > 60) {
+                if (diff > 6) {
                     playAlert = true;
                     if (audioEl) {
                         audioEl.play();
                     }
                 }
             });
-        }, 5000); // cek tiap 5 detik
+        }, 1000); // cek tiap 5 detik
 
         return () => clearInterval(interval);
     });
