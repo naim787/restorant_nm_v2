@@ -42,7 +42,7 @@
             </div>
         </div>
         <div class="w-[13vw] h-[5vw] bg-gray-950 rounded-3xl flex justify-start items-center p-4 shadow-md">
-            <CircleAlert class="p-2 text-green-500 bg-red-500/20 rounded-xl mr-3" size={40}/>
+            <CircleAlert class="p-2 text-green-500 bg-green-500/20 rounded-xl mr-3" size={40}/>
             <div class="flex flex-col">
                 <h1 class="text-3xl font-bold">1</h1>
                 <p class="text-sm">Butuh Perhatian</p>
