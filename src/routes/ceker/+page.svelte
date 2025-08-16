@@ -72,7 +72,7 @@
             <div class="bg-gray-950 rounded-2xl p-6 shadow-md hover:scale-[1.02] transition">
                 <div class="flex justify-between items-center mb-3">
                     <h2 class="text-xl font-bold flex items-center gap-2">
-                        <UtensilsCrossed size={22}/> Meja <span class="text-3xl">{data.table_id}</span>
+                        <UtensilsCrossed size={22}/> Meja <span class="text-4xl">{data.table_id}</span>
                     </h2>
                     <div class="flex items-center justify-center">
                         <span class="text-sm px-3 py-1 rounded-full bg-yellow-500/20 text-yellow-400"><Clock /></span>
