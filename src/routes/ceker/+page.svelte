@@ -3,7 +3,7 @@
     import NavPanel from '$lib/component/Nav_Panel.svelte';
     import { Search, Clock, ClockAlert, CircleAlert, UtensilsCrossed, Check } from "@lucide/svelte";
      import { onMount, tick } from "svelte";
-     
+
     let audioEl;
     let search = "";
 
@@ -18,7 +18,7 @@
         ],
         table_id: 1,
         waiter_name: 'tony',
-        time: '16/8/2025/15:20:50',
+        time: '16/8/2025/15:20:',
         total: 1000175100
         }
     ];
@@ -95,7 +95,7 @@
 
     <!-- Daftar Pesanan -->
       {#if playAlert}
-        <video bind:this={audioEl} src="./ayu_bagun.mp4" controls width="500"></video>
+        <video bind:this={audioEl} src="./ayu_bagun.mp4" controls width="500" autoplay loop></video>
       {/if}
     <div class="grid grid-cols-3 gap-6">
         <!-- <audio src="musik.mp3" controls></audio> -->
