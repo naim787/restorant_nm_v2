@@ -1,4 +1,42 @@
-................
+<script>
+  import { onMount } from "svelte";
+
+  let audioEl;
+  let allowPlay = false; // awalnya belum boleh play
+  let notified = false; // biar gak play berulang
+
+  // contoh data order (real nanti dari API)
+  let order = {
+    products_name: "Ceker Mercon",
+    orderTime: new Date().getTime(), // simpan timestamp pesanan dibuat
+  };
+
+  // aktifkan izin audio saat user klik 1x
+  function enableSound() {
+    allowPlay = true;
+    if (audioEl) {
+      audioEl.play().catch(() => {});
+    }
+  }
+
+  onMount(() => {
+    const interval = setInterval(() => {
+      if (!allowPlay || notified) return;
+
+      const now = new Date().getTime();
+      const diff = (now - order.orderTime) / 1000; // dalam detik
+
+      // disini ganti threshold sesuai kebutuhan (2 detik untuk testing, 1800 detik = 30 menit real)
+      if (diff > 2) {
+        audioEl.play().catch(() => {});
+        notified = true;
+        alert(`Pesanan ${order.products_name} sudah waktunya diantar!`);
+      }
+    }, 1000);
+
+    return () => clearInterval(interval);
+  });
+</script>
 
 <NavPanel />
 
