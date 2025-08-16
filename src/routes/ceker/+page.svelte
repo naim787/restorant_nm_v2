@@ -20,7 +20,7 @@
             <ClockAlert class="p-2 text-red-500 bg-red-500/20 rounded-xl" size={40}/>
             <div class="flex flex-col">
                 <h1 class="text-3xl font-bold">1</h1>
-                <p class=""></p>
+                <p class="">P</p>
             </div>
         </div>
     </div>
