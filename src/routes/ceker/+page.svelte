@@ -1,7 +1,7 @@
 <script>
     import "../../app.css"
     import NavPanel from '$lib/component/Nav_Panel.svelte';
-    import { Search, Clock, <ClockAlert } from "@lucide/svelte";
+    import { Search, Clock, ClockAlert } from "@lucide/svelte";
 </script>
 
 <NavPanel />
