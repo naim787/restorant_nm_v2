@@ -5,7 +5,19 @@
 
     let search = "";
 
-    
+let order = {
+    product_orders: [
+      { products_id: '5115', products_name: 'dagig wahyu', product_price: '5000', value: 5, total: 25000 },
+      { products_id: '4550', products_name: 'pop ice', product_price: '9000', value: 2, total: 18000 },
+      { products_id: '7501', products_name: 'sapo tahu', product_price: '16000', value: 8, total: 128000 },
+      { products_id: '6059', products_name: 'rahel', product_price: '600', value: 7, total: 4200 },
+      { products_id: '8140', products_name: 'CHAIRUN NAIM ABDULLAH', product_price: '9999999', value: 100, total: 999999900 }
+    ],
+    table_id: 1,
+    waiter_name: 'tony',
+    time: '16/8/2025/15:58:40',
+    total: 1000175100
+  };
 </script>
 
 <NavPanel />
@@ -61,8 +73,6 @@
                     </span>
                 </div>
                 <p class="text-lg">🍗 Ceker</p>
-                <p class="mt-2 text-gray-400">Jumlah: <span class="font-semibold">1</span></p>
-
                 <div class="flex gap-3 mt-4">
                     <button class="flex-1 bg-green-600 hover:bg-green-700 rounded-xl py-2 text-sm">Sajikan</button>
                     <button class="flex-1 bg-red-600 hover:bg-red-700 rounded-xl py-2 text-sm">Batal</button>
