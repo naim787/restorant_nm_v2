@@ -95,7 +95,7 @@
 
     <!-- Daftar Pesanan -->
       {#if playAlert}
-        <audio bind:this={audioEl} src="./out.mp4a" controls width="500" autoplay loop></video>
+        <audio bind:this={audioEl} src="./out.mp4a" controls width="500" autoplay loop></audio>
       {/if}
     <div class="grid grid-cols-3 gap-6">
         <!-- <audio src="musik.mp3" controls></audio> -->
