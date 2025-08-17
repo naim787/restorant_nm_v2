@@ -7,6 +7,7 @@
   const base = import.meta.env.VITE_API_BASE || 'localhost:3001';
   // Remove http:// or https:// if present
   const cleanBase = base.replace(/^https?:\/\//, '');
+  let socket;
 
   let audioEl;
   let search = "";
