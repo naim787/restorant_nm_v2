@@ -15,7 +15,7 @@
   let orders = [
     {
       product_orders: [
-        { products_id: '5115', products_name: 'dagig wahyu', value: 5, status: "pending" },
+        { products_id: '5115', products_name: 'dagig wahyu', value: 5 },
         { products_id: '4550', products_name: 'pop ice', value: 2, status: "pending" }
       ],
       table_id: 1,
