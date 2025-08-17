@@ -82,7 +82,7 @@
 
     socket.onopen = () => console.log('✅ WebSocket connected');
     socket.onmessage = (event) => {
-    const data = JSON.parse(event.sa);
+    const data = JSON.parse(event.saved);
       console.log("✅ WebSocket response:", data);
 
       if (data.success && data.saved) {
