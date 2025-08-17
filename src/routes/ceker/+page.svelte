@@ -16,7 +16,7 @@
     {
       product_orders: [
         { products_id: '5115', products_name: 'dagig wahyu', value: 5 },
-        { products_id: '4550', products_name: 'pop ice', value: 2, status: "pending" }
+        { products_id: '4550', products_name: 'pop ice', value: 2 }
       ],
       table_id: 1,
       waiter_name: 'tony',
