@@ -102,8 +102,8 @@
           product_price: item.products.price,
           value : item.value,
           total : item.subtotal,
-          status: "pending",
         }));
+        status: "pending",
         
         // object pembugkus pesanan websoket
         const ordersDone = {
