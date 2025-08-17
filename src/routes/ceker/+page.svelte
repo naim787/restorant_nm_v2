@@ -75,6 +75,25 @@
   }
 
   onMount(() => {
+
+    // ✅ Perbaiki WebSocket connection
+    const protocol = window.location.protocol === 'https:' ? 'wss' : 'ws';
+    socket = new WebSocket(`${protocol}://${cleanBase}/ws/orders`);
+
+    socket.onopen = () => console.log('✅ WebSocket connected');
+    socket.onmessage = (event) => {
+  const data = JSON.parse(event.data);
+  console.log("✅ WebSocket response:", data);
+
+  if (data.success && data.saved) {
+    // tambahkan order baru ke list
+    orders = [data.saved, ...orders];
+  }
+};
+    socket.onerror = (e) => console.error('❌ WebSocket error', e);
+    socket.onclose = () => console.log('🔌 WebSocket closed');
+
+
     const interval = setInterval(checkOrders, 1000);
     return () => clearInterval(interval);
   });
