@@ -82,14 +82,14 @@
 
     socket.onopen = () => console.log('✅ WebSocket connected');
     socket.onmessage = (event) => {
-  const data = JSON.parse(event.data);
-  console.log("✅ WebSocket response:", data);
+    const data = JSON.parse(event.data);
+    console.log("✅ WebSocket response:", data);
 
-  if (data.success && data.saved) {
-    // tambahkan order baru ke list
-    orders = [data.saved, ...orders];
-  }
-};
+    if (data.success && data.saved) {
+      // tambahkan order baru ke list
+      orders = [data.saved, ...orders];
+    }
+  };
     socket.onerror = (e) => console.error('❌ WebSocket error', e);
     socket.onclose = () => console.log('🔌 WebSocket closed');
 
