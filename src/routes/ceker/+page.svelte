@@ -12,8 +12,7 @@
   let audioEl;
   let search = "";
 
-  let orders = [
-  ];
+  let orders = [];
 
   function parseTime(timeStr) {
     let [day, month, year, hms] = timeStr.split("/");
