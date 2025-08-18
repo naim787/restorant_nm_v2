@@ -3,6 +3,8 @@
   import { Search, Clock, ClockAlert, UtensilsCrossed, Check, Volume2, VolumeOff } from "@lucide/svelte";
   import { onMount } from "svelte";
 
+  
+
   // ✅ Perbaiki format base URL
   const base = import.meta.env.VITE_API_BASE || 'localhost:3001';
   // Remove http:// or https:// if present
@@ -83,9 +85,9 @@
   <!-- Aktifkan notifikasi manual -->
   <button on:click={() => audioEl.play().catch(()=>{})} class="bg-green-500 px-4 py-2 rounded mb-4 flex text-black">
     {#if audioEl?.paused}
-     <VolumeOff />
+      <Volume2 class="mx-2"/>
     {:else}
-     <Volume2 class="mx-2"/>
+      <VolumeOff />
     {/if}
     Aktifkan Notifikasi
   </button>
