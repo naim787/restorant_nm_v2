@@ -84,8 +84,8 @@
 
 <div class="w-[100vw] h-[100vh] pt-20 px-10 bg-gray-900 text-white overflow-y-auto">
   <!-- Aktifkan notifikasi manual -->
-  <button on:click={() => {audioEl.play().catch(()=>{}); isPlaying ? }} class="bg-green-500 px-4 py-2 rounded mb-4 flex text-black">
-    {#if audioEl?.paused}
+  <button on:click={() => {audioEl.play().catch(()=>{}); isPlaying ? true : false}} class="bg-green-500 px-4 py-2 rounded mb-4 flex text-black">
+    {#if isPlay}
       <Volume2 class="mx-2"/>
     {:else}
       <VolumeOff />
