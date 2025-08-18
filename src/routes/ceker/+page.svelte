@@ -83,7 +83,7 @@
   <!-- Aktifkan notifikasi manual -->
   <button on:click={() => audioEl.play().catch(()=>{})} class="bg-green-500 px-4 py-2 rounded mb-4 flex text-black">
     {#if audioEl.paused}
-    {/}
+    {/if}
     <Volume2 class="mx-2"/>
     Aktifkan Notifikasi
   </button>
