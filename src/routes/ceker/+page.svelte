@@ -1,6 +1,6 @@
 <script>
   import NavPanel from '$lib/component/Nav_Panel.svelte';
-  import { Search, Clock, ClockAlert, UtensilsCrossed, Check } from "@lucide/svelte";
+  import { Search, Clock, ClockAlert, UtensilsCrossed, Check, Volume2 } from "@lucide/svelte";
   import { onMount } from "svelte";
 
   // ✅ Perbaiki format base URL
