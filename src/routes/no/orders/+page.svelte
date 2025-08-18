@@ -103,7 +103,6 @@
           value : item.value,
           total : item.subtotal,
         }));
-        status: "pending",
         
         // object pembugkus pesanan websoket
         const ordersDone = {

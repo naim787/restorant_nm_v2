@@ -13,28 +13,6 @@
   let search = "";
 
   let orders = [
-    {
-      product_orders: [
-        { products_id: '5115', products_name: 'dagig wahyu', value: 5 },
-        { products_id: '4550', products_name: 'pop ice', value: 2 }
-      ],
-      table_id: 1,
-      waiter_name: 'tony',
-      time: '16/8/2025/20:21:19',
-      total: 1000175100,
-      done: false
-    },
-    {
-      product_orders: [
-        { products_id: '5115', products_name: 'dagig wahyu', value: 5, status: "pending" },
-        { products_id: '4550', products_name: 'pop ice', value: 2, status: "pending" }
-      ],
-      table_id: 1,
-      waiter_name: 'tony',
-      time: '16/8/2025/23:36:00',
-      total: 1000175100,
-      done: false
-    }
   ];
 
   function parseTime(timeStr) {
