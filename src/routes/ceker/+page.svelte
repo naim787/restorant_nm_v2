@@ -1,6 +1,6 @@
 <script>
   import NavPanel from '$lib/component/Nav_Panel.svelte';
-  import { Search, Clock, ClockAlert, UtensilsCrossed, Check, Volume2 } from "@lucide/svelte";
+  import { Search, Clock, ClockAlert, UtensilsCrossed, Check, Volume2, VolumeOff } from "@lucide/svelte";
   import { onMount } from "svelte";
 
   // ✅ Perbaiki format base URL
@@ -83,8 +83,10 @@
   <!-- Aktifkan notifikasi manual -->
   <button on:click={() => audioEl.play().catch(()=>{})} class="bg-green-500 px-4 py-2 rounded mb-4 flex text-black">
     {#if audioEl.paused}
-    {/if}
+    <VolumeOff />
+    {:else}
     <Volume2 class="mx-2"/>
+    {/if}
     Aktifkan Notifikasi
   </button>
 
