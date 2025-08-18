@@ -3,7 +3,19 @@
   import { Search, Clock, ClockAlert, UtensilsCrossed, Check, Volume2, VolumeOff } from "@lucide/svelte";
   import { onMount } from "svelte";
 
-  // fugsi play dan pause
+  // fugsi play dan pause audio
+  function togglePlay() {
+  if (!isPlaying) {
+    audioEl.play().then(() => {
+      isPlaying = true;
+    }).catch(()=>{});
+  } else {
+    audioEl.pause();
+    audioEl.currentTime = 0;
+    isPlaying = false;
+  }
+}
+
   let isPlaying = false;
 
   // ✅ Perbaiki format base URL
