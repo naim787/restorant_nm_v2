@@ -99,9 +99,9 @@
   <!-- Aktifkan notifikasi manual -->
   <button on:click={togglePlay} class="bg-green-500 px-4 py-2 rounded mb-4 flex text-black">
     {#if isPlaying}
-      <Volume2 class="mx-2"/>
-      <VolumeOff />
+    <VolumeOff />
     {:else}
+    <Volume2 class="mx-2"/>
     {/if}
     Aktifkan Notifikasi
   </button>
