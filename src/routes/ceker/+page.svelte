@@ -65,8 +65,9 @@
 
   // fungsi untuk menandai order selesai
   function finishOrder(index) {
-    orders[index].done = true;
-    const order = orders[index].status = "diantar";
+    // orders[index].done = true;
+    const order = 
+    orders[index].status = "diantar";
     socket.send(JSON.stringify(order));
   }
 
@@ -125,9 +126,11 @@
         </div>
         {/each}
         <div class="flex gap-3 mt-4">
-          {#if data.sta}
+
+          {#if data.status !== "diantar"}
             <button on:click={() => finishOrder(index)} class="flex-1 bg-green-600 hover:bg-green-700 rounded-xl py-2 text-sm">Selesai</button>
           {/if}
+
         </div>
       </div>
     {/each}
