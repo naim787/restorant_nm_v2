@@ -125,7 +125,7 @@
         </div>
         {/each}
         <div class="flex gap-3 mt-4">
-          {#if !data.}
+          {#if data.}
             <button on:click={() => finishOrder(index)} class="flex-1 bg-green-600 hover:bg-green-700 rounded-xl py-2 text-sm">Selesai</button>
           {/if}
         </div>
