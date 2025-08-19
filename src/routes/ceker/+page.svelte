@@ -78,7 +78,7 @@
     socket = new WebSocket(`${protocol}://${cleanBase}/ws/orders`);
 
     socket.onopen = () => console.log('✅ WebSocket connected');
-    
+
     socket.onmessage = (event) => {
       const data = JSON.parse(event.data);
       console.log("✅ WebSocket response:", data);
@@ -102,7 +102,7 @@
           orders = orders.filter(o => o.id !== newOrder.id);
         }
       }
-    };
+    }
 
     // socket.onmessage = (event) => {
     // const data = JSON.parse(event.data);
