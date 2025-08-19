@@ -66,7 +66,7 @@
   // fungsi untuk menandai order selesai
   function finishOrder(index) {
     // orders[index].done = true;
-    const order = 
+    const order = orders[index];
     orders[index].status = "diantar";
     socket.send(JSON.stringify(order));
   }
@@ -78,15 +78,15 @@
     socket = new WebSocket(`${protocol}://${cleanBase}/ws/orders`);
 
     socket.onopen = () => console.log('✅ WebSocket connected');
-    socket.onmessage = (event) => {
-    const data = JSON.parse(event.data);
-      console.log("✅ WebSocket response:", data);
+    // socket.onmessage = (event) => {
+    // const data = JSON.parse(event.data);
+    //   console.log("✅ WebSocket response:", data);
 
-      if (data.success && data.saved) {
-        // tambahkan order baru ke list
-        orders = [data.saved, ...orders];
-      }
-    };
+    //   if (data.success && data.saved) {
+    //     // tambahkan order baru ke list
+    //     orders = [data.saved, ...orders];
+    //   }
+    // };
     socket.onerror = (e) => console.error('❌ WebSocket error', e);
     socket.onclose = () => console.log('🔌 WebSocket closed');
 
