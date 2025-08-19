@@ -67,7 +67,8 @@
   function finishOrder(index) {
     orders[index].done = true;
     const order = orders[index];
-   
+  order.status = "diantar";
+  socket.send(JSON.stringify(order));
   }
 
   onMount(() => {
