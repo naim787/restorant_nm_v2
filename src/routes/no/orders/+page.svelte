@@ -110,6 +110,7 @@
           table_id: noTABLE,
           waiter_name: namaWaiters,
           time: tanggal +"/"+ waktu,
+          
           total: totalFromDrawer,
         }
 
