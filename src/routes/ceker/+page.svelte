@@ -78,6 +78,7 @@
     socket = new WebSocket(`${protocol}://${cleanBase}/ws/orders`);
 
     socket.onopen = () => console.log('✅ WebSocket connected');
+    
     socket.onmessage = (event) => {
       const data = JSON.parse(event.data);
       console.log("✅ WebSocket response:", data);
