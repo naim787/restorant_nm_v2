@@ -65,7 +65,7 @@
 
   // fungsi untuk menandai order selesai
   function finishOrder(index) {
-    orders[index].done = true;
+    orders[index].status = true;
   }
 
   onMount(() => {
