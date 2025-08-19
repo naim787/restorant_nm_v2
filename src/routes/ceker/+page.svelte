@@ -78,7 +78,31 @@
     socket = new WebSocket(`${protocol}://${cleanBase}/ws/orders`);
 
     socket.onopen = () => console.log('✅ WebSocket connected');
-    
+    socket.onmessage = (event) => {
+  const data = JSON.parse(event.data);
+  console.log("✅ WebSocket response:", data);
+
+  if (data.success && data.saved) {
+    const newOrder = data.saved;
+
+    // kalau status masih pending -> update/insert
+    if (newOrder.status === "pending") {
+      // cek apakah order sudah ada
+      const idx = orders.findIndex(o => o.id === newOrder.id);
+      if (idx !== -1) {
+        // update data lama
+        orders[idx] = newOrder;
+      } else {
+        // tambahkan data baru di depan
+        orders = [newOrder, ...orders];
+      }
+    } else {
+      // kalau status bukan pending -> hapus dari list
+      orders = orders.filter(o => o.id !== newOrder.id);
+    }
+  }
+};
+
     // socket.onmessage = (event) => {
     // const data = JSON.parse(event.data);
     //   console.log("✅ WebSocket response:", data);
