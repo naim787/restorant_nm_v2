@@ -88,8 +88,6 @@
 
         // kalau status masih pending -> update/insert
         if (newOrder.status === "pending") {
-          // cek apakah order sudah ada
-          const idx = orders.findIndex(o => o.id === newOrder.id);
             // tambahkan data baru di depan
             orders = [newOrder, ...orders];
           }
