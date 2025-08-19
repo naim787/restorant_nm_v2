@@ -66,9 +66,8 @@
   // fungsi untuk menandai order selesai
   function finishOrder(index) {
     orders[index].done = true;
-    const order = orders[index];
-  order.status = "diantar";
-  socket.send(JSON.stringify(order));
+    const order = orders[index].status = "diantar";
+    socket.send(JSON.stringify(order));
   }
 
   onMount(() => {
