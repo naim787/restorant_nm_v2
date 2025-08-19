@@ -42,7 +42,7 @@
     let anyExpired = false;
 
     orders.forEach(order => {
-      if (order.done) return; // skip kalau sudah selesai
+      if (order.status !== 'pending') return; // skip kalau bukan 'pending'
       let orderTime = parseTime(order.time);
       let diff = (now - orderTime) / 1000;
       if (diff > 10) { // batas waktu 10 detik
@@ -65,7 +65,21 @@
 
   // fungsi untuk menandai order selesai
   function finishOrder(index) {
-    orders[index].done = true;
+    const orderToUpdate = { ...orders[index], status: 'antar' };
+
+    if (socket && socket.readyState === WebSocket.OPEN) {
+      // Kirim seluruh objek order yang sudah diupdate ke WebSocket
+      // Server akan menerima ini dan bisa memprosesnya lebih lanjut
+      socket.send(JSON.stringify(orderToUpdate));
+
+      // Update state lokal agar UI langsung berubah
+      const newOrders = [...orders];
+      newOrders[index] = orderToUpdate;
+      orders = newOrders;
+    } else {
+      console.error('WebSocket is not connected.');
+      alert('Koneksi ke server terputus, tidak bisa update status pesanan.');
+    }
   }
 
   onMount(() => {
@@ -80,8 +94,9 @@
       console.log("✅ WebSocket response:", data);
 
       if (data.success && data.saved) {
-        // tambahkan order baru ke list
-        orders = [data.saved, ...orders];
+        // Tambahkan order baru ke list, pastikan ada status (default ke 'pending')
+        const newOrder = { ...data.saved, status: data.saved.status || 'pending' };
+        orders = [newOrder, ...orders];
       }
     };
     socket.onerror = (e) => console.error('❌ WebSocket error', e);
@@ -115,15 +130,20 @@
           <h2 class="text-xl font-bold flex items-center gap-2">
             <UtensilsCrossed size={22}/> Meja : <span class="text-4xl">{data.table_id}</span>
           </h2>
+          <span
+            class="px-3 py-1 rounded-full text-sm font-semibold text-black"
+            class:bg-yellow-400={data.status === 'pending'}
+            class:bg-blue-500={data.status === 'antar'}
+            class:bg-green-500={data.status === 'done'}>{data.status}</span>
         </div>
         {#each data.product_orders as d}
         <div class="flex w-[50%] justify-between p-2 border-b border-white/10 text-2xl">
           <p class="text-lg">{d.products_name}</p>
-          <p class="text-3xl">{d.value}</p>  
+          <p class="text-3xl">{d.value}</p>
         </div>
         {/each}
         <div class="flex gap-3 mt-4">
-          {#if !data.done}
+          {#if data.status === 'pending'}
             <button on:click={() => finishOrder(index)} class="flex-1 bg-green-600 hover:bg-green-700 rounded-xl py-2 text-sm">Selesai</button>
           {/if}
         </div>
