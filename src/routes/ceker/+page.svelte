@@ -94,6 +94,7 @@
           // kalau status bukan pending -> hapus dari list
           orders = orders.filter(o => o.id !== newOrder.id);
         }
+        
       }
     }
 
