@@ -119,7 +119,7 @@
 
 <NavPanel />
 
-<div class="w-[100vw] h-[100vh] pt-20 px-3 bg-gray-900 text-white overflow-y-auto">
+<div class="w-[100vw] h-[100vh] pt-20 px-2 bg-gray-900 text-white overflow-y-auto">
   <!-- Aktifkan notifikasi manual -->
   <!-- <button on:click={togglePlay} class="mb-4 text-black">
     {#if isPlaying}
@@ -133,7 +133,7 @@
 
   <div class="flex flex-col gap-2 justify-center items-start">
     <!-- {#each orders as data, index} -->
-      <div class="bg-gray-950 rounded-2xl p-2 shadow-md hover:scale-[1.02] transition w-auto">
+      <div class="bg-gray-950 rounded-2xl p-1 shadow-md hover:scale-[1.02] transition w-auto">
         <div class="flex justify-between items-center mb-3">
           <h2 class="text-xl font-bold flex items-center gap-2">
             <!-- <UtensilsCrossed size={22}/> Meja : <span class="text-4xl">{data.table_id}</span> -->
@@ -141,7 +141,7 @@
           </h2>
         </div>
         <!-- {#each data.product_orders as d} -->
-        <div class="flex w-[50%] justify-between items-center p-2 border-b border-white/10 text-2xl">
+        <div class="flex w-auto border justify-between items-center p-2 border-b border-white/10 text-2xl">
           <div class="text-lg w-[300px] h-auto border">
             <!-- {d.products_name} -->
              Lorem ipsum dolor sit amet.
