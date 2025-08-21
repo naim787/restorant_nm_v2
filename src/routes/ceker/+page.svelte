@@ -89,7 +89,7 @@
         // kalau status masih pending -> update/insert
         if (newOrder.status.includes("p")) {
           // tambahkan data baru di depan
-          orders = [newOrder, ...orders];
+            orders = [newOrder, ...orders];
           } else {
           console.log("aman bro💚");
           // kalau status bukan pending -> hapus dari list
