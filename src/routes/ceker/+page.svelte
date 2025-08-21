@@ -153,6 +153,6 @@
 
         </div>
       </div>
-    {/each}
+    <!-- {/each} -->
   </div>
 </div>
