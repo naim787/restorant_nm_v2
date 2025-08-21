@@ -132,11 +132,11 @@
   <audio bind:this={audioEl} src="./out.mp3"></audio>
 
   <div class="flex flex-col gap-2 justify-center items-start">
-    <!-- {#each orders as data, index} -->
-      <div class="bg-gray-950 rounded-2xl p-1 shadow-md hover:scale-[1.02] transition w-auto">
+    {#each orders as data, index}
+      <div class="bg-gray-950 rounded-2xl p-2 shadow-md hover:scale-[1.02] transition w-auto">
         <div class="flex justify-between items-center mb-3">
           <h2 class="text-xl font-bold flex items-center gap-2">
-            <UtensilsCrossed size={22}/> Meja : <span class="text-4xl">{data.table_id}</span>
+            <UtensilsCrossed size={22}/> Meja : (<span class="text-4xl">{data.table_id}</span>) <span class="font-thin text-lg">12:30:00</span>
           </h2>
         </div>
         {#each data.product_orders as d}
@@ -151,12 +151,12 @@
         {/each}
         <div class="flex gap-3 mt-4">
 
-          <!-- {#if data.status !== "diantar"} -->
+          {#if data.status !== "diantar"}
             <button on:click={() => finishOrder(index)} class="flex-1 bg-green-600 hover:bg-green-700 rounded-xl py-2 text-sm">Selesai</button>
-          <!-- {/if} -->
+          {/if}
 
         </div>
       </div>
-    <!-- {/each} -->
+    {/each}
   </div>
 </div>
