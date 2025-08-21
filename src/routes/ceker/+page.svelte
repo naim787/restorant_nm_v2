@@ -129,7 +129,7 @@
     {/if}
   </button> -->
 
-  <audio bind:this={audioEl} src="./out.mp3" class></audio>
+  <audio bind:this={audioEl} src="./out.mp3" class=""></audio>
 
   <div class="flex flex-col gap-2 justify-center items-start">
     {#each orders as data, index}
