@@ -133,7 +133,7 @@
 
   <!-- filter -->
    <div class="w-full flex justify-evenly items-center">
-    <h1 class="font-bold p-3 rounded-2xl bgg-gray-950 border-gray-">20</h1>
+    <h1 class="font-bold p-3 rounded-2xl bgg-gray-950 border-gray-400">20</h1>
    </div>
 
   <div class="flex flex-col gap-2 justify-center items-start">
