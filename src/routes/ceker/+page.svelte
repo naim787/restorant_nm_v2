@@ -121,19 +121,19 @@
 
 <div class="w-[100vw] h-[100vh] pt-20 px-10 bg-gray-900 text-white overflow-y-auto">
   <!-- Aktifkan notifikasi manual -->
-  <button on:click={togglePlay} class="mb-4 text-black">
+  <!-- <button on:click={togglePlay} class="mb-4 text-black">
     {#if isPlaying}
     <VolumeOff size={40} class="p-2 bg-blue-300 rounded-full"/>
     {:else}
     <Volume2 size={40} class="p-2 bg-blue-300 rounded-full"/>
     {/if}
-  </button>
+  </button> -->
 
   <audio bind:this={audioEl} src="./out.mp3"></audio>
 
-  <div class="flex flex-col">
+  <div class="flex flex-col gap-2 justify-center items-start">
     <!-- {#each orders as data, index} -->
-      <div class="bg-gray-950 rounded-2xl p-6 shadow-md hover:scale-[1.02] transition w-1/2">
+      <div class="bg-gray-950 rounded-2xl p-6 shadow-md hover:scale-[1.02] transition w-auto">
         <div class="flex justify-between items-center mb-3">
           <h2 class="text-xl font-bold flex items-center gap-2">
             <!-- <UtensilsCrossed size={22}/> Meja : <span class="text-4xl">{data.table_id}</span> -->
