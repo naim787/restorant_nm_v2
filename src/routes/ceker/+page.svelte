@@ -133,8 +133,8 @@
 
   <!-- filter -->
    <div class="w-full flex justify-evenly items-center">
-    <div class="font-bold w- h-30 rounded-2xl bg-gray-950 border-gray-400 flex items-center"><AlarmClock class="text-yellow-500"/> : 0</div>
-    <div class="font-bold w- h-30 rounded-2xl bg-gray-950 border-gray-400 flex items-center"><AlarmClock class="text-yellow-500"/> : 0</div>
+    <div class="font-bold w-[] h-30 rounded-2xl bg-gray-950 border-gray-400 flex items-center"><AlarmClock class="text-yellow-500"/> : 0</div>
+    <div class="font-bold w-[] h-30 rounded-2xl bg-gray-950 border-gray-400 flex items-center"><AlarmClock class="text-yellow-500"/> : 0</div>
    </div>
 
   <div class="flex flex-col gap-2 justify-center items-start">
