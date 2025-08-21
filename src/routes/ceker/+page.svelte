@@ -85,12 +85,12 @@
 
       if (data.success && data.saved) {
         let newOrder = data.saved;
-        orders = [newOrder, ...orders];
-
+        
         // kalau status masih pending -> update/insert
-        if (newOrder.status == "pendig") {
-            // tambahkan data baru di depan
-            console.log("pendig br🛑");
+        if (newOrder.status.includes("p")) {
+          // tambahkan data baru di depan
+          console.log("pendig br🛑");
+          orders = [newOrder, ...orders];
           } else {
           console.log("aman bro💚");
           // kalau status bukan pending -> hapus dari list
