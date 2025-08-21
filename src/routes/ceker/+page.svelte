@@ -141,8 +141,8 @@
           </h2>
         </div>
         <!-- {#each data.product_orders as d} -->
-        <div class="flex w-auto border justify-between items-center p-2 border-b border-white/10 text-2xl">
-          <div class="text-lg w-[300px] h-auto border">
+        <div class="flex w-auto justify-between items-center p-2 border-b border-white/10 text-2xl">
+          <div class="text-lg w-[300px] h-auto">
             <!-- {d.products_name} -->
              Lorem ipsum dolor sit amet.
           </div>
