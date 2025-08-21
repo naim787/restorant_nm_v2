@@ -137,7 +137,7 @@
         <div class="flex justify-between items-center mb-3">
           <h2 class="text-xl font-bold flex items-center gap-2">
             <!-- <UtensilsCrossed size={22}/> Meja : <span class="text-4xl">{data.table_id}</span> -->
-             lorem
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo vero ducimus neque ipsum repudiandae est distinctio, nam delectus assumenda natus corrupti quidem autem tenetur in voluptatem inventore, exercitationem eveniet. Saepe?
           </h2>
         </div>
         <!-- {#each data.product_orders as d} -->
