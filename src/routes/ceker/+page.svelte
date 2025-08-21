@@ -90,7 +90,7 @@
         // kalau status masih pending -> update/insert
         if (newOrder.status === "pending") {
             // tambahkan data baru di depan
-            console.log("pendig bro")
+            console.log("pendig br")
         } else {
           // kalau status bukan pending -> hapus dari list
           orders = orders.filter(o => o.id !== newOrder.id);
