@@ -137,21 +137,18 @@
         <div class="flex justify-between items-center mb-3">
           <h2 class="text-xl font-bold flex items-center gap-2">
             <!-- <UtensilsCrossed size={22}/> Meja : <span class="text-4xl">{data.table_id}</span> -->
-            <UtensilsCrossed size={22}/> Meja : (<span class="">1</span>) <span class="font-thin text-lg">12:30:00</span>
           </h2>
         </div>
-        <!-- {#each data.product_orders as d} -->
+        {#each data.product_orders as d}
         <div class="flex w-auto justify-between items-center p-2 border-b border-white/10 text-2xl">
           <div class="text-lg w-[300px] h-auto">
-            <!-- {d.products_name} -->
-             Lorem ipsum dolor sit amet.
+            {d.products_name}
           </div>
           <p class="text-3xl text-green-400">
-            <!-- {d.value} -->
-             1
+            {d.value}
           </p>  
         </div>
-        <!-- {/each} -->
+        {/each}
         <div class="flex gap-3 mt-4">
 
           <!-- {#if data.status !== "diantar"} -->
