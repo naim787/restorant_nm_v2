@@ -132,7 +132,7 @@
   <audio bind:this={audioEl} src="./out.mp3"></audio>
 
   <div class="grid grid-cols-3 gap-6">
-    {#each orders as data, index}
+    <!-- {#each orders as data, index} -->
       <div class="bg-gray-950 rounded-2xl p-6 shadow-md hover:scale-[1.02] transition">
         <div class="flex justify-between items-center mb-3">
           <h2 class="text-xl font-bold flex items-center gap-2">
