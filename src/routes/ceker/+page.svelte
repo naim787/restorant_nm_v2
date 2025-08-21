@@ -145,7 +145,7 @@
           <div class="text-lg w-full">
             <!-- {d.products_name} -->
              Lorem ipsum dolor sit amet.
-          </p>
+          </div>
           <p class="text-3xl text-green-400">
             <!-- {d.value} -->
              1
