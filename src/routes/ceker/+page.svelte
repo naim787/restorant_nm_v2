@@ -1,6 +1,6 @@
 <script>
   import NavPanel from '$lib/component/Nav_Panel.svelte';
-  import { Search, Clock, ClockAlert, UtensilsCrossed, Check, Volume2, VolumeOff, <AlarmClock } from "@lucide/svelte";
+  import { Search, Clock, ClockAlert, UtensilsCrossed, Check, Volume2, VolumeOff, AlarmClock } from "@lucide/svelte";
   import { onMount } from "svelte";
 
   // fugsi play dan pause audio
@@ -133,7 +133,7 @@
 
   <!-- filter -->
    <div class="w-full flex justify-evenly items-center">
-    <h1 class="font-bold p-3 rounded-2xl bg-gray-950 border-gray-400"></h1>
+    <div class="font-bold p-3 rounded-2xl bg-gray-950 border-gray-400 flex ite"><AlarmClock /> Orders</div>
    </div>
 
   <div class="flex flex-col gap-2 justify-center items-start">
