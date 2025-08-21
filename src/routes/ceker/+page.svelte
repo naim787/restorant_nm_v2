@@ -142,7 +142,7 @@
         </div>
         <!-- {#each data.product_orders as d} -->
         <div class="flex w-[50%] justify-between items-center p-2 border-b border-white/10 text-2xl">
-          <div class="text-lg w-full">
+          <div class="text-lg w-[45vw] h-a border">
             <!-- {d.products_name} -->
              Lorem ipsum dolor sit amet.
           </div>
