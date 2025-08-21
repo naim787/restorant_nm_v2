@@ -132,11 +132,11 @@
   <audio bind:this={audioEl} src="./out.mp3" class="hidden"></audio>
 
   <!-- filter -->
-   <div class="w-full flex justify-evenly items-center">
-    <div class="font-bold w-[90px] h-[80px] p-2 rounded-2xl bg-gray-950 border-gray-400 flex items-center"><AlarmClock class="text-yellow-500"/> : 0</div>
-    <div class="font-bold w-[90px] h-[80px] p-2 rounded-2xl bg-gray-950 border-gray-400 flex items-center"><AlarmClock class="text-yellow-500"/> : 0</div>
-    <div class="font-bold w-[90px] h-[80px] p-2 rounded-2xl bg-gray-950 border-gray-400 flex items-center"><AlarmClock class="text-yellow-500"/> : 0</div>
-    <div class="font-bold w-[90px] h-[80px] p-2 rounded-2xl bg-gray-950 border-gray-400 flex items-center"><AlarmClock class="text-yellow-500"/> : 0</div>
+   <div class="w-full flex justify-evenly items-center gap-2">
+    <div class="font-bold w-[90px] h-[80px] p-2 rounded-md bg-gray-950 border-gray-400 flex items-center"><AlarmClock class="text-yellow-500"/>  0</div>
+    <div class="font-bold w-[90px] h-[80px] p-2 rounded-md bg-gray-950 border-gray-400 flex items-center"><AlarmClock class="text-yellow-500"/>  0</div>
+    <div class="font-bold w-[90px] h-[80px] p-2 rounded-md bg-gray-950 border-gray-400 flex items-center"><AlarmClock class="text-yellow-500"/>  0</div>
+    <div class="font-bold w-[90px] h-[80px] p-2 rounded-md bg-gray-950 border-gray-400 flex items-center"><AlarmClock class="text-yellow-500"/>  0</div>
    </div>
 
   <div class="flex flex-col gap-2 justify-center items-start">
