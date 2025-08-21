@@ -135,7 +135,7 @@
    <div class="w-full flex justify-evenly items-center gap-2">
     <div class="font-bold w-[90px] h-[80px] p-2 rounded-md bg-gray-950 border-gray-400 flex items-center text-1xl"><AlarmClock class="text-yellow-500"/> : 0</div>
     <div class="font-bold w-[90px] h-[80px] p-2 rounded-md bg-gray-950 border-gray-400 flex items-center text-1xl"><ConciergeBell class="text-red-500"/> : 0</div>
-    <div class="font-bold w-[90px] h-[80px] p-2 rounded-md bg-gray-950 border-gray-400 flex items-center text-1xl"><<Check /> class="text-yellow-500"/> : 0</div>
+    <div class="font-bold w-[90px] h-[80px] p-2 rounded-md bg-gray-950 border-gray-400 flex items-center text-1xl"><<Check class="text-yellow-500"/> : 0</div>
     <div class="font-bold w-[90px] h-[80px] p-2 rounded-md bg-gray-950 border-gray-400 flex items-center text-1xl"><AlarmClock class="text-yellow-500"/> : 0</div>
    </div>
 
