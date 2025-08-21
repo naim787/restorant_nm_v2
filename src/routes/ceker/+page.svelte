@@ -127,7 +127,6 @@
     {:else}
     <Volume2 class="mx-2"/>
     {/if}
-    Aktifkan Notifikasi
   </button>
 
   <audio bind:this={audioEl} src="./out.mp3"></audio>
