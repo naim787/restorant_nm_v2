@@ -143,8 +143,12 @@
         <div class="flex w-[50%] justify-between p-2 border-b border-white/10 text-2xl">
           <p class="text-lg">
             <!-- {d.products_name} -->
+             Lorem ipsum dolor sit amet.
           </p>
-          <p class="text-3xl">{d.value}</p>  
+          <p class="text-3xl text-gree-400">
+            <!-- {d.value} -->
+             1
+          </p>  
         </div>
         <!-- {/each} -->
         <div class="flex gap-3 mt-4">
