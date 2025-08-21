@@ -132,7 +132,7 @@
   <audio bind:this={audioEl} src="./out.mp3" class="hidden"></audio>
 
   <!-- filter -->
-   <div class="w-full flex justify-evenly items-center gap-2 fixed left-0 ">
+   <div class="w-full flex justify-evenly items-center gap-2 fixed left-0 bg-black">
     <div class="font-bold w-[90px] h-[80px] p-2 rounded-md xl:rounded-2xl bg-gray-950 border-gray-400 flex items-center text-1xl"><AlarmClock class="text-blue-500"/> : 0</div>
     <div class="font-bold w-[90px] h-[80px] p-2 rounded-md xl:rounded-2xl bg-gray-950 border-gray-400 flex items-center text-1xl"><ConciergeBell class="text-orange-500"/> : 0</div>
     <div class="font-bold w-[90px] h-[80px] p-2 rounded-md xl:rounded-2xl bg-gray-950 border-gray-400 flex items-center text-1xl"><Check class="text-green-500"/> : 0</div>
