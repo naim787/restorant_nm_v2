@@ -140,7 +140,7 @@
           </h2>
         </div>
         {#each data.product_orders as d}
-        <div class="flex w- justify-between p-2 border-b border-white/10 text-2xl">
+        <div class="flex w-auto justify-between p-2 border-b border-white/10 text-2xl">
           <p class="text-lg">{d.products_name}</p>
           <p class="text-3xl">{d.value}</p>  
         </div>
