@@ -137,12 +137,12 @@
         <div class="flex justify-between items-center mb-3">
           <h2 class="text-xl font-bold flex items-center gap-2">
             <!-- <UtensilsCrossed size={22}/> Meja : <span class="text-4xl">{data.table_id}</span> -->
-            <UtensilsCrossed size={22}/> Meja : (<span class="">1</span>) <span class="text-lg">12:30:00</span>
+            <UtensilsCrossed size={22}/> Meja : (<span class="">1</span>) <span class="font-thin text-lg">12:30:00</span>
           </h2>
         </div>
         <!-- {#each data.product_orders as d} -->
         <div class="flex w-[50%] justify-between items-center p-2 border-b border-white/10 text-2xl">
-          <p class="text-lg">
+          <div class="text-lg w-full">
             <!-- {d.products_name} -->
              Lorem ipsum dolor sit amet.
           </p>
