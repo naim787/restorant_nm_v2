@@ -132,8 +132,8 @@
   <audio bind:this={audioEl} src="./out.mp3" class="hidden"></audio>
 
   <!-- filter -->
-   <div class="">
-    
+   <div class="w-full flex justify-evenly items-center">
+    <h1 class="text-">20</h1>
    </div>
 
   <div class="flex flex-col gap-2 justify-center items-start">
