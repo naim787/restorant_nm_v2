@@ -133,7 +133,7 @@
 
   <!-- filter -->
    <div class="w-full flex justify-evenly items-center">
-    <h1 class="text-2">20</h1>
+    <h1 class="font-bold">20</h1>
    </div>
 
   <div class="flex flex-col gap-2 justify-center items-start">
