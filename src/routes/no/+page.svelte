@@ -39,28 +39,6 @@
 </svelte:head> -->
 
 <style>
-  :global(body) {
-    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
-  }
-  
-  :global(.font-geist) { font-family: 'Geist', sans-serif !important; }
-  :global(.font-roboto) { font-family: 'Roboto', sans-serif !important; }
-  :global(.font-montserrat) { font-family: 'Montserrat', sans-serif !important; }
-  :global(.font-poppins) { font-family: 'Poppins', sans-serif !important; }
-  :global(.font-playfair) { font-family: 'Playfair Display', serif !important; }
-  :global(.font-instrument-serif) { font-family: 'Instrument Serif', serif !important; }
-  :global(.font-merriweather) { font-family: 'Merriweather', serif !important; }
-  :global(.font-bricolage) { font-family: 'Bricolage Grotesque', sans-serif !important; }
-  :global(.font-jakarta) { font-family: 'Plus Jakarta Sans', sans-serif !important; }
-  :global(.font-manrope) { font-family: 'Manrope', sans-serif !important; }
-  :global(.font-space-grotesk) { font-family: 'Space Grotesk', sans-serif !important; }
-  :global(.font-work-sans) { font-family: 'Work Sans', sans-serif !important; }
-  :global(.font-pt-serif) { font-family: 'PT Serif', serif !important; }
-  :global(.font-geist-mono) { font-family: 'Geist Mono', monospace !important; }
-  :global(.font-space-mono) { font-family: 'Space Mono', monospace !important; }
-  :global(.font-quicksand) { font-family: 'Quicksand', sans-serif !important; }
-  :global(.font-nunito) { font-family: 'Nunito', sans-serif !important; }
-  
   .animate-fade-in { 
     animation: fadeIn 0.8s ease-out forwards; 
     opacity: 0; 
@@ -91,23 +69,23 @@
   
   <header class="py-6 animate-fade-in">
     <div class="mx-auto max-w-7xl px-6 flex items-center justify-between">
-      <a href="#" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
+      <a href="/" class="flex items-center gap-3 hover:opacity-80 transition-opacity">
         <div class="w-8 h-8 bg-gradient-to-br rounded-full flex items-center justify-center from-black to-gray-700">
           <i data-lucide="trending-up" class="w-4 h-4 text-white"></i>
         </div>
         <span class="font-semibold text-lg tracking-tight font-sans">CryptoLearn</span>
       </a>
       <nav class="hidden md:flex items-center gap-10 text-sm font-medium">
-        <a href="#" class="transition-colors flex items-center gap-2 font-sans hover:text-black text-gray-700">
+        <a href="/" class="transition-colors flex items-center gap-2 font-sans hover:text-black text-gray-700">
           About
         </a>
-        <a href="#" class="transition-colors flex items-center gap-2 hover:text-black text-gray-700">
+        <a href="/" class="transition-colors flex items-center gap-2 hover:text-black text-gray-700">
           Pricing
         </a>
-        <a href="#" class="transition-colors flex items-center gap-2 font-sans hover:text-black text-gray-700">
+        <a href="/" class="transition-colors flex items-center gap-2 font-sans hover:text-black text-gray-700">
           Curriculum
         </a>
-        <a href="#" class="transition-colors flex items-center gap-2 font-sans hover:text-black text-gray-700">
+        <a href="/" class="transition-colors flex items-center gap-2 font-sans hover:text-black text-gray-700">
           Reviews
         </a>
       </nav>
