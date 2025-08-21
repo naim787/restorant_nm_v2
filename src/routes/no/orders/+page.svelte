@@ -116,8 +116,8 @@
 
       
       socket.send(JSON.stringify(ordersDone));
-      // console.log("📤 Sent orders:", ordersDone);
       checkoutData = [];
+      // console.log("📤 Sent orders:", ordersDone);
     } else {
       if (!socket || socket.readyState !== WebSocket.OPEN) {
         console.warn("⚠️ WebSocket belum siap. ReadyState:", socket?.readyState);
