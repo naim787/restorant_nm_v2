@@ -89,7 +89,6 @@
         // kalau status masih pending -> update/insert
         if (newOrder.status.includes("p")) {
           // tambahkan data baru di depan
-          console.log("pendig br🛑");
           orders = [newOrder, ...orders];
           } else {
           console.log("aman bro💚");
