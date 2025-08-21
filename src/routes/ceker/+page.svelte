@@ -1,6 +1,6 @@
 <script>
   import NavPanel from '$lib/component/Nav_Panel.svelte';
-  import { Search, UtensilsCrossed, Check, AlarmClock, ConciergeBell } from "@lucide/svelte";
+  import { Search, UtensilsCrossed, Check, AlarmClock, ConciergeBell , <X} from "@lucide/svelte";
   import { onMount } from "svelte";
 
   // fugsi play dan pause audio
