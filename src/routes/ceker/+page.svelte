@@ -142,7 +142,7 @@
         </div>
         <!-- {#each data.product_orders as d} -->
         <div class="flex w-[50%] justify-between p-2 border-b border-white/10 text-2xl">
-          <p class="text-lg">
+          <p class="">
             <!-- {d.products_name} -->
              Lorem ipsum dolor sit amet.
           </p>
@@ -152,7 +152,7 @@
           </p>  
         </div>
         <div class="flex w-[50%] justify-between p-2 border-b border-white/10 text-2xl">
-          <p class="text-lg">
+          <p class="">
             <!-- {d.products_name} -->
              Lorem ipsum dolor sit amet.
           </p>
@@ -162,7 +162,7 @@
           </p>  
         </div>
         <div class="flex w-[50%] justify-between p-2 border-b border-white/10 text-2xl">
-          <p class="text-lg">
+          <p class="">
             <!-- {d.products_name} -->
              Lorem ipsum dolor sit amet.
           </p>
@@ -172,7 +172,7 @@
           </p>  
         </div>
         <div class="flex w-[50%] justify-between p-2 border-b border-white/10 text-2xl">
-          <p class="text-lg">
+          <p class="">
             <!-- {d.products_name} -->
              Lorem ipsum dolor sit amet.
           </p>
