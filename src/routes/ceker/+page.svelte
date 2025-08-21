@@ -84,7 +84,7 @@
       console.log("✅ WebSocket response:", data);
 
       if (data.success && data.saved) {
-        const newOrder = data.saved;
+        let newOrder = data.saved;
         orders = [newOrder, ...orders];
 
         // kalau status masih pending -> update/insert
