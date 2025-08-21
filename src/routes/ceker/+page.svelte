@@ -131,7 +131,7 @@
 
   <audio bind:this={audioEl} src="./out.mp3"></audio>
 
-  <div class="">
+  <div class="flex flex">
     <!-- {#each orders as data, index} -->
       <div class="bg-gray-950 rounded-2xl p-6 shadow-md hover:scale-[1.02] transition w-1/2">
         <div class="flex justify-between items-center mb-3">
