@@ -145,7 +145,7 @@
             <!-- {d.products_name} -->
              Lorem ipsum dolor sit amet.
           </p>
-          <p class="text-3xl text-gree-400">
+          <p class="text-3xl text-green-400">
             <!-- {d.value} -->
              1
           </p>  
