@@ -121,11 +121,11 @@
 
 <div class="w-[100vw] h-[100vh] pt-20 px-10 bg-gray-900 text-white overflow-y-auto">
   <!-- Aktifkan notifikasi manual -->
-  <button on:click={togglePlay} class="mb-4">
+  <button on:click={togglePlay} class="mb-4 text-2xl">
     {#if isPlaying}
-    <VolumeOff />
+    <VolumeOff class="p-2 bg-blue-300 rounded-full"/>
     {:else}
-    <Volume2 class="mx-2"/>
+    <Volume2 class="p-2 bg-blue-300 rounded-full"/>
     {/if}
   </button>
 
