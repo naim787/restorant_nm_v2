@@ -88,7 +88,7 @@
         orders = [newOrder, ...orders];
 
         // kalau status masih pending -> update/insert
-        if (newOrder.status == "pending") {
+        if (newOrder.status == "pendig") {
             // tambahkan data baru di depan
             console.log("pendig br🛑");
           } else {
