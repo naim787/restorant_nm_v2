@@ -121,11 +121,11 @@
 
 <div class="w-[100vw] h-[100vh] pt-20 px-10 bg-gray-900 text-white overflow-y-auto">
   <!-- Aktifkan notifikasi manual -->
-  <button on:click={togglePlay} class="mb-4 text-2xl">
+  <button on:click={togglePlay} class="mb-4 text-black">
     {#if isPlaying}
-    <VolumeOff class="p-2 bg-blue-300 rounded-full"/>
+    <VolumeOff size={40} class="p-2 bg-blue-300 rounded-full"/>
     {:else}
-    <Volume2 class="p-2 bg-blue-300 rounded-full"/>
+    <Volume2 size={40} class="p-2 bg-blue-300 rounded-full"/>
     {/if}
   </button>
 
@@ -140,7 +140,7 @@
           </h2>
         </div>
         {#each data.product_orders as d}
-        <div class="flex w-[50%] justify-between p-2 border-b border-white/10 text-2xl">
+        <div class="flex w- justify-between p-2 border-b border-white/10 text-2xl">
           <p class="text-lg">{d.products_name}</p>
           <p class="text-3xl">{d.value}</p>  
         </div>
