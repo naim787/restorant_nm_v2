@@ -7,20 +7,6 @@
   const cleanBase = base.replace(/^https?:\/\//, '');
   let socket;
 
-  // fugsi play dan pause audio
-  function togglePlay() {
-  if (!isPlaying) {
-    audioEl.play().then(() => {
-      isPlaying = true;
-    }).catch(()=>{});
-  } else {
-    audioEl.pause();
-    audioEl.currentTime = 0;
-    isPlaying = false;
-  }
-}
-
-
   let isPlaying = false;
 
 
@@ -28,6 +14,19 @@
   let search = "";
 
   let orders = [];
+
+  // fugsi play dan pause audio
+  function togglePlay() {
+    if (!isPlaying) {
+      audioEl.play().then(() => {
+        isPlaying = true;
+      }).catch(()=>{});
+    } else {
+      audioEl.pause();
+      audioEl.currentTime = 0;
+      isPlaying = false;
+    }
+  }
 
   function parseTime(timeStr) {
     let [day, month, year, hms] = timeStr.split("/");
@@ -70,6 +69,7 @@
     socket.send(JSON.stringify(order));
   }
 
+  // fugsi untuk meggambil order 
   onMount(() => {
 
     // ✅ Perbaiki WebSocket connection
