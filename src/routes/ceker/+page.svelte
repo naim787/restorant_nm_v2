@@ -84,7 +84,7 @@
   }
 
   onMount(() => {
-    
+    all
     // ✅ Perbaiki WebSocket connection
     const protocol = window.location.protocol === 'https:' ? 'wss' : 'ws';
     socket = new WebSocket(`${protocol}://${cleanBase}/ws/orders`);
