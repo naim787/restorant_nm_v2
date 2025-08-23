@@ -139,7 +139,7 @@
 
   <!-- filter -->
    <div class="w-full flex justify-evenly items-center gap-2 fixed left-0 bg-gray-900 p-2">
-    <div class="font-bold w-[90px] h-[70px] p-2 rounded-md xl:rounded-2xl bg-black border-gray-400 flex items-center text-1xl"><AlarmClock class="text-blue-500"/> : 0</div>
+    <div class="font-bold w-[90px] h-[70px] p-2 rounded-md xl:rounded-2xl bg-black border-gray-400 flex items-center text-1xl"><AlarmClock class="text-blue-500"/> : {o}</div>
     <div class="font-bold w-[90px] h-[70px] p-2 rounded-md xl:rounded-2xl bg-black border-gray-400 flex items-center text-1xl"><ConciergeBell class="text-orange-500"/> : 0</div>
     <div class="font-bold w-[90px] h-[70px] p-2 rounded-md xl:rounded-2xl bg-black border-gray-400 flex items-center text-1xl"><Check class="text-green-500"/> : 0</div>
     <div class="font-bold w-[90px] h-[70px] p-2 rounded-md xl:rounded-2xl bg-black border-gray-400 flex items-center text-1xl"><X class="text-red-500"/> : 0</div>
