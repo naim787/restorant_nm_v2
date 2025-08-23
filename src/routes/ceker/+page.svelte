@@ -70,18 +70,18 @@
   }
 
   // fugsi untuk meggambil order 
-  async function allOrders() {
-    try {
+  async function allOders(){
+     try {
+      // ✅ Perbaiki URL fetch
       const res = await fetch(`http://${cleanBase}/orders`);
       if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
 
-      const result = await res.json();
+      let result = await res.json();
       orders = result.data;
     } catch (error) {
-      console.error("❌ Error fetching orders:", error);
+      console.error("❌ Error fetching menu:", error);
     }
   }
-
 
   onMount(async () => {
     await allOders()
