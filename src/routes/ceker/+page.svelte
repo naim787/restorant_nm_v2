@@ -17,9 +17,10 @@
   let orders = [];
 
   // filtered order
-  $: orderPend = order.filter(d => d.status.includes("p"));
-  $: orderDone = order.filter(d => d.status.includes("d"));
-  $: orderDone = order.filter(d => d.status.includes("c"));
+$: orderPend = orders.filter(o => o.status.startsWith("p"));
+$: orderDone = orders.filter(o => o.status.startsWith("d"));
+$: orderCancel = orders.filter(o => o.status.startsWith("c"));
+
 
 
   // fugsi play dan pause audio
