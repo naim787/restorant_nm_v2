@@ -165,8 +165,8 @@
           </h2>
         </div>
         {#each data.product_orders as d}
-        <div class="flex w-auto justify-between items-center p-1 border-b border-white/10 text-2xl">
-          <div class="text-lg w-[300px] h-auto">
+        <div class="flex w-[250px] justify-between items-center p-1 border-b border-white/10 text-2xl">
+          <div class="text-lg w- h-auto">
             {d.products_name}
           </div>
           <p class="text-3xl text-green-400">
