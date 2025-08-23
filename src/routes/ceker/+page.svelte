@@ -71,16 +71,16 @@
 
   // fugsi untuk meggambil order 
   async function allOrders() {
-  try {
-    const res = await fetch(`http://${cleanBase}/orders`);
-    if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+    try {
+      const res = await fetch(`http://${cleanBase}/orders`);
+      if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
 
-    const result = await res.json();
-    orders = result.data;
-  } catch (error) {
-    console.error("❌ Error fetching orders:", error);
+      const result = await res.json();
+      orders = result.data;
+    } catch (error) {
+      console.error("❌ Error fetching orders:", error);
+    }
   }
-}
 
 
   onMount(async () => {
