@@ -77,6 +77,7 @@
       if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
 
       let result = await res.json();
+      
       orders = result.data;
     } catch (error) {
       console.error("❌ Error fetching menu:", error);
@@ -152,7 +153,9 @@
    </div>
 
   <div class="flex flex-wrap gap-2 justify-start items-center mt-22">
-    {#each orders as data, index}
+    <!-- {#each orders as data, index} -->
+     {#each orders.filter(o => o.status === "pending") as data, index}
+
       <div class="bg-black rounded-2xl p-3 shadow-md hover:scale-[1.02] transition w-auto h-auto">
         <div class="flex justify-between items-center mb-3">
           <h2 class="text-xl font-bold flex items-center gap-2">
