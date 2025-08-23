@@ -77,9 +77,7 @@
       if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
 
       let result = await res.json();
-              if (newOrder.status.includes("p")) {
-          // tambahkan data baru di depan
-            orders = [newOrder, ...orders];
+      
       orders = result.data;
     } catch (error) {
       console.error("❌ Error fetching menu:", error);
