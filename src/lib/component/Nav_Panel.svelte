@@ -6,8 +6,9 @@
 
 <div class="drawer fixed z-30 bg-coffe" data-theme="coffe" >
     <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
-    <div class="drawer-content flex flex-col bg-gray-950      <!-- Navbar -->
-      <div class="navbar bg-base-300 w-full">
+    <div class="drawer-content flex flex-col">
+      <!-- Navbar -->
+      <div class="navbar bg-black w-full">
         <div class="flex-none">
           <label for="my-drawer-3" aria-label="open sidebar" class="btn btn-square btn-ghost">
             <AlignJustify />
@@ -35,9 +36,9 @@
       <!-- Page content here -->
       <!-- Content -->
     </div>
-    <div class="drawer-side">
+    <div class="drawer-side backdrop-blur">
       <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
-      <ul class="menu bg-base-200 min-h-full w-80 p-4">
+      <ul class="menu bg-black min-h-full w-80 p-4 shadow shadow-">
         <!-- Sidebar content here -->
         <li><a href="/">Sidebar Item 1</a></li>
         <li><a href="/">Sidebar Item 2</a></li>
