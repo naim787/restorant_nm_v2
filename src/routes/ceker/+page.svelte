@@ -82,6 +82,7 @@
       console.error("❌ Error fetching menu:", error);
     }
   }
+  
   onMount(() => {
 
     // ✅ Perbaiki WebSocket connection
