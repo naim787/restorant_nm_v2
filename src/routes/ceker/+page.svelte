@@ -70,7 +70,18 @@
   }
 
   // fugsi untuk meggambil order 
-  function allOder()
+  async function allOders(){
+     try {
+      // ✅ Perbaiki URL fetch
+      const res = await fetch(`http://${cleanBase}/menu`);
+      if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+
+      let result = await res.json();
+       = result.data;
+    } catch (error) {
+      console.error("❌ Error fetching menu:", error);
+    }
+  }
   onMount(() => {
 
     // ✅ Perbaiki WebSocket connection
