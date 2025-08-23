@@ -12,12 +12,12 @@
   let isPlaying = false;
 
   function isExpired(order) {
-  if (!order?.time) return false;
-  const orderTime = parseTime(order.time);
-  const now = new Date();
-  const diff = (now - orderTime) / 1000;
-  return diff > EXPIRED_LIMIT;
-}
+    if (!order?.time) return false;
+    const orderTime = parseTime(order.time);
+    const now = new Date();
+    const diff = (now - orderTime) / 1000;
+    return diff > EXPIRED_LIMIT;
+  }
 
   // audio
   let audioEl;
