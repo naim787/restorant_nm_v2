@@ -6,7 +6,7 @@
 
 <div class="drawer fixed z-30 bg-coffe" data-theme="coffe" >
     <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
-    <div class="drawer-content flex flex-col bg-gray-">
+    <div class="drawer-content flex flex-col bg-gray-950">
       <!-- Navbar -->
       <div class="navbar bg-base-300 w-full">
         <div class="flex-none">
