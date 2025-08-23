@@ -70,24 +70,24 @@
   }
 
   // fugsi untuk meggambil order 
-  async function allOders(){
-     try {
-      // ✅ Perbaiki URL fetch
-      const res = await fetch(`http://${cleanBase}/orders`);
-      if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+  async function allOrders() {
+  try {
+    const res = await fetch(`http://${cleanBase}/orders`);
+    if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
 
-      let result = await res.json();
-      orders = result.data;
-    } catch (error) {
-      console.error("❌ Error fetching menu:", error);
-    }
+    const result = await res.json();
+    orders = result.data;
+  } catch (error) {
+    console.error("❌ Error fetching orders:", error);
   }
+}
+
 
   onMount(async () => {
     await allOders()
     // ✅ Perbaiki WebSocket connection
-    const protocol = window.location.protocol === 'https:' ? 'wss' : 'ws';
-    socket = new WebSocket(`${protocol}://${cleanBase}/ws/orders`);
+    const protocol = await window.location.protocol === 'https:' ? 'wss' : 'ws';
+    socket = await new WebSocket(`${protocol}://${cleanBase}/ws/orders`);
 
     socket.onopen = () => console.log('✅ WebSocket connected');
 
