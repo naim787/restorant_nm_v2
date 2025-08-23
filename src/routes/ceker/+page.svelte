@@ -80,7 +80,7 @@
       
       if (result.data.status.includes("p")) {
       // tambahkan data baru di depan
-        orders = [result.data, ...orders];
+        orders = aw[result.data, ...orders];
       }
     } catch (error) {
       console.error("❌ Error fetching menu:", error);
