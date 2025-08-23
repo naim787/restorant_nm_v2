@@ -2,6 +2,9 @@
   import NavPanel from '$lib/component/Nav_Panel.svelte';
   import { Search, UtensilsCrossed, Check, AlarmClock, ConciergeBell , X} from "@lucide/svelte";
   import { onMount } from "svelte";
+  const STATUS_PENDING = "pending";
+const STATUS_DONE = "diantar";
+const STATUS_CANCELLED = "cancel";
   
   const base = import.meta.env.VITE_API_BASE || 'localhost:3001';
   const cleanBase = base.replace(/^https?:\/\//, '');
@@ -69,11 +72,11 @@
     }
   }
 
-  // fungsi untuk menandai order selesai
-  function actionOrder(index) {
+  // fungsi untuk menandai orderan
+  function actionOrder(index, status) {
     // orders[index].done = true;
     const order = orders[index];
-    orders[index].status = "diantar";
+    orders[index].status = status;
     socket.send(JSON.stringify(order));
   }
 
