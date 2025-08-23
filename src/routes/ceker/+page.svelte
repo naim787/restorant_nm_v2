@@ -119,7 +119,7 @@
 
 <NavPanel />
 
-<div class="w-[100vw] h-[100vh] pt-15 px-2 bg-[] text-white overflow-y-auto">
+<div class="w-[100vw] h-[100vh] pt-15 px-2 bg-[#232526] text-white overflow-y-auto">
   <!-- Aktifkan notifikasi manual -->
   <!-- <button on:click={togglePlay} class="mb-4 text-black">
     {#if isPlaying}
