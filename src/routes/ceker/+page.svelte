@@ -154,7 +154,7 @@
     <div class="font-bold w-[90px] h-[70px] p-2 rounded-md xl:rounded-2xl bg-black border-gray-400 flex items-center text-1xl"><X class="text-red-500"/> : 0</div>
    </div>
 
-  <div class="flex flex-wrap gap-2 justify-start items-center mt-22">
+  <div class="flex flex-wrap gap-2 justify-start items-start mt-22">
     {#each orders as data, index}
      <!-- {#each orders.filter(o => o.status === "pending") as data, index} -->
 
@@ -165,7 +165,7 @@
           </h2>
         </div>
         {#each data.product_orders as d}
-        <div class="flex w-[250px] justify-between items-center p-1 border-b border-white/10 text-2xl">
+        <div class="flex w-[150px] justify-between items-center p-1 border-b border-white/10 text-2xl">
           <div class="text-lg w-auto h-auto">
             {d.products_name}
           </div>
