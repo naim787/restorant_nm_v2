@@ -17,9 +17,9 @@
   let orders = [];
 
   // filtered order
-$: orderPend = orders.filter(o => o.status.startsWith("p"));
-$: orderDone = orders.filter(o => o.status.startsWith("d"));
-$: orderCancel = orders.filter(o => o.status.startsWith("c"));
+  $: orderPend = orders.filter(o => o.status.startsWith("p"));
+  $: orderDone = orders.filter(o => o.status.startsWith("d"));
+  $: orderCancel = orders.filter(o => o.status.startsWith("c"));
 
 
 
