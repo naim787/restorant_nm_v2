@@ -17,8 +17,9 @@
   let orders = [];
 
   // filtered order
-  $: orderPend = order.filter(d => d.status === d.status.includes("p"));
-  $: orderDone = order.filter(d => d.status === d.status.includes("d"));
+  $: orderPend = order.filter(d => d.status.includes("p"));
+  $: orderDone = order.filter(d => d.status.includes("d"));
+  $: orderDone = order.filter(d => d.status.includes("c"));
 
 
   // fugsi play dan pause audio
