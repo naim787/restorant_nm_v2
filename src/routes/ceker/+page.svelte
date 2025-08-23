@@ -81,6 +81,7 @@
               if (newOrder.status.includes("p")) {
           // tambahkan data baru di depan
             orders = [newOrder, ...orders];
+              }
 
       orders = result.data;
     } catch (error) {
