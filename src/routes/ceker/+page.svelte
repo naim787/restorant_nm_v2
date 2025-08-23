@@ -3,12 +3,12 @@
   import { Search, UtensilsCrossed, Check, AlarmClock, ConciergeBell , X} from "@lucide/svelte";
   import { onMount } from "svelte";
   
+  const base = import.meta.env.VITE_API_BASE || 'localhost:3001';
+  const cleanBase = base.replace(/^https?:\/\//, '');
+  let socket;
 
   // fugsi play dan pause audio
   function togglePlay() {
-    const base = import.meta.env.VITE_API_BASE || 'localhost:3001';
-    const cleanBase = base.replace(/^https?:\/\//, '');
-    let socket;
   if (!isPlaying) {
     audioEl.play().then(() => {
       isPlaying = true;
