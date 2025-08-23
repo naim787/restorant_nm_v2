@@ -134,6 +134,25 @@
     //   }
     // }
 
+    socket.onmessage = (event) => {
+  const data = JSON.parse(event.data);
+  console.log("✅ WebSocket response:", data);
+
+  if (data.success && data.saved) {
+    const newOrder = data.saved;
+    const index = orders.findIndex(o => o.id === newOrder.id);
+
+    if (index !== -1) {
+      // 🛠️ Update order di posisi lama
+      orders[index] = newOrder;
+    } else {
+      // ➕ Tambahkan order baru ke array
+      orders = [newOrder, ...orders];
+    }
+  }
+}
+
+
     socket.onerror = (e) => console.error('❌ WebSocket error', e);
     socket.onclose = () => console.log('🔌 WebSocket closed');
 
