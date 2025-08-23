@@ -6,6 +6,9 @@
 
   // fugsi play dan pause audio
   function togglePlay() {
+    const base = import.meta.env.VITE_API_BASE || 'localhost:3001';
+    const cleanBase = base.replace(/^https?:\/\//, '');
+    let socket;
   if (!isPlaying) {
     audioEl.play().then(() => {
       isPlaying = true;
@@ -20,9 +23,6 @@
 
   let isPlaying = false;
 
-  const base = import.meta.env.VITE_API_BASE || 'localhost:3001';
-  const cleanBase = base.replace(/^https?:\/\//, '');
-  let socket;
 
   let audioEl;
   let search = "";
