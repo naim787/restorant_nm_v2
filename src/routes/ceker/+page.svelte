@@ -73,7 +73,7 @@
   async function allOders(){
      try {
       // ✅ Perbaiki URL fetch
-      const res = await fetch(`http://${cleanBase}/menu`);
+      const res = await fetch(`http://${cleanBase}/orders`);
       if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
 
       let result = await res.json();
@@ -83,8 +83,8 @@
     }
   }
 
-  onMount(() => {
-    all
+  onMount(async () => {
+    awwaitallOders()
     // ✅ Perbaiki WebSocket connection
     const protocol = window.location.protocol === 'https:' ? 'wss' : 'ws';
     socket = new WebSocket(`${protocol}://${cleanBase}/ws/orders`);
