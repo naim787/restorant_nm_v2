@@ -11,6 +11,13 @@
 
   let isPlaying = false;
 
+  function isExpired(order) {
+  if (!order?.time) return false;
+  const orderTime = parseTime(order.time);
+  const now = new Date();
+  const diff = (now - orderTime) / 1000;
+  return diff > EXPIRED_LIMIT;
+}
 
   // audio
   let audioEl;
@@ -19,6 +26,8 @@
   let orders = [];
 
   // filtered order
+
+  $: orderExpired = orders.filter(o => o.status.startsWith("p") && isExpired(o));
   $: orderPend = orders.filter(o => o.status.startsWith("p"));
   $: orderDone = orders.filter(o => o.status.startsWith("d"));
   $: orderCancel = orders.filter(o => o.status.startsWith("c"));
