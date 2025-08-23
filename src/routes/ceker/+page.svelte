@@ -70,7 +70,7 @@
   }
 
   // fungsi untuk menandai order selesai
-  function Order(index) {
+  function acOrder(index) {
     // orders[index].done = true;
     const order = orders[index];
     orders[index].status = "diantar";
