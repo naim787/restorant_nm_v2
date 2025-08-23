@@ -70,22 +70,21 @@
   }
 
   // fugsi untuk meggambil order 
-  async function allOders(){
-     try {
-      // ✅ Perbaiki URL fetch
-      const res = await fetch(`http://${cleanBase}/orders`);
-      if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+  async function allOders() {
+  try {
+    const res = await fetch(`http://${cleanBase}/orders`);
+    if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
 
-      let result = await res.json();
-      
-      if (result.data.status.includes("p")) {
-      // tambahkan data baru di depan
-        orders = await [result.data, ...orders];
-      }
-    } catch (error) {
-      console.error("❌ Error fetching menu:", error);
-    }
+    const result = await res.json();
+
+    // Filter hanya order yang status-nya "pending"
+    orders = result.data.filter(order => order.status === "pending");
+
+  } catch (error) {
+    console.error("❌ Error fetching orders:", error);
   }
+}
+
 
   onMount(async () => {
     await allOders()
