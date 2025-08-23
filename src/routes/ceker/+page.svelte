@@ -154,7 +154,7 @@
     <div class="font-bold w-[90px] h-[70px] p-2 rounded-md xl:rounded-2xl bg-black border-gray-400 flex items-center text-1xl"><X class="text-red-500"/> : 0</div>
    </div>
 
-  <div class="flex flex-wrap gap-2 justify-start items-start mt-[10vw]">
+  <div class="flex flex-wrap gap-2 justify-start items-start mt-23">
     {#each orders as data, index}
      <!-- {#each orders.filter(o => o.status === "pending") as data, index} -->
 
