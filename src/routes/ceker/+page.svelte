@@ -2,9 +2,6 @@
   import NavPanel from '$lib/component/Nav_Panel.svelte';
   import { Search, UtensilsCrossed, Check, AlarmClock, ConciergeBell , X} from "@lucide/svelte";
   import { onMount } from "svelte";
-  const STATUS_PENDING = "pending";
-  const STATUS_DONE = "diantar";
-  const STATUS_CANCELLED = "cancel";
   
   const base = import.meta.env.VITE_API_BASE || 'localhost:3001';
   const cleanBase = base.replace(/^https?:\/\//, '');
@@ -188,7 +185,7 @@
         <div class="flex gap-3 mt-4">
 
           {#if data.status !== "diantar"}
-            <button on:click={() => finishOrder(index)} class="flex-2 bg-green-600 hover:bg-green-700 rounded-xl py-2 text-sm">Selesai</button>
+            <button on:click={() => actionOrder(index)} class="flex-2 bg-green-600 hover:bg-green-700 rounded-xl py-2 text-sm">Selesai</button>
             <button on:click={() => cencelOrder(index)} class="flex-1 bg-red-600 hover:bg-red-700 rounded-xl py-2 text-sm">Cencel</button>
           {/if}
 
