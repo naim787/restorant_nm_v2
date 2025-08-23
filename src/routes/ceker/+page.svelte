@@ -11,6 +11,7 @@
 
   let isPlaying = false;
 
+  // meggecek waktu
   function isExpired(order) {
     if (!order?.time) return false;
     const orderTime = parseTime(order.time);
@@ -151,9 +152,9 @@
   <!-- filter -->
    <div class="w-full flex justify-evenly items-center gap-2 fixed left-0 bg-gray-900 p-2">
     <div class="font-bold w-[90px] h-[70px] p-2 rounded-md xl:rounded-2xl bg-black border-gray-400 flex items-center text-1xl"><AlarmClock class="text-blue-500"/> : {orderPend.length}</div>
-    <div class="font-bold w-[90px] h-[70px] p-2 rounded-md xl:rounded-2xl bg-black border-gray-400 flex items-center text-1xl"><ConciergeBell class="text-orange-500"/> : {orderDone.length}</div>
+    <div class="font-bold w-[90px] h-[70px] p-2 rounded-md xl:rounded-2xl bg-black border-gray-400 flex items-center text-1xl"><ConciergeBell class="text-orange-500"/> : {orderExpired.length}</div>
     <div class="font-bold w-[90px] h-[70px] p-2 rounded-md xl:rounded-2xl bg-black border-gray-400 flex items-center text-1xl"><Check class="text-green-500"/> : {orderDone}</div>
-    <div class="font-bold w-[90px] h-[70px] p-2 rounded-md xl:rounded-2xl bg-black border-gray-400 flex items-center text-1xl"><X class="text-red-500"/> : 0</div>
+    <div class="font-bold w-[90px] h-[70px] p-2 rounded-md xl:rounded-2xl bg-black border-gray-400 flex items-center text-1xl"><X class="text-red-500"/> : {ord}</div>
    </div>
 
   <div class="flex flex-wrap gap-2 justify-start items-start mt-22 md:mt-30">
