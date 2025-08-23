@@ -114,25 +114,25 @@
 
     socket.onopen = () => console.log('✅ WebSocket connected');
 
-    socket.onmessage = (event) => {
-      const data = JSON.parse(event.data);
-      console.log("✅ WebSocket response:", data);
+    // socket.onmessage = (event) => {
+    //   const data = JSON.parse(event.data);
+    //   console.log("✅ WebSocket response:", data);
 
-      if (data.success && data.saved) {
-        let newOrder = data.saved;
+    //   if (data.success && data.saved) {
+    //     let newOrder = data.saved;
         
-        // kalau status masih pending -> update/insert
-        if (newOrder.status.includes("p")) {
-          // tambahkan data baru di depan
-            orders = [newOrder, ...orders];
-          } else {
-          console.log("aman bro💚");
-          // kalau status bukan pending -> hapus dari list
-          orders = orders.filter(o => o.id !== newOrder.id);
-        }
+    //     // kalau status masih pending -> update/insert
+    //     if (newOrder.status.includes("p")) {
+    //       // tambahkan data baru di depan
+    //         orders = [newOrder, ...orders];
+    //       } else {
+    //       console.log("aman bro💚");
+    //       // kalau status bukan pending -> hapus dari list
+    //       orders = orders.filter(o => o.id !== newOrder.id);
+    //     }
         
-      }
-    }
+    //   }
+    // }
 
     socket.onerror = (e) => console.error('❌ WebSocket error', e);
     socket.onclose = () => console.log('🔌 WebSocket closed');
@@ -153,8 +153,8 @@
    <div class="w-full flex justify-evenly items-center gap-2 fixed left-0 bg-gray-900 p-2">
     <div class="font-bold w-[90px] h-[70px] p-2 rounded-md xl:rounded-2xl bg-black border-gray-400 flex items-center text-1xl"><AlarmClock class="text-blue-500"/> : {orderPend.length}</div>
     <div class="font-bold w-[90px] h-[70px] p-2 rounded-md xl:rounded-2xl bg-black border-gray-400 flex items-center text-1xl"><ConciergeBell class="text-orange-500"/> : {orderExpired.length}</div>
-    <div class="font-bold w-[90px] h-[70px] p-2 rounded-md xl:rounded-2xl bg-black border-gray-400 flex items-center text-1xl"><Check class="text-green-500"/> : {orderDone}</div>
-    <div class="font-bold w-[90px] h-[70px] p-2 rounded-md xl:rounded-2xl bg-black border-gray-400 flex items-center text-1xl"><X class="text-red-500"/> : {orderCancel}</div>
+    <div class="font-bold w-[90px] h-[70px] p-2 rounded-md xl:rounded-2xl bg-black border-gray-400 flex items-center text-1xl"><Check class="text-green-500"/> : {orderDone.length}</div>
+    <div class="font-bold w-[90px] h-[70px] p-2 rounded-md xl:rounded-2xl bg-black border-gray-400 flex items-center text-1xl"><X class="text-red-500"/> : {orderCancel.length}</div>
    </div>
 
   <div class="flex flex-wrap gap-2 justify-start items-start mt-22 md:mt-30">
