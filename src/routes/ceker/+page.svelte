@@ -71,18 +71,18 @@
 
   // fugsi untuk meggambil order 
   async function allOders() {
-  try {
-    const res = await fetch(`http://${cleanBase}/orders`);
-    if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+    try {
+      const res = await fetch(`http://${cleanBase}/orders`);
+      if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
 
-    const result = await res.json();
+      const result = await res.json();
 
-    // Filter hanya order yang status-nya "pending"
-    orders = result.data.filter(order => order.status === "pending");
+      // Filter hanya order yang status-nya "pending"
+      orders = result.data.filter(order => order.status === "pending");
 
-  } catch (error) {
-    console.error("❌ Error fetching orders:", error);
-  }
+    } catch (error) {
+      console.error("❌ Error fetching orders:", error);
+    }
 }
 
 
