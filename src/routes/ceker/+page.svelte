@@ -78,7 +78,7 @@
       const result = await res.json();
 
       // Filter hanya order yang status-nya "pending"
-      orders = result.data.filter(order => order.status === "pending");
+      orders = result.data.filter(order => order.status === "pendig");
 
     } catch (error) {
       console.error("❌ Error fetching orders:", error);
@@ -158,7 +158,7 @@
     {#each orders as data, index}
      <!-- {#each orders.filter(o => o.status === "pending") as data, index} -->
 
-      <div class="bg-black rounded-2xl p-3 shadow-md hover:scale-[1.02] transition w-auto h-auto">
+      <div class="bg-black rounded-2xl p-3 shadow-md hover:scale-[1.02] transition w- h-auto">
         <div class="flex justify-between items-center mb-3">
           <h2 class="text-xl font-bold flex items-center gap-2">
             <UtensilsCrossed size={22}/> Meja : (<span class="">{data.table_id}</span>) <span class="font-thin text-lg">12:30:00</span>
