@@ -143,14 +143,6 @@
 <NavPanel />
 
 <div class="w-[100vw] h-[100vh] pt-15 px-2 bg-gray-900 text-white overflow-y-auto">
-  <!-- Aktifkan notifikasi manual -->
-  <!-- <button on:click={togglePlay} class="mb-4 text-black">
-    {#if isPlaying}
-    <VolumeOff size={40} class="p-2 bg-blue-300 rounded-full"/>
-    {:else}
-    <Volume2 size={40} class="p-2 bg-blue-300 rounded-full"/>
-    {/if}
-  </button> -->
 
   <audio bind:this={audioEl} src="./out.mp3" class="hidden"></audio>
 
@@ -185,8 +177,8 @@
         <div class="flex gap-3 mt-4">
 
           {#if data.status !== "diantar"}
-            <button on:click={() => actionOrder(index)} class="flex-2 bg-green-600 hover:bg-green-700 rounded-xl py-2 text-sm">Selesai</button>
-            <button on:click={() => actionOrder(index)} class="flex-1 bg-red-600 hover:bg-red-700 rounded-xl py-2 text-sm">Cencel</button>
+            <button on:click={() => actionOrder(index, "diantar")} class="flex-2 bg-green-600 hover:bg-green-700 rounded-xl py-2 text-sm">Selesai</button>
+            <button on:click={() => actionOrder(index, "cancel")} class="flex-1 bg-red-600 hover:bg-red-700 rounded-xl py-2 text-sm">Cencel</button>
           {/if}
 
         </div>
