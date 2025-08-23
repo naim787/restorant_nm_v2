@@ -38,7 +38,7 @@
     </div>
     <div class="drawer-side backdrop-blur">
       <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
-      <ul class="menu bg-black min-h-full w-80 p-4 shadow shadow-white">
+      <ul class="menu bg-black min-h-full w-80 p-4 shadow-2xl shadow-white/20">
         <!-- Sidebar content here -->
         <li><a href="/">Sidebar Item 1</a></li>
         <li><a href="/">Sidebar Item 2</a></li>
