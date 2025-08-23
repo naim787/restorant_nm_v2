@@ -77,14 +77,6 @@
     socket.send(JSON.stringify(order));
   }
 
-  // fungsi untuk menandai order selesai
-  function cencelOrder(index) {
-    // orders[index].done = true;
-    const order = orders[index];
-    orders[index].status = "cencel";
-    socket.send(JSON.stringify(order));
-  }
-
   // fugsi untuk meggambil order 
   async function allOders() {
     try {
