@@ -77,7 +77,7 @@
       if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
 
       let result = await res.json();
-       = result.data;
+      o = result.data;
     } catch (error) {
       console.error("❌ Error fetching menu:", error);
     }
