@@ -186,7 +186,7 @@
 
           {#if data.status !== "diantar"}
             <button on:click={() => actionOrder(index)} class="flex-2 bg-green-600 hover:bg-green-700 rounded-xl py-2 text-sm">Selesai</button>
-            <button on:click={() => cencelOrder(index)} class="flex-1 bg-red-600 hover:bg-red-700 rounded-xl py-2 text-sm">Cencel</button>
+            <button on:click={() => actionOrder(index)} class="flex-1 bg-red-600 hover:bg-red-700 rounded-xl py-2 text-sm">Cencel</button>
           {/if}
 
         </div>
