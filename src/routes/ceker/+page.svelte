@@ -70,7 +70,7 @@
   }
 
   // fugsi untuk meggambil order 
-  function allOder
+  function allOder()
   onMount(() => {
 
     // ✅ Perbaiki WebSocket connection
