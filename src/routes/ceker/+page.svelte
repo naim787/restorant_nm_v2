@@ -6,18 +6,9 @@
   const base = import.meta.env.VITE_API_BASE || 'localhost:3001';
   const cleanBase = base.replace(/^https?:\/\//, '');
   let socket;
-  const EXPIRED_LIMIT = 10; // detik
-
 
   let isPlaying = false;
 
-  function isExpired(order) {
-  if (!order?.time) return false;
-  const orderTime = parseTime(order.time);
-  const now = new Date();
-  const diff = (now - orderTime) / 1000;
-  return diff > EXPIRED_LIMIT;
-}
 
   // audio
   let audioEl;
@@ -26,8 +17,6 @@
   let orders = [];
 
   // filtered order
-
-  $: orderExpired = orders.filter(o => o.status.startsWith("p") && isExpired(o));
   $: orderPend = orders.filter(o => o.status.startsWith("p"));
   $: orderDone = orders.filter(o => o.status.startsWith("d"));
   $: orderCancel = orders.filter(o => o.status.startsWith("c"));
@@ -152,7 +141,7 @@
    <div class="w-full flex justify-evenly items-center gap-2 fixed left-0 bg-gray-900 p-2">
     <div class="font-bold w-[90px] h-[70px] p-2 rounded-md xl:rounded-2xl bg-black border-gray-400 flex items-center text-1xl"><AlarmClock class="text-blue-500"/> : {orderPend.length}</div>
     <div class="font-bold w-[90px] h-[70px] p-2 rounded-md xl:rounded-2xl bg-black border-gray-400 flex items-center text-1xl"><ConciergeBell class="text-orange-500"/> : {orderDone.length}</div>
-    <div class="font-bold w-[90px] h-[70px] p-2 rounded-md xl:rounded-2xl bg-black border-gray-400 flex items-center text-1xl"><Check class="text-green-500"/> : {orderDone}</div>
+    <div class="font-bold w-[90px] h-[70px] p-2 rounded-md xl:rounded-2xl bg-black border-gray-400 flex items-center text-1xl"><Check class="text-green-500"/> : {orde}</div>
     <div class="font-bold w-[90px] h-[70px] p-2 rounded-md xl:rounded-2xl bg-black border-gray-400 flex items-center text-1xl"><X class="text-red-500"/> : 0</div>
    </div>
 
