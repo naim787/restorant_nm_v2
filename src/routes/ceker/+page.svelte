@@ -114,44 +114,25 @@
 
     socket.onopen = () => console.log('✅ WebSocket connected');
 
-    // socket.onmessage = (event) => {
-    //   const data = JSON.parse(event.data);
-    //   console.log("✅ WebSocket response:", data);
-
-    //   if (data.success && data.saved) {
-    //     let newOrder = data.saved;
-        
-    //     // kalau status masih pending -> update/insert
-    //     if (newOrder.status.includes("p")) {
-    //       // tambahkan data baru di depan
-    //         orders = [newOrder, ...orders];
-    //       } else {
-    //       console.log("aman bro💚");
-    //       // kalau status bukan pending -> hapus dari list
-    //       orders = orders.filter(o => o.id !== newOrder.id);
-    //     }
-        
-    //   }
-    // }
-
     socket.onmessage = (event) => {
-  const data = JSON.parse(event.data);
-  console.log("✅ WebSocket response:", data);
+      const data = JSON.parse(event.data);
+      console.log("✅ WebSocket response:", data);
 
-  if (data.success && data.saved) {
-    const newOrder = data.saved;
-    const index = orders.findIndex(o => o.id === newOrder.id);
-
-    if (index !== -1) {
-      // 🛠️ Update order di posisi lama
-      orders[index] = newOrder;
-    } else {
-      // ➕ Tambahkan order baru ke array
-      orders = [newOrder, ...orders];
+      if (data.success && data.saved) {
+        let newOrder = data.saved;
+        
+        // kalau status masih pending -> update/insert
+        if (newOrder.status.includes("p")) {
+          // tambahkan data baru di depan
+            orders = [newOrder, ...orders];
+          } else {
+          console.log("aman bro💚");
+          // kalau status bukan pending -> hapus dari list
+          orders = orders.filter(o => o.id !== newOrder.id);
+        }
+        
+      }
     }
-  }
-}
-
 
     socket.onerror = (e) => console.error('❌ WebSocket error', e);
     socket.onclose = () => console.log('🔌 WebSocket closed');
