@@ -3,8 +3,8 @@
   import { Search, UtensilsCrossed, Check, AlarmClock, ConciergeBell , X} from "@lucide/svelte";
   import { onMount } from "svelte";
   const STATUS_PENDING = "pending";
-const STATUS_DONE = "diantar";
-const STATUS_CANCELLED = "cancel";
+  const STATUS_DONE = "diantar";
+  const STATUS_CANCELLED = "cancel";
   
   const base = import.meta.env.VITE_API_BASE || 'localhost:3001';
   const cleanBase = base.replace(/^https?:\/\//, '');
