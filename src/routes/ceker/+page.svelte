@@ -3,6 +3,11 @@
   import { Search, UtensilsCrossed, Check, AlarmClock, ConciergeBell , X} from "@lucide/svelte";
   import { onMount } from "svelte";
 
+  // ✅ Perbaiki format base URL
+  const base = import.meta.env.VITE_API_BASE || 'localhost:3001';
+  // Remove http:// or https:// if present
+  const cleanBase = base.replace(/^https?:\/\//, '');
+
   // fugsi play dan pause audio
   function togglePlay() {
   if (!isPlaying) {
