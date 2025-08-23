@@ -12,10 +12,12 @@
 
   // audio
   let audioEl;
-  
-  let search = "";
 
+  // orderan
   let orders = [];
+
+  // filtered order
+  let 
 
   // fugsi play dan pause audio
   function togglePlay() {
