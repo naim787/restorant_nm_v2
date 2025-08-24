@@ -79,7 +79,7 @@
         </div>
 
         <div class="w-70 md:w-full bg-black rounded-2xl p-3 m-1 md:text-2xl">Total Rp: <span class="text-green-500">{total}</span></div>
-        <div class="w-70 md:w-full h-auto bg-black rounded-2xl p-3 m-1 md:text-2xl flex flex-col">
+        <div class="w-75 md:w-full h-auto bg-black rounded-2xl p-3 m-1 md:text-2xl flex flex-col">
           <div class="flex">
             <!-- // nama pemesan -->
               <label class="select w-[50%]">
