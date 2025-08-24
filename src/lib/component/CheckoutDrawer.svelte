@@ -100,7 +100,6 @@
                   {/each}
                 </select>
               </label>
-
           </div>
             <!-- opsi pesanan -->
              <div class="flex w-full justify-evenly items-center mt-2">
