@@ -92,7 +92,7 @@
           />
 
         <div>
-          <h3 class="font-medium sm:text-lg"></h3>
+          <h3 class="font-medium sm:text-lg">{showData.image_url}</h3>
 
           <p class="line-clamp-2 text-sm text-gray-400">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, accusantium temporibus
