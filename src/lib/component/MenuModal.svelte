@@ -1,7 +1,7 @@
 <script>
   import { createEventDispatcher } from "svelte";
   const dispatch = createEventDispatcher();
-  import { CircleX } from "@lucide/svelte";
+  import { CircleX, <ShoppingBasket } from "@lucide/svelte";
 
   export let showModal = false;
   export let showData = {};
