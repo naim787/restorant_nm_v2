@@ -103,14 +103,14 @@
                 </label>
 
                 {:else}
-                <input type="text" class="w-full bg-black" placeholder="nama pemesan..">
+                <input type="text" class="w-full bg-" placeholder="nama pemesan..">
                {/if}
           </div>
             <!-- opsi pesanan -->
              <div class="flex w-full justify-evenly items-center mt-2">
                <h1 class="text-[10px]">NO        :<input type="radio" name="radio-1" class="radio" value="NO" bind:group={OPSI}/></h1>
-               <h1 class="text-[10px]">BUGKUS    :<input type="radio" name="radio-1" class="radio" bind:group={OPSI}/></h1>
-               <h1 class="text-[10px]">RESERFASI :<input type="radio" name="radio-1" class="radio" bind:group={OPSI}/></h1>
+               <h1 class="text-[10px]">BUGKUS    :<input type="radio" name="radio-1" class="radio" value="BUGKUS" bind:group={OPSI}/></h1>
+               <h1 class="text-[10px]">RESERFASI :<input type="radio" name="radio-1" class="radio" value="RESERVASI" bind:group={OPSI}/></h1>
              </div>
         </div>
         <div class="w-70 md:w-full bg-black rounded-2xl p-3">
