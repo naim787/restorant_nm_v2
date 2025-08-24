@@ -43,16 +43,15 @@
 
     <div class="drawer-side backdrop-blur">
       <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
-      <ul class="menu bg-base-200 text-base-content h-[95vh] w-[90vw] md:w-[30vw] mt-15 flex flex-col justify-center items-center">
+      <ul class="menu bg-base-200 text-base-content h-[95vh] w-[90vw] md:w-[30vw] mt-15 flex flex-col justify-center items-center z-">
 
         <!-- tombol keluar -->
         <div class="w-80 flex justify-between items-center"><button class="py-2 px-4 font-bold bg-orange-500 rounded-full md:hidden" on:click={() => {
         const drawer = document.getElementById('my-drawer-4');
-        if (drawer) drawer.checked = false;}}> <ArrowLeft /> </button>
-        <h1 class="m-auto text-3xl">CheckOut</h1></div>
+        if (drawer) drawer.checked = false;}}> <ArrowLeft /></button></div>
 
         <!-- list pesanan -->
-        <div class="w-full md:w-[30vw] h-[50vh] flex flex-col justify-start items-center">
+        <div class="w-full md:w-[30vw] h-[30vh] flex flex-col justify-start items-center overflow-scroll">
           {#each checkoutData.slice().reverse() as item, index}
             <div class="w-100 h-15 bg-black flex justify-between items-center rounded-full m-1 ">
               <img src={`http://${base}/${item.products.image_url}`} alt="" class="w-16 h-16 object-cover rounded-full">
