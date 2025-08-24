@@ -88,7 +88,7 @@
             </label>
 
             <!-- opsi pesanan -->
-             <div class="flex w-f">
+             <div class="flex w-full jus">
                <h1 class="text-[10px]">NO        :<input type="radio" name="radio-1" class="radio" checked="checked" /></h1>
                <h1 class="text-[10px]">BUGKUS    :<input type="radio" name="radio-1" class="radio" /></h1>
                <h1 class="text-[10px]">RESERFASI :<input type="radio" name="radio-1" class="radio" /></h1>
