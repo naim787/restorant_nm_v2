@@ -21,7 +21,7 @@
   </div>
 </div> -->
 
-<div class="card bg-base-100 w-80 shadow-sm h-auto">
+<div class="card bg-base-100 w-70 shadow-sm h-auto">
   <figure>
     <img class="w-full h-60 object-cover" src={`http://${base}/${item.image_url}`} alt={item.name} loading="lazy" />
   </figure>
@@ -30,7 +30,7 @@
     <div class="rating">
       <div class="mask mask-star" aria-label="1 star"></div>
       <div class="mask mask-star" aria-label="2 star"></div>
-      <div class="mask mask-star" aria-label="3 star" aria-current="true"></div>
+      <div class="mask mask-star" aria-label="3 star" ></div>
       <div class="mask mask-star" aria-label="4 star"></div>
       <div class="mask mask-star" aria-label="5 star"></div>
     </div>
