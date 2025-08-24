@@ -1,7 +1,7 @@
 <script>
   import { createEventDispatcher } from "svelte";
   const dispatch = createEventDispatcher();
-  import { CircleX, ShoppingBasket } from "@lucide/svelte";
+  import { CircleX, ShoppingCart} from "@lucide/svelte";
 
   export let showModal = false;
   export let showData = {};
@@ -92,7 +92,7 @@
           />
 
         <div>
-          <h3 class="font-medium sm:text-lg">Question about Livewire Rendering-3 and Alpine JS</h3>
+          <h3 class="font-medium sm:text-lg">showData.image_url</h3>
 
           <p class="line-clamp-2 text-sm text-gray-400">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, accusantium temporibus
@@ -120,7 +120,7 @@
                   <button type="button" class="py-1 px-3 bg-green-500 rounded-full"
                     on:click={() => onValueChange(Value + 1)}>+</button>
           </div>
-            <button class="text-[5vw] font-bold sm:text-xs py-2 px-4 bg-blue-500 rounded-md text-black" on:click={onCheckout}><ShoppingBasket /></button>
+            <button class="text-[5vw] font-bold py-2 px-4 bg-blue-500 rounded-md" on:click={onCheckout}><ShoppingCart /></button>
         </div>
     </article>
   </div>
