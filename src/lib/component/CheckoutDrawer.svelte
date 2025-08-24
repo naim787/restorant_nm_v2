@@ -118,7 +118,7 @@
           <textarea class="bg-white w-full h-30 text-black rounded-2xl p-2" name="" id="">kete</textarea>
         </div>
         
-        <div class="w-70 md:w-full bg-black rounded-xl p-3 m-1 text-2xl">Total Rp: <span class="text-green-500">{total}</span></div>
+        <div class="w-78 md:w-full bg-black rounded-xl p-3 m-1 text-2xl">Total Rp: <span class="text-green-500">{total}</span></div>
         <button
           class="btn bg-yellow-500 mt-3 w-80 md:w-full h-15"
           on:click={onCheckout}
