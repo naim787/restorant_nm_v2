@@ -8,7 +8,7 @@
 {#if loadingMenu}
   <div class="skeleton w-65 h-10 rounded-md"></div>
 {:else}
-  <div class="w-65 h-10 rounded-md flex justify-between items-center">
+  <div class="w-62 h-10 rounded-md flex justify-between items-center">
     <input
       type="text"
       class="bg-white w-50 h-10 text-black rounded-md p-2"
