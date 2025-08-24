@@ -8,7 +8,7 @@
     </nav>
     <nav>
       <h6 class="footer-title">Company</h6>
-      <a href="/" class="link link-hover">About us</a>
+      <a href="https://github.com/naim787" class="link link-hover">About us</a>
       <a href="/" class="link link-hover">Contact</a>
       <a href="/" class="link link-hover">Jobs</a>
       <a href="/" class="link link-hover">Press kit</a>
