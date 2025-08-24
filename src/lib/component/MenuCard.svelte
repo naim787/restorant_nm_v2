@@ -27,15 +27,15 @@
   </figure>
   <div class="p-5 bg-gray-900 rounded-b-xl">
     <h2 class="card-title text-3xl uppercase">{item.name}</h2>
-    <div class="rating">
+    <!-- <div class="rating">
       <div class="mask mask-star bg-yellow-500" aria-label="1 star"></div>
       <div class="mask mask-star bg-yellow-500" aria-label="2 star"></div>
       <div class="mask mask-star bg-yellow-500" aria-label="3 star"></div>
       <div class="mask mask-star bg-yellow-500" aria-label="4 star"></div>
       <div class="mask mask-star bg-yellow-500" aria-label="5 star" aria-current="true"></div>
-    </div>
+    </div> -->
     <div class="w-full flex justify-between items-center">
-      <p class="text-1xl">Rp: {item.price}</p>
+      <p class="text-2xl">Rp: <span class="text-yellow-500"></span></p>
       <div class="card-actions justify-end">
         <button class="btn bg-green-500 text-black uppercase" on:click={onClick}>pesan</button>
       </div>
