@@ -88,9 +88,7 @@
             <label class="select w-[50%]">
               <span class="label bg-black">NO</span>
               <select>
-                {#each Array.from(100) as d, i }
-                  <option>01</option>
-                {/each}
+                
               </select>
             </label>
         </div>
