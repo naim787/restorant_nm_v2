@@ -48,7 +48,8 @@
         <!-- tombol keluar -->
         <div class="w-80 flex justify-between items-center"><button class="py-2 px-4 font-bold bg-orange-500 rounded-full" on:click={() => {
         const drawer = document.getElementById('my-drawer-4');
-        if (drawer) drawer.checked = false;}}> <ArrowLeft /> </button>
+        if (drawer) drawer.checked = false;}}> <ArrowLeft />
+        </button>
         <h1 class="m-auto text-3xl">CheckOut</h1></div>
 
         <!-- list pesanan -->
