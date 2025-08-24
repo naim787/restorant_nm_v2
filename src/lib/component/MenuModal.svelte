@@ -108,12 +108,12 @@
       </div>
 
         <div class="flex justify-between items-center border">
-          <div class="p-2 bg-gray-900 rounded-full flex justify-center items-center border border-amber-300">
+          <div class="p-2 bg-gray-900 rounded-full flex justify-center items-center border border-amber-300 w-auto">
                   <button type="button" class="py-1 px-3 bg-red-500 rounded-full"
                     on:click={() => onValueChange(Math.max(1, Value - 1))}>-</button>
         
-                  <div class="flex justify-center items-center">
-                    <input class="w-[20vw] text-2xl font-bold text-center" type="number" bind:value={Value} min="1"
+                  <div class="flex justify-center items-center w-[20vw]">
+                    <input class="text-2xl font-bold w-full" type="number" bind:value={Value} min="1"
                       on:input={e => onValueChange(Math.max(1, +e.target.value))} />
                   </div>
         
