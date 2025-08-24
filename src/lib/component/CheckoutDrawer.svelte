@@ -80,30 +80,34 @@
 
         <div class="w-70 md:w-full bg-black rounded-2xl p-3 m-1 md:text-2xl">Total Rp: <span class="text-green-500">{total}</span></div>
         <div class="w-70 md:w-full h-auto bg-black rounded-2xl p-3 m-1 md:text-2xl flex flex-col">
-          <!-- // nama pemesan -->
-            <label class="select w-[50%]">
-              <span class="label bg-black">Name</span>
-              <select bind:value={namaWaiters}>
-                {#each users as d}
-                <option value={d.name}>{d.name}</option>
-                {/each}
-              </select>
-            </label>
+          <div class="flex">
+            <!-- // nama pemesan -->
+              <label class="select w-[50%]">
+                <span class="label bg-black">Name</span>
+                <select bind:value={namaWaiters}>
+                  {#each users as d}
+                  <option value={d.name}>{d.name}</option>
+                  {/each}
+                </select>
+              </label>
+  
+              <!-- OPSI -->
+              <label class="select w-[50%]">
+                <span class="label bg-black">OPTION</span>
+                <select>
+                  {#each Array.from({ length: 100 }) as _, i}
+                    <option value="">{String(i + 1).padStart(2, '0')}</option>
+                  {/each}
+                </select>
+              </label>
 
+          </div>
             <!-- opsi pesanan -->
              <div class="flex w-full justify-evenly items-center mt-2">
                <h1 class="text-[10px]">NO        :<input type="radio" name="radio-1" class="radio" checked="checked" /></h1>
                <h1 class="text-[10px]">BUGKUS    :<input type="radio" name="radio-1" class="radio" /></h1>
                <h1 class="text-[10px]">RESERFASI :<input type="radio" name="radio-1" class="radio" /></h1>
              </div>
-            <label class="select w-[50%]">
-              <span class="label bg-black">OPTION</span>
-              <select>
-                {#each Array.from({ length: 100 }) as _, i}
-                  <option value="">{String(i + 1).padStart(2, '0')}</option>
-                {/each}
-              </select>
-            </label>
         </div>
         <div class="w-70 md:w-full bg-black rounded-2xl p-3">
           <p class="">Keterangan :</p>
