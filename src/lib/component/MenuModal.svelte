@@ -117,7 +117,7 @@
                   <button type="button" class="py-1 px-3 bg-green-500 rounded-full"
                     on:click={() => onValueChange(Value + 1)}>+</button>
           </div>
-            <button class="text-[5vw] font-bold py-2 px-4 rounded-md" on:click={onCheckout}><ShoppingCart /></button>
+            <button class="text-[5vw] font-bold py-2 px-4 rounded-md " on:click={onCheckout}><ShoppingCart /></button>
         </div>
     </article>
   </div>
