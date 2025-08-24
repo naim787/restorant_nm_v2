@@ -88,7 +88,10 @@
             <label class="select w-[50%]">
               <span class="label bg-black">NO</span>
               <select>
-                
+                {#each Array.from({ length: 100 }) as _, i}
+  <option>{String(i + 1).padStart(2, '0')}</option>
+{/each}
+
               </select>
             </label>
         </div>
