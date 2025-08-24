@@ -21,7 +21,7 @@
   </div>
 </div> -->
 
-<div class="card bg-base-100 w-70 shadow-sm h-">
+<div class="card bg-base-100 w-70 shadow-sm h-[">
   <figure>
     <img class="w-full h-60 object-cover" src={`http://${base}/${item.image_url}`} alt={item.name} loading="lazy" />
   </figure>
