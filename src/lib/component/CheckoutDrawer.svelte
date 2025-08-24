@@ -103,7 +103,7 @@
                 </label>
 
                 {:else}
-                <input type="text" class="w-full h-13 bg-gray-800 p-2 rounded-md" placeholder="nama ">
+                <input type="text" class="w-full h-13 bg-gray-800 p-2 rounded-md" placeholder="nama atau no meja pemesan..">
                {/if}
           </div>
             <!-- opsi pesanan -->
@@ -115,7 +115,7 @@
         </div>
         <div class="w-78 md:w-full bg-black rounded-2xl p-3">
           <p class="">Keterangan :</p>
-          <textarea class="bg-white w-full h-30 text-black rounded-2xl p-2" name="" id="">kete</textarea>
+          <textarea class="bg-white w-full h-30 text-black rounded-2xl p-2" name="" id=""></textarea>
         </div>
         
         <div class="w-78 md:w-full bg-black rounded-xl p-3 m-1 text-2xl">Total Rp: <span class="text-green-500">{total}</span></div>
