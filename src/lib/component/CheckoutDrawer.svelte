@@ -38,7 +38,7 @@
   <div class="drawer drawer-end ml-10">
     <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
     <div class="drawer-content">
-      <label for="my-drawer-4" class="drawer-button btn bg-white/ indicator">
+      <label for="my-drawer-4" class="drawer-button btn bg-linear-to-r from-cyan-500 to-blue-500 indicator">
         <span class="indicator-item badge badge-secondary">{checkoutData.length}</span>
         <ShoppingBasket />
       </label>
