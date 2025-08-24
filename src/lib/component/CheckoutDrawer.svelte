@@ -78,7 +78,7 @@
         <div class="w-83 md:w-full bg-black rounded-2xl p-3 m-1 md:text-2xl">Total Rp: <span class="text-green-500">{total}</span></div>
         <div class="w-full bg-black rounded-2xl p-3 m-1 md:text-2xl">
           <label class="select w-[40%]">
-            <span class="label bg-g">Name</span>
+            <span class="label bg-gray">Name</span>
             <select bind:value={namaWaiters}>
               {#each users as d}
               <option value={d.name}>{d.name}</option>
