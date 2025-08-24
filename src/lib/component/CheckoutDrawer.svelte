@@ -103,7 +103,7 @@
                 </label>
 
                 {:else}
-                <input type="text" class="w-full h-13 bg-gray-800 p-2 rounded-md" placeholder="nama pemesan..">
+                <input type="text" class="w-full h-13 bg-gray-800 p-2 rounded-md" placeholder="nama ">
                {/if}
           </div>
             <!-- opsi pesanan -->
