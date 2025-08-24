@@ -82,46 +82,46 @@
 
       <article class="rounded-xl bg-black shadow shadow-white/20 modal-box ">
         <button class="absolute top-0 right-0 bg-transparent text-red-500" on:click={onClose}>
-        <CircleX size={40}/>
-      </button>
-  <div class="flex items-start gap-4 p-4 sm:p-6 lg:p-8">
-      <img
-        alt=""
-        src={`http://${base}/${showData.image_url}`}
-        class="size-14 rounded-lg object-cover"
-      />
+          <CircleX size={40}/>
+        </button>
+      <div class="flex items-start gap-4 p-4 sm:p-6 lg:p-8">
+          <img
+            alt=""
+            src={`http://${base}/${showData.image_url}`}
+            class="size-14 rounded-lg object-cover"
+          />
 
-    <div>
-      <h3 class="font-medium sm:text-lg">Question about Livewire Rendering-3 and Alpine JS</h3>
+        <div>
+          <h3 class="font-medium sm:text-lg">Question about Livewire Rendering-3 and Alpine JS</h3>
 
-      <p class="line-clamp-2 text-sm text-gray-400">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, accusantium temporibus
-        iure delectus ut totam natus nesciunt ex? Ducimus, enim.
-      </p>
+          <p class="line-clamp-2 text-sm text-gray-400">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, accusantium temporibus
+            iure delectus ut totam natus nesciunt ex? Ducimus, enim.
+          </p>
 
-      <div class="mt-2 sm:flex sm:items-center sm:gap-2">
-        <div class="flex items-center gap-1 text-gray-500">
-          <p class="text-xs">category : makanan</p>
+          <div class="mt-2 sm:flex sm:items-center sm:gap-2">
+            <div class="flex items-center gap-1 text-gray-500">
+              <p class="text-xs">category : makanan</p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <div class="flex justify-between items-center">
-     <div class="p-2 bg-gray-900 rounded-full flex justify-center items-center border">
-            <button type="button" class="py-1 px-3 bg-red-500 rounded-full"
-              on:click={() => onValueChange(Math.max(1, Value - 1))}>-</button>
-  
-            <div class="flex justify-center items-center">
-              <input class="w-[10%] text-2xl font-bold text-center" type="number" bind:value={Value} min="1"
-                on:input={e => onValueChange(Math.max(1, +e.target.value))} />
-            </div>
-  
-            <button type="button" class="py-1 px-3 bg-green-500 rounded-full"
-              on:click={() => onValueChange(Value + 1)}>+</button>
-    </div>
-      <button class="text-[10px] font-medium sm:text-xs py-2 px-3 bg-green-500 rounded-md" on:click={onCheckout}>+</button>
-  </div>
+        <div class="flex justify-between items-center">
+          <div class="p-2 bg-gray-900 rounded-full flex justify-center items-center border">
+                  <button type="button" class="py-1 px-3 bg-red-500 rounded-full"
+                    on:click={() => onValueChange(Math.max(1, Value - 1))}>-</button>
+        
+                  <div class="flex justify-center items-center">
+                    <input class="w-[20vw] text-2xl font-bold text-center" type="number" bind:value={Value} min="1"
+                      on:input={e => onValueChange(Math.max(1, +e.target.value))} />
+                  </div>
+        
+                  <button type="button" class="py-1 px-3 bg-green-500 rounded-full"
+                    on:click={() => onValueChange(Value + 1)}>+</button>
+          </div>
+            <button class="text-[10px] font-medium sm:text-xs py-2 px-3 bg-green-500 rounded-md" on:click={onCheckout}>+</button>
+        </div>
 </article>
   </div>
 {/if}
