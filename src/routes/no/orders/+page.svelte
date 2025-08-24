@@ -145,7 +145,7 @@
 
 <NavPanel />
 
-<div class="w-[100vw] h-[100vh] pt-15 bg-black">
+<div class="w-[100vw] h-[100vh] pt-15 ">
   <div class="w-full h-20 flex justify-around items-center p-2 bg-black">
     <SearchBar {searchTerm} {loadingMenu} onInput={e => searchTerm = e.target.value} />
     <!-- menu checkout ketika selesai klik tombol menu -->
