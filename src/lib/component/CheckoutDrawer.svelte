@@ -86,9 +86,9 @@
               </select>
             </label>
             <label class="select w-[50%]">
-              <span class="label bg-black">NO :</span>
+              <span class="label bg-black">NO</span>
               <select>
-                <option ></option>
+                <option>01</option>
               </select>
             </label>
         </div>
