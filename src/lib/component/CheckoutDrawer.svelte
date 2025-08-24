@@ -92,7 +92,7 @@
               </label>
   
               <!-- OPSI -->
-               {#if OPSI === "NO" :}
+               {#if OPSI === "NO" || OPSI === "RESERVASI"}
                 <label class="select w-full">
                   <span class="label bg-black">OPTION</span>
                   <select>
@@ -101,6 +101,8 @@
                     {/each}
                   </select>
                 </label>
+
+                {:}
                {/if}
           </div>
             <!-- opsi pesanan -->
