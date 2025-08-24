@@ -88,8 +88,9 @@
             </label>
 
             <!-- opsi pesanan -->
-             <h1 class="">NO<input type="radio" name="radio-1" class="radio" checked="checked" /></h1>
-             <h1 class=""><input type="radio" name="radio-1" class="radio" checked="checked" /></h1>
+             <h1 class="">NO     :<input type="radio" name="radio-1" class="radio" checked="checked" /></h1>
+             <h1 class="">BUGKUS :<input type="radio" name="radio-1" class="radio" checked="checked" /></h1>
+             <h1 class="">RESERFASI :<input type="radio" name="radio-1" class="radio" checked="checked" /></h1>
             <!-- <label class="select w-[50%]">
               <span class="label bg-black">OPTION</span>
               <select>
