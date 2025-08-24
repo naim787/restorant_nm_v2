@@ -142,7 +142,7 @@
 
 <NavPanel />
 
-<div class="w-[100vw] h-[100vh] pt-15 px-2 bg-linear-to-r from-cyan-900 to-blue-900 text-white overflow-y-auto">
+<div class="w-[100vw] h-[100vh] pt-15 px-2 bg-linear-to-r from-cyan-500 to-black text-white overflow-y-auto">
   <!-- Aktifkan notifikasi manual -->
   <!-- <button on:click={togglePlay} class="mb-4 text-black">
     {#if isPlaying}
