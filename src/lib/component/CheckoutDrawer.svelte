@@ -77,7 +77,7 @@
 
         <div class="w-83 md:w-full bg-black rounded-2xl p-3 m-1 md:text-2xl">Total Rp: <span class="text-green-500">{total}</span></div>
         <div class="w-full bg-black rounded-2xl p-3 m-1 md:text-2xl">
-          <label class="select w-[0%]">
+          <label class="select w-[35%]">
             <span class="label bg-black">Name ></span>
             <select bind:value={namaWaiters}>
               {#each users as d}
