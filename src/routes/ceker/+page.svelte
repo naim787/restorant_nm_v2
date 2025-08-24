@@ -156,7 +156,7 @@
 
   <!-- filter -->
 
-  <div class="flex flex-wrap gap-2 justify-start items-start mt-22 md:mt-30">
+  <div class="flex flex-wrap gap-2 justify-start items-start mt-md:mt-30">
     {#each orders as data, index}
      <!-- {#each orders.filter(o => o.status === "pending") as data, index} -->
 
