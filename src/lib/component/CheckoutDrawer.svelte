@@ -92,15 +92,16 @@
               </label>
   
               <!-- OPSI -->
-               {#}
-              <label class="select w-full">
-                <span class="label bg-black">OPTION</span>
-                <select>
-                  {#each Array.from({ length: 100 }) as _, i}
-                    <option value="">{String(i + 1).padStart(2, '0')}</option>
-                  {/each}
-                </select>
-              </label>
+               {#if OPSI === "NO" /}
+                <label class="select w-full">
+                  <span class="label bg-black">OPTION</span>
+                  <select>
+                    {#each Array.from({ length: 100 }) as _, i}
+                      <option value="">{String(i + 1).padStart(2, '0')}</option>
+                    {/each}
+                  </select>
+                </label>
+               {/if}
           </div>
             <!-- opsi pesanan -->
              <div class="flex w-full justify-evenly items-center mt-2">
