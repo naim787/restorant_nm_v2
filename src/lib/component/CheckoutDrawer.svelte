@@ -68,7 +68,7 @@
                 <div class="w-full">
                   <h1 class="text-green-500 font-bold">{item.value}</h1>
                 </div>
-              <button type="submit" class="btn bg-transparent border-none" on:click={() => removeCheckout(index)}>
+              <button type="submit" class="btn bg-transparent border-none outline-" on:click={() => removeCheckout(index)}>
                 <CircleX size={30} class="text-red-500" />
               </button>
             </div>
