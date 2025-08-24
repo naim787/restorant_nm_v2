@@ -11,7 +11,7 @@
       <a href="https://github.com/naim787" class="link link-hover">About us</a>
       <a href="https://api.whatsapp.com/send/?phone=62895352455400" class="link link-hover">Contact</a>
       <a href="https://api.whatsapp.com/send/?phone=62895352455400" class="link link-hover">Jobs</a>
-      <a href="/" class="link link-hover">Press kit</a>
+      <a href="https://api.whatsapp.com/send/?phone=62895352455400" class="link link-hover">Press kit</a>
     </nav>
     <nav>
       <h6 class="footer-title">Legal</h6>
