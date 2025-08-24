@@ -155,10 +155,6 @@
       onCheckout={sendCheckoutData}
       on:totalChange={(e) => totalFromDrawer = e.detail}
       on:waitersChange={(e) => namaWaiters = e.detail}/>
-
-    <div class="p-2 mx-3 flex absolute top-0 right-0 z-40">
-      <h1 class="text-2xl">NO: {noTABLE}</h1>
-    </div>
   </div>
 
   <div class="w-full h-[80vh] flex flex-wrap justify-evenly items-center overflow-auto gap-2">
