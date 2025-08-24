@@ -107,8 +107,8 @@
         </div>
       </div>
 
-        <div class="flex justify-between items-center">
-          <div class="p-2 bg-gray-900 rounded-full flex justify-center items-center border">
+        <div class="flex justify-between items-center border">
+          <div class="p-2 bg-gray-900 rounded-full flex justify-center items-center border border-amber-300">
                   <button type="button" class="py-1 px-3 bg-red-500 rounded-full"
                     on:click={() => onValueChange(Math.max(1, Value - 1))}>-</button>
         
@@ -122,6 +122,6 @@
           </div>
             <button class="text-[10px] font-medium sm:text-xs py-2 px-3 bg-green-500 rounded-md" on:click={onCheckout}>+</button>
         </div>
-</article>
+    </article>
   </div>
 {/if}
