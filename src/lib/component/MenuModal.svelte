@@ -113,14 +113,14 @@
               on:click={() => onValueChange(Math.max(1, Value - 1))}>-</button>
   
             <div class="flex justify-center items-center">
-              <input class="w-full text-2xl font-bold text-center" type="number" bind:value={Value} min="1"
+              <input class="w-[30%] text-2xl font-bold text-center" type="number" bind:value={Value} min="1"
                 on:input={e => onValueChange(Math.max(1, +e.target.value))} />
             </div>
   
             <button type="button" class="py-1 px-3 bg-green-500 rounded-full"
               on:click={() => onValueChange(Value + 1)}>+</button>
     </div>
-      <button class="text-[10px] font-medium sm:text-xs py-2 px-3 bg-green-500 rounded-md" on:click={onCheckout}>Add To Cart</button>
+      <button class="text-[10px] font-medium sm:text-xs py-2 px-3 bg-green-500 rounded-md" on:click={onCheckout}>+</button>
   </div>
 </article>
   </div>
