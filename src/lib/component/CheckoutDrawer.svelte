@@ -10,6 +10,7 @@
 
   // opsi
   let  OPSI = ""
+   let selected = 'NO';
 
 
   const base = import.meta.env.VITE_API_BASE || '';
