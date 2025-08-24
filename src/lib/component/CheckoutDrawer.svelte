@@ -88,7 +88,8 @@
             </label>
 
             <!-- opsi pesanan -->
-             <input type="radio" name="" id="" />
+             <input type="radio" name="radio-1" class="radio" checked="checked" />
+<input type="radio" name="radio-1" class="radio" />
             <!-- <label class="select w-[50%]">
               <span class="label bg-black">OPTION</span>
               <select>
