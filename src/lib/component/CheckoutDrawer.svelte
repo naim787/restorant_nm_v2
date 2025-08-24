@@ -50,7 +50,7 @@
           <button class="py-2 px-4 font-bold bg-orange-500 rounded-full" on:click={() => {
             const drawer = document.getElementById('my-drawer-4');
             if (drawer) drawer.checked = false;}}> <ArrowLeft />
-            </button>
+          </button>
         <h1 class="m-auto text-3xl">CheckOut</h1></div>
 
         <!-- list pesanan -->
