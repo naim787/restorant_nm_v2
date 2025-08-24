@@ -44,9 +44,9 @@
     <div class="drawer-side backdrop-blur">
       <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
       <ul class="menu bg-base-200 text-base-content h-auto w-[90vw] md:w-[30vw] mt-15 flex flex-col justify-center items-center z-50">
-
+        ellemeny
         <!-- tombol keluar -->
-        <div class="w-80 flex justify-between items-center"><button class="py-2 px-4 font-bold bg-orange-500 rounded-full md:hidden absolute top-0 right-0 z-50" on:click={() => {
+        <div class="w-80 flex justify-between items-center"><button class="py-2 px-4 font-bold bg-orange-500 rounded-full md:hidden" on:click={() => {
         const drawer = document.getElementById('my-drawer-4');
         if (drawer) drawer.checked = false;}}> <ArrowLeft /></button></div>
 
