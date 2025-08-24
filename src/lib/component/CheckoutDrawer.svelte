@@ -5,8 +5,6 @@
   export let removeCheckout;
   export let onCheckout; // <- callback function dari page.svelte
   import { createEventDispatcher } from 'svelte';
-  
-   let selectedOption = '';
 
   const dispatch = createEventDispatcher();
 
@@ -90,16 +88,12 @@
             <label class="select w-[50%]">
               <span class="label bg-black">NO</span>
               <select>
-                <option value=""></option>
                 {#each Array.from({ length: 100 }) as _, i}
                   <option value="">{String(i + 1).padStart(2, '0')}</option>
                 {/each}
-                <select>
-                  <option>BUGKUS</option>
-                  {#each Array.from({ length: 100 }) as _, i}
-                    <option value="">{String(i + 1).padStart(2, '0')}</option>
-                  {/each}
-                </select>
+                <option value="">BUGKUS</option>
+                <option value="">BUGKUS</option>
+                <option value="">RESERVASI</option>
               </select>
             </label>
         </div>
