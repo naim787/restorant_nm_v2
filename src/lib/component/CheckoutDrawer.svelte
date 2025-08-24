@@ -91,7 +91,7 @@
                 {#each Array.from({ length: 100 }) as _, i}
                   <option>{String(i + 1).padStart(2, '0')}</option>
                 {/each}
-                op
+                option
               </select>
             </label>
         </div>
