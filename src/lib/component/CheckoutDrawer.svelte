@@ -5,6 +5,7 @@
   export let removeCheckout;
   export let onCheckout; // <- callback function dari page.svelte
   import { createEventDispatcher } from 'svelte';
+  
    let selectedOption = '';
 
   const dispatch = createEventDispatcher();
