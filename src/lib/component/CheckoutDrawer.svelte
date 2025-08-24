@@ -9,8 +9,7 @@
   const dispatch = createEventDispatcher();
 
   // opsi
-  let  OPSI = ""
-   let selected = 'NO';
+  let  OPSI = "NO"
 
 
   const base = import.meta.env.VITE_API_BASE || '';
@@ -93,6 +92,7 @@
               </label>
   
               <!-- OPSI -->
+               
               <label class="select w-full">
                 <span class="label bg-black">OPTION</span>
                 <select>
@@ -104,9 +104,9 @@
           </div>
             <!-- opsi pesanan -->
              <div class="flex w-full justify-evenly items-center mt-2">
-               <h1 class="text-[10px]">NO        :<input type="radio" name="radio-1" class="radio" checked="checked" /></h1>
-               <h1 class="text-[10px]">BUGKUS    :<input type="radio" name="radio-1" class="radio" /></h1>
-               <h1 class="text-[10px]">RESERFASI :<input type="radio" name="radio-1" class="radio" /></h1>
+               <h1 class="text-[10px]">NO        :<input type="radio" name="radio-1" class="radio" bind:group={OPSI}/></h1>
+               <h1 class="text-[10px]">BUGKUS    :<input type="radio" name="radio-1" class="radio" bind:group={OPSI}/></h1>
+               <h1 class="text-[10px]">RESERFASI :<input type="radio" name="radio-1" class="radio" bind:group={OPSI}/></h1>
              </div>
         </div>
         <div class="w-70 md:w-full bg-black rounded-2xl p-3">
