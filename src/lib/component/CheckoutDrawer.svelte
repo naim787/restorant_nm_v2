@@ -102,7 +102,7 @@
                   </select>
                 </label>
 
-                {:}
+                {:else}
                {/if}
           </div>
             <!-- opsi pesanan -->
