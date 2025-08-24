@@ -75,9 +75,9 @@
           {/each}
         </div>
 
-        <div class="w-83 md:w-full bg-black rounded-2xl p-3 m-1 md:text-2xl">Total Rp: <span class="text-green-500">{total}</span></div>
+        <div class="w-70 md:w-full bg-black rounded-2xl p-3 m-1 md:text-2xl">Total Rp: <span class="text-green-500">{total}</span></div>
         <div class="w-70 md:w-full bg-black rounded-2xl p-3 m-1 md:text-2xl">
-          <label class="select w-[60%]">
+          <label class="select w-[50%]">
             <span class="label bg-black">Name ></span>
             <select bind:value={namaWaiters}>
               {#each users as d}
@@ -86,9 +86,9 @@
             </select>
           </label>
         </div>
-        <div class="w-83 md:w-full bg-black rounded-2xl p-3">
+        <div class="w-70 md:w-full bg-black rounded-2xl p-3">
           <p class="">Keterangan :</p>
-          <textarea class="bg-white w-75 md:w-[98%] h-30 text-black rounded-2xl p-2" name="" id="">kete</textarea>
+          <textarea class="bg-white w-full h-30 text-black rounded-2xl p-2" name="" id="">kete</textarea>
         </div>
 
         <button
