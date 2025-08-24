@@ -54,7 +54,7 @@
         <!-- list pesanan -->
         <div class="w-full md:w-[30vw] border h-[50vh] flex flex-col justify-start items-center overflow-scroll">
           {#each checkoutData.slice().reverse() as item, index}
-            <div class="w-[30vw] h-[51vw] border border-red-500 bg-black flex justify-between items-center rounded-full m-1 ">
+            <div class="w-[30vw] h-[1vw] border border-red-500 bg-black flex justify-between items-center rounded-full m-1 ">
               <img src={`http://${base}/${item.products.image_url}`} alt="" class="w-16 h-16 object-cover rounded-full">
                 <div class="w-full px-2">
                   <h1>{item.products.name}</h1>
