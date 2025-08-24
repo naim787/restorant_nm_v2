@@ -76,7 +76,8 @@
         </div>
 
         <div class="w-70 md:w-full bg-black rounded-2xl p-3 m-1 md:text-2xl">Total Rp: <span class="text-green-500">{total}</span></div>
-        <div class="w-70 md:w-full bg-black rounded-2xl p-3 m-1 md:text-2xl flex">
+        <div class="w-70 md:w-full bg-black rounded-2xl p-3 m-1 md:text-2xl flex flex">
+          <!-- // nama pemesan -->
             <label class="select w-[50%]">
               <span class="label bg-black">Name</span>
               <select bind:value={namaWaiters}>
@@ -85,14 +86,14 @@
                 {/each}
               </select>
             </label>
+
+            <!-- opsi pesanan -->
             <label class="select w-[50%]">
-              <span class="label bg-black">NO</span>
+              <span class="label bg-black">OPTION</span>
               <select>
                 {#each Array.from({ length: 100 }) as _, i}
                   <option value="">{String(i + 1).padStart(2, '0')}</option>
                 {/each}
-                <option value="">BUGKUS</option>
-                <option value="">RESERVASI</option>
               </select>
             </label>
         </div>
