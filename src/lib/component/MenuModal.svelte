@@ -94,11 +94,11 @@
         <div>
           <h3 class="font-medium sm:text-lg">{showData.name}</h3>
 
-          <p class="line-clamp-2 text-sm text-gray-400">{}</p>
+          <p class="line-clamp-2 text-sm text-gray-400">{showData.description}</p>
 
           <div class="mt-2 sm:flex sm:items-center sm:gap-2">
             <div class="flex items-center gap-1 text-gray-500">
-              <p class="text-xs">category : makanan</p>
+              <p class="text-xs">category : {showData.category}</p>
             </div>
           </div>
         </div>
