@@ -9,7 +9,7 @@
   const dispatch = createEventDispatcher();
 
   // opsi
-  
+  let  OPSI = ""
 
 
   const base = import.meta.env.VITE_API_BASE || '';
@@ -96,14 +96,14 @@
                <h1 class="text-[10px]">BUGKUS    :<input type="radio" name="radio-1" class="radio" /></h1>
                <h1 class="text-[10px]">RESERFASI :<input type="radio" name="radio-1" class="radio" /></h1>
              </div>
-            <!-- <label class="select w-[50%]">
+            <label class="select w-[50%]">
               <span class="label bg-black">OPTION</span>
               <select>
                 {#each Array.from({ length: 100 }) as _, i}
                   <option value="">{String(i + 1).padStart(2, '0')}</option>
                 {/each}
               </select>
-            </label> -->
+            </label>
         </div>
         <div class="w-70 md:w-full bg-black rounded-2xl p-3">
           <p class="">Keterangan :</p>
