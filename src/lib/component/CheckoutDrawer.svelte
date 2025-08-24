@@ -79,7 +79,7 @@
         <div class="w-full bg-black rounded-2xl p-3 m-1 md:text-2xl">
           <label class="select w-[40%]">
             <span class="label">Name</span>
-            <select bind:value={namaWaiters} class="bg-white/20">
+            <select bind:value={namaWaiters} class="bg-white">
               {#each users as d}
               <option value={d.name}>{d.name}</option>
               {/each}
