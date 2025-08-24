@@ -98,7 +98,7 @@
 
           <div class="mt-2 sm:flex sm:items-center sm:gap-2">
             <div class="flex items-center gap-1 text-gray-500">
-              <p class="text-xs">category : {showData.category}</p>
+              <p class="text-xs">type : {showData.category}</p>
             </div>
           </div>
         </div>
@@ -108,6 +108,7 @@
           <div class="p-2 bg-gray-900 rounded-full flex justify-center items-center w-auto">
                   <button type="button" class="py-1 px-3 bg-red-500 rounded-full"
                     on:click={() => onValueChange(Math.max(1, Value - 1))}>-</button>
+                    lorem
         
                   <div class="flex justify-center items-center w-[20vw]">
                     <input class="text-2xl font-bold w-full text-center" type="number" bind:value={Value} min="1"
