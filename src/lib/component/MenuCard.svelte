@@ -35,7 +35,7 @@
       <div class="mask mask-star bg-yellow-500" aria-label="5 star" aria-current="true"></div>
     </div> -->
     <div class="w-full flex justify-between items-center">
-      <p class="text-2xl">Rp: <span class="text-yellow-500"></span></p>
+      <p class="text-2xl">Rp: <span class="text-yellow-500"> {item.price}</span></p>
       <div class="card-actions justify-end">
         <button class="btn bg-green-500 text-black uppercase" on:click={onClick}>pesan</button>
       </div>
