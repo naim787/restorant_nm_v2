@@ -113,7 +113,7 @@
                <h1 class="text-[10px]">RESERFASI :<input type="radio" name="radio-1" class="radio" value="RESERVASI" bind:group={OPSI}/></h1>
              </div>
         </div>
-        <div class="w- md:w-full bg-black rounded-2xl p-3">
+        <div class="w-8 md:w-full bg-black rounded-2xl p-3">
           <p class="">Keterangan :</p>
           <textarea class="bg-white w-full h-30 text-black rounded-2xl p-2" name="" id="">kete</textarea>
         </div>
