@@ -16,6 +16,6 @@
       bind:value={searchTerm}
       on:input={onInput}
     />
-    <Search class="p-2 rounded-md bg-yellow-500 text-black" size={}/>
+    <Search class="p-2 rounded-md bg-yellow-500 text-black" size={35}/>
   </div>
 {/if}
