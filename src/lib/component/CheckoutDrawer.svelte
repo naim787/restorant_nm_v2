@@ -73,20 +73,20 @@
         </div>
 
         <div class="w-83 md:w-full bg-black rounded-2xl p-3 m-1 md:text-2xl">Total Rp: <span class="text-green-500">{total}</span></div>
-        <div class="w-full bg-black rounded-2xl p-3 m-1 md:text-2xl">
-          <label class="select">
-            <span class="label">Name</span>
-            <select bind:value={namaWaiters}>
-              {#each users as d}
-              <option value={d.name}>{d.name}</option>
-              {/each}
-            </select>
-          </label>
-        </div>
-        <div class="w-83 md:w-full bg-black rounded-2xl p-3">
-          <p class="">Keterangan :</p>
-          <textarea class="bg-white w-75 md:w-[98%] h-30 text-black rounded-2xl p-2" name="" id="">kete</textarea>
-        </div>
+          <div class="w-full bg-black rounded-2xl p-3 m-1 md:text-2xl">
+            <label class="select w-">
+              <span class="label">Name</span>
+              <select bind:value={namaWaiters}>
+                {#each users as d}
+                <option value={d.name}>{d.name}</option>
+                {/each}
+              </select>
+            </label>
+          </div>
+          <div class="w-83 md:w-full bg-black rounded-2xl p-3">
+            <p class="">Keterangan :</p>
+            <textarea class="bg-white w-75 md:w-[98%] h-30 text-black rounded-2xl p-2" name="" id="">kete</textarea>
+          </div>
 
         <button
           class="btn bg-yellow-500 mt-3 w-80 md:w-full h-15"
