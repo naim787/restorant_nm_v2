@@ -92,7 +92,7 @@
                   <option value="">{String(i + 1).padStart(2, '0')}</option>
                 {/each}
                 <option value="">BUGKUS</option>
-                <option value="">RESERVASE</option>
+                <option value="">RESERVAS</option>
               </select>
             </label>
         </div>
