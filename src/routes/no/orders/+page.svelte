@@ -4,7 +4,7 @@
   import MenuCard from "$lib/component/MenuCard.svelte";
   import CheckoutDrawer from "$lib/component/CheckoutDrawer.svelte";
   import { onMount } from "svelte";
-  import Menu from "$lib/component/MenuModal.svelte";
+  import MenuM from "$lib/component/MenuModal.svelte";
   import Footer from '$lib/component/Footer.svelte';
   import NavPanel from '$lib/component/Nav_Panel.svelte';
   import { page } from '$app/stores';
@@ -171,7 +171,7 @@
   </div>
   
   <!-- highlight product -->
-  <Menu
+  <MenuM
     {showModal}
     {showData}
     {pajak}
