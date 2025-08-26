@@ -134,5 +134,4 @@
             stroke="#f3f4f6" 
             stroke-width="1"
           />
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat minima atque quasi inventore placeat iusto modi neque magni velit, molestias voluptatum, ullam impedit voluptatem non ut. Voluptates laborum exercitationem optio repudiandae corporis, cupiditate fugit enim corrupti voluptatum saepe libero ullam distinctio asperiores veniam, labore minima dignissimos reiciendis eligendi architecto itaque quasi doloribus. Quod voluptatibus corrupti itaque in voluptas amet quas veritatis mollitia alias soluta. Temporibus aliquam ipsa repudiandae itaque animi inventore similique veritatis, voluptatum, accusantium doloribus beatae, vitae libero veniam ipsum voluptas laudantium nulla illo illum fugit eveniet eos? Qui dolor atque tempore, voluptatibus est illum assumenda et odit eaque.
 </div>
