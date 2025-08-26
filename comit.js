@@ -2,61 +2,47 @@ import chokidar from 'chokidar';
 import simpleGit from 'simple-git';
 
 const git = simpleGit();
+let lastCommitTime = 0;
+const COMMIT_INTERVAL = 1 * 60 * 1000;
+const now = new Date();
 
-// Fungsi untuk mendapatkan pesan commit saat ini
 function getTimestampMessage() {
-    const now = new Date();
     return `Update: ${now.toLocaleString()}`;
 }
 
-// Cek apakah ada commit yang belum di-push
-async function pushPendingCommits() {
-    try {
-        const status = await git.status();
-        const log = await git.log(['@{u}..']); // Commit yang belum di-push
-
-        if (log.total > 0) {
-            console.log(`🔄 Ditemukan ${log.total} commit yang belum di-push. Melanjutkan push...`);
-            await git.push();
-            console.log('✅ Push berhasil.');
-        } else {
-            console.log('🟢 Tidak ada commit yang tertunda.');
-        }
-    } catch (error) {
-        console.error('❌ Gagal memeriksa commit tertunda:', error.message);
-    }
-}
-
-// Commit dan push jika ada perubahan
 async function commitAndPush() {
-    try {
-        const status = await git.status();
-        if (status.files.length === 0) {
-            console.log('🟢 Tidak ada perubahan. Tidak commit.');
-            return;
-        }
+    const status = await git.status();
+    if (status.files.length === 0) {
+        console.log('🟢 Tidak ada perubahan. Tidak commit.');
+        return;
+    }
 
-        console.log('📦 Melakukan add, commit, dan push...');
+    console.log('📦 Melakukan add, commit, dan push...');
+    try {
         await git.add('.');
         await git.commit(getTimestampMessage());
         await git.push();
+        lastCommitTime = Date.now();
         console.log('✅ Sukses commit dan push!');
     } catch (error) {
-        console.error('❌ Error saat git commit/push:', error.message);
+        console.error('❌ Error saat git commit/push:', error);
     }
 }
 
-// Watcher
+async function maybeCommit() {
+    const now = Date.now();
+    if (now - lastCommitTime >= COMMIT_INTERVAL) {
+        await commitAndPush();
+    } else {
+        const sisa = ((COMMIT_INTERVAL - (now - lastCommitTime)) / 1000).toFixed(1);
+        console.log(`⏳ Menunggu ${sisa} detik lagi sebelum commit berikutnya...`);
+    }
+}
+
 chokidar.watch('.', {
     ignored: /(^|[\/\\])\..|node_modules/,
     persistent: true
-}).on('change', (path) => {
-    console.log(`📁 Perubahan terdeteksi: ${path}`);
-    commitAndPush();
+}).on('all', (event, path) => {
+    console.log(`📁 Perubahan terdeteksi: ${path} (${event})`);
+    maybeCommit();
 });
-
-// Saat aplikasi dijalankan
-(async () => {
-    console.log('🚀 Menjalankan auto-commit...');
-    await pushPendingCommits();
-})();
