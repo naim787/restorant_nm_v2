@@ -120,6 +120,7 @@
 
     <!-- Chart Area -->
 
+
     
     <div class="relative h-64 mb-6">
       <svg class="w-full h-full" viewBox="0 0 600 200">
