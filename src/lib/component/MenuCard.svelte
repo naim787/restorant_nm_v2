@@ -26,7 +26,7 @@
     <img class="w-full h-60 object-cover" src={`http://${base}/${item.image_url}`} alt={item.name} loading="lazy" />
   </figure>
   <div class="p-5 bg-gray-900 rounded-b-xl">
-    <div class="flex -">
+    <div class="flex h-">
       <h2 class="card-title text-3xl uppercase">{item.name}</h2>
     </div>
     <!-- <div class="rating">
