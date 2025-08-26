@@ -38,7 +38,7 @@ async function commitAndPush() {
 
         console.log('📦 Melakukan add, commit, dan push...');
         await git.add('.');
-        await git.commit(getTimestampMessage()); // format waktu
+        await git.commit(getTimestampMessage());
         await git.push();
         console.log('✅ Sukses commit dan push!');
     } catch (error) {
