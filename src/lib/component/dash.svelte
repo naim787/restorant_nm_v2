@@ -133,14 +133,4 @@
             y2={200 - (y * 1.6)} 
             stroke="#f3f4f6" 
             stroke-width="1"
-          />
-          <text x="45" y={205 - (y *
-
-
-
-
-
-
-
-
-lorem
+          
