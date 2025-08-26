@@ -133,4 +133,4 @@
             y2={200 - (y * 1.6)} 
             stroke="#f3f4f6" 
             stroke-width="1"
-          
+          />
