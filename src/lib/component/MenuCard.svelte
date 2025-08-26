@@ -23,7 +23,7 @@
 
 <div class="card bg-base-100 w-70 shadow-sm h-auto">
   <figure>
-    <img class="w- h-60 object-cover" src={`http://${base}/${item.image_url}`} alt={item.name} loading="lazy" />
+    <img class="w-40 h-60 object-cover" src={`http://${base}/${item.image_url}`} alt={item.name} loading="lazy" />
   </figure>
   <div class="p-5 bg-gray-900 rounded-b-xl">
     <h2 class="card-title text-3xl uppercase">{item.name}</h2>
