@@ -3,7 +3,7 @@
   import "../../app.css"
 </script>
 
-<div class="w-[100vw] flex">
+<div class="w-[100vw] flex jus">
     <Table hoverable={true}>
       <TableHead class="bg-black">
         <TableHeadCell>Product name</TableHeadCell>
