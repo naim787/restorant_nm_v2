@@ -10,7 +10,7 @@
             <TableHeadCell>Product name</TableHeadCell>
             <TableHeadCell>Color</TableHeadCell>
             <TableHeadCell>Category</TableHeadCell>
-            <TableHeadCell></TableHeadCell>
+            <TableHeadCell>action</TableHeadCell>
             <TableHeadCell>
               <span class="sr-only">Edit</span>
             </TableHeadCell>
