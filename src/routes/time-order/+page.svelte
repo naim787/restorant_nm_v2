@@ -27,24 +27,6 @@
                 <a href="/tables" class="text-primary-600 dark:text-primary-500 font-medium hover:underline">Edit</a>
               </TableBodyCell>
             </TableBodyRow>
-            <TableBodyRow>
-              <TableBodyCell>Microsoft Surface Pro</TableBodyCell>
-              <TableBodyCell>White</TableBodyCell>
-              <TableBodyCell>Laptop PC</TableBodyCell>
-              <TableBodyCell>$1999</TableBodyCell>
-              <TableBodyCell>
-                <a href="/tables" class="text-primary-600 dark:text-primary-500 font-medium hover:underline">Edit</a>
-              </TableBodyCell>
-            </TableBodyRow>
-            <TableBodyRow>
-              <TableBodyCell>Magic Mouse 2</TableBodyCell>
-              <TableBodyCell>Black</TableBodyCell>
-              <TableBodyCell>Accessories</TableBodyCell>
-              <TableBodyCell>$99</TableBodyCell>
-              <TableBodyCell>
-                <a href="/tables" class="text-primary-600 dark:text-primary-500 font-medium hover:underline">Edit</a>
-              </TableBodyCell>
-            </TableBodyRow>
           </TableBody>
         </Table>
     </div>
