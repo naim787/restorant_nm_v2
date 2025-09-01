@@ -1,6 +1,6 @@
 <script>
   import { Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell } from "flowbite-svelte";
-  import ""
+  import "../"
 </script>
 
 <Table hoverable={true}>
