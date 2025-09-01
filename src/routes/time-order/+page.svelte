@@ -4,6 +4,7 @@
 </script>
 
 <div class="w-[100vw] flex justify-center">
+    <div class=""></div>
     <Table hoverable={true}>
       <TableHead class="bg-black">
         <TableHeadCell>Product name</TableHeadCell>
