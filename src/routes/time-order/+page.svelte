@@ -5,7 +5,7 @@
 
 <div class="w-[60vw]">
     <Table hoverable={true}>
-      <TableHead class="bg-">
+      <TableHead class="bg-black">
         <TableHeadCell>Product name</TableHeadCell>
         <TableHeadCell>Color</TableHeadCell>
         <TableHeadCell>Category</TableHeadCell>
