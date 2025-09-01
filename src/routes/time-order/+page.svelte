@@ -18,7 +18,7 @@
           </TableHead>
           <TableBody>
             <TableBodyRow>
-              <TableBodyCell>Apple MacBook Pro 17"</TableBodyCell>
+              <TableBodyCell>Apple MacBook Pro 17</TableBodyCell>
               <TableBodyCell>Apple MacBook Pro 17"</TableBodyCell>
               <TableBodyCell>Sliver</TableBodyCell>
               <TableBodyCell>Laptop</TableBodyCell>
