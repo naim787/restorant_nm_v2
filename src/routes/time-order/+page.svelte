@@ -8,7 +8,7 @@
         <Table hoverable={true}>
           <TableHead class="bg-black">
             <TableHeadCell>Product name</TableHeadCell>
-            <TableHeadCell>no</TableHeadCell>
+            <TableHeadCell>N</TableHeadCell>
             <TableHeadCell>Time</TableHeadCell>
             <TableHeadCell>Action</TableHeadCell>
             <TableHeadCell>
