@@ -7,7 +7,7 @@
     <div class="w-[60%]">
         <Table hoverable={true}>
           <TableHead class="bg-black">
-            <TableHeadCell>Name</TableHeadCell>
+            <TableHeadCell>Name-</TableHeadCell>
             <TableHeadCell>Product</TableHeadCell>
             <TableHeadCell>No</TableHeadCell>
             <TableHeadCell>Time</TableHeadCell>
