@@ -13,7 +13,7 @@
             <Input id="website-admin" placeholder="johndoe" class="w-100"/>
         </ButtonGroup>
     </div>
-    <div class="w-[60%]">
+    <div class="w-">
         <Table hoverable={true}>
           <TableHead class="bg-black">
             <TableHeadCell>Product</TableHeadCell>
