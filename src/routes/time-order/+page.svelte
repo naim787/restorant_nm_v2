@@ -21,7 +21,7 @@
             <TableBodyRow>
               <TableBodyCell>Apple MacBook Pro 17</TableBodyCell>
               <TableBodyCell>Rahel</TableBodyCell>
-              <TableBodyCell>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non repellendus explicabo error corrupti eius archite!</TableBodyCell>
+              <TableBodyCell>Lorem ipsum dolor sit amet consectetur adipisicing elit.</TableBodyCell>
               <TableBodyCell>Sliver</TableBodyCell>
               <TableBodyCell>Laptop</TableBodyCell>
               <TableBodyCell>$2999</TableBodyCell>
