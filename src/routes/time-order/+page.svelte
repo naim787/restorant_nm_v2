@@ -4,7 +4,6 @@
 </script>
 
 <div class="w-[60vw]">
-
     <Table hoverable={true}>
       <TableHead>
         <TableHeadCell>Product name</TableHeadCell>
