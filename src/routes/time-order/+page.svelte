@@ -10,7 +10,7 @@
             <!-- <UserCircleSolid class="h-4 w-4 text-gray-500 dark:text-gray-400" /> -->
              hallo
             </InputAddon>
-            <Input id="website-admin" placeholder="johndoe" class="w-[50]"/>
+            <Input id="website-admin" placeholder="johndoe" class="w-[50vw]"/>
         </ButtonGroup>
     </div>
     <div class="w-[60%]">
