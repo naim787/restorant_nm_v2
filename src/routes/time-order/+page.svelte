@@ -9,6 +9,7 @@
           <TableHead class="bg-black">
               <TableHeadCell>Product</TableHeadCell>
               <TableHeadCell>Name-Waiters</TableHeadCell>
+              <TableHeadCell>Name-Waiters</TableHeadCell>
             <TableHeadCell>No</TableHeadCell>
             <TableHeadCell>Time</TableHeadCell>
             <TableHeadCell>Action</TableHeadCell>
