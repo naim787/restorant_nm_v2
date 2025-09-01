@@ -3,7 +3,7 @@
   import "../../app.css"
 </script>
 
-<div class="w-[100vw] flex flex-col items">
+<div class="w-[100vw] flex flex-col items-center ju">
     <div class="">
         <ButtonGroup class="w-full">
             <InputAddon>
