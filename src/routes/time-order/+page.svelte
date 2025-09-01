@@ -21,6 +21,7 @@
             <TableBodyRow>
               <TableBodyCell>Apple MacBook Pro 17</TableBodyCell>
               <TableBodyCell>Rahel</TableBodyCell>
+              <TableBodyCell>Rahel</TableBodyCell>
               <TableBodyCell>Sliver</TableBodyCell>
               <TableBodyCell>Laptop</TableBodyCell>
               <TableBodyCell>$2999</TableBodyCell>
