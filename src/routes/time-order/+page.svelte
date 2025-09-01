@@ -10,12 +10,12 @@
               <TableHeadCell>Product</TableHeadCell>
               <TableHeadCell>Name-Waiters</TableHeadCell>
               <TableHeadCell>description</TableHeadCell>
-            <TableHeadCell>No</TableHeadCell>
-            <TableHeadCell>Time</TableHeadCell>
-            <TableHeadCell>Action</TableHeadCell>
-            <TableHeadCell>
-              <span class="sr-only">Edit</span>
-            </TableHeadCell>
+                <TableHeadCell>No</TableHeadCell>
+                <TableHeadCell>Time</TableHeadCell>
+                <TableHeadCell>Action</TableHeadCell>
+                <TableHeadCell>
+                <span class="sr-only">Edit</span>
+                </TableHeadCell>
           </TableHead>
           <TableBody>
             <TableBodyRow>
