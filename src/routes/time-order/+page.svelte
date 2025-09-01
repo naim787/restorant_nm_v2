@@ -3,7 +3,9 @@
   import "../../app.css"
 </script>
 
-<div class="w-[60vw]"></div>
+<div class="w-[60vw]">
+    
+</div>
 <Table hoverable={true}>
   <TableHead>
     <TableHeadCell>Product name</TableHeadCell>
