@@ -4,7 +4,9 @@
 </script>
 
 <div class="w-[100vw] flex justify-center">
-    <div class=""></div>
+    <div class="">
+        
+    </div>
     <div class="w-[60%]">
         <Table hoverable={true}>
           <TableHead class="bg-black">
