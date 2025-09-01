@@ -14,7 +14,7 @@
         </ButtonGroup>
     </div>
     <div class="w-full">
-        <Table hoverable={true} class>
+        <Table hoverable={true} class="text-white">
           <TableHead class="bg-gray-900">
             <TableHeadCell>Product</TableHeadCell>
             <TableHeadCell>Name-Waiters</TableHeadCell>
