@@ -27,7 +27,7 @@
             </TableHeadCell>
           </TableHead>
           <TableBody>
-            <TableBodyRow class="bg-gray-400">
+            <TableBodyRow class="bg-gray-500">
               <TableBodyCell>Apple MacBook Pro 17</TableBodyCell>
               <TableBodyCell>Rahel</TableBodyCell>
               <TableBodyCell>Lorem ipsum dolor sit amet </TableBodyCell>
