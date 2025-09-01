@@ -5,7 +5,6 @@
 
 <div class="w-[100vw] flex justify-center">
     <div class="w-[60%]">
-
         <Table hoverable={true}>
           <TableHead class="bg-black">
             <TableHeadCell>Product name</TableHeadCell>
