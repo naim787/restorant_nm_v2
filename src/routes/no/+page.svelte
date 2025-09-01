@@ -64,7 +64,7 @@
   }
 </style>
 
-<div class="bg-[#cfddea] text-[#0f0f0f] antialiased">
+<div class="bg-[radial-gradient(#000_1px,transparent_0)] [background-size:20px_20px] text-[#0f0f0f] antialiased">
   <div class="fixed top-0 w-full h-screen bg-cover bg-center -z-10" style="background-image: url('https://cdn.midjourney.com/a55c302e-35a2-40d2-8ae8-1f2bc7f74192/0_0.png?w=800&q=80');"></div>
   
   <header class="py-6 animate-fade-in">

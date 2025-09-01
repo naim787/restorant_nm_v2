@@ -6,16 +6,16 @@
 </script>
 
 {#if loadingMenu}
-  <div class="skeleton w-65 h-10 rounded-md"></div>
+  <div class="skeleton w-100 h-10 rounded-md"></div>
 {:else}
-  <div class="w-62 h-10 rounded-md flex justify-between items-center">
+  <div class="w-92 h-10 rounded-md flex justify-between items-center">
     <input
       type="text"
-      class="bg-white w-50 h-10 text-black rounded-md p-2"
+      class="bg-white w-80 h-10 text-black rounded-md p-2"
       placeholder="Search Menu"
       bind:value={searchTerm}
       on:input={onInput}
     />
-    <Search class="p-2 rounded-md bg-yellow-500 text-black" size={30}/>
+    <Search class="p-2 rounded-r-md bg-yellow-500 text-black" size={40}/>
   </div>
 {/if}

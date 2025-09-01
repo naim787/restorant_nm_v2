@@ -85,6 +85,7 @@
               <label class="select w-full">
                 <span class="label bg-black">Name</span>
                 <select bind:value={namaWaiters}>
+                  <option value=""></option>
                   {#each users as d}
                   <option value={d.name}>{d.name}</option>
                   {/each}
@@ -92,22 +93,20 @@
               </label>
   
               <!-- OPSI -->
-               {#if OPSI === "NO" || OPSI === "RESERVASI"}
                 <label class="select w-full">
                   <span class="label bg-black">NO</span>
                   <select>
+                    <option value=""></option>
+                    <option value="">none</option>
                     {#each Array.from({ length: 100 }) as _, i}
                       <option value="">{String(i + 1).padStart(2, '0')}</option>
                     {/each}
                   </select>
                 </label>
-
-                {:else}
-                <input type="text" class="w-full h-13 bg-gray-800 p-2 rounded-md" placeholder="nama atau no meja pemesan..">
-               {/if}
           </div>
             <!-- opsi pesanan -->
              <div class="flex w-full justify-evenly items-center mt-2">
+              <h1 class="text-yellow-500">TYPE </h1>
                <h1 class="text-[10px]">NO        :<input type="radio" name="radio-1" class="radio" value="NO" bind:group={OPSI}/></h1>
                <h1 class="text-[10px]">BUGKUS    :<input type="radio" name="radio-1" class="radio" value="BUGKUS" bind:group={OPSI}/></h1>
                <h1 class="text-[10px]">RESERFASI :<input type="radio" name="radio-1" class="radio" value="RESERVASI" bind:group={OPSI}/></h1>
