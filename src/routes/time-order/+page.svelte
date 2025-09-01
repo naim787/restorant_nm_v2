@@ -3,6 +3,7 @@
   import "../../app.css"
 </script>
 
+<div class=""></div>
 <Table hoverable={true}>
   <TableHead>
     <TableHeadCell>Product name</TableHeadCell>
