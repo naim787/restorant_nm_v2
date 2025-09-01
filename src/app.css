@@ -1,9 +1,10 @@
 @import "tailwindcss";
+@plugin 'flowbite/plugin';
+
 @plugin "daisyui" {
     themes: dark --default;
 }
 
-@plugin 'flowbite/plugin';
 
 @custom-variant dark (&:where(.dark, .dark *));
 
