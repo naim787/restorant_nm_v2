@@ -15,7 +15,7 @@
     </div>
     <div class="w-full">
         <Table hoverable={true}>
-          <TableHead class="bg-black rounded">
+          <TableHead class="bg-black rounded-t-">
             <TableHeadCell>Product</TableHeadCell>
             <TableHeadCell>Name-Waiters</TableHeadCell>
             <TableHeadCell>description</TableHeadCell>
