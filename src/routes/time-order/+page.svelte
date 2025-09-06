@@ -12,7 +12,7 @@
 
 
   // data orderan
-  let data
+  let data;
 
   onMount(async () => {
      try {
