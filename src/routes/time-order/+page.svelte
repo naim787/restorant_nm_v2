@@ -38,8 +38,8 @@
               <TableBodyCell>00:00</TableBodyCell>
               <!-- <TableBodyCell>$2999</TableBodyCell> -->
               <TableBodyCell>
-                <Button onclick={() => (defaultModal = true)} class="text-yellow-600 dark:text-yellow-500 font-medium hover:underline p-2 rounded-full bg-yellow-500/10 border border-yellow-500">LIHAT</Button>
-
+                <Button onclickerline p-2 rounded-full bg-yellow-500/10 border border-yellow-500">LIHAT</Button>
+={() => (defaultModal = true)} class="text-yellow-600 dark:text-yellow-500 font-medium hover:und
               </TableBodyCell>
             </TableBodyRow>
           </TableBody>
