@@ -46,8 +46,7 @@
         </Table>
     </div>
 </div>
-
-<Modal form bind:open={defaultModal} onaction={({ action }) => alert(`berhasil men" ${action}"`)} class="bg-black text-white">
+${action}"`)} class="bg-black text-white">
 
   <h1 class="text-2xl mb-[2vh]">Lorem ipsum dolor sit amet.</h1>
   
