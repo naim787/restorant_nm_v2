@@ -10,6 +10,9 @@
 
   let defaultModal = $state(false);
 
+
+  let data
+
   onMount(async () => {
      try {
       // ✅ Perbaiki URL fetch
