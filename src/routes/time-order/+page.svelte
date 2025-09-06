@@ -53,7 +53,7 @@
           </TableHead>
           <TableBody>
             <TableBodyRow class="bg-gray-600 text-white hover:bg-tranparent">
-              {#each  as }
+              {#each data as }
                 
               {/each}
               <TableBodyCell>Rahel</TableBodyCell>
