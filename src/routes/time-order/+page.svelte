@@ -47,7 +47,7 @@
     </div>
 </div>
 
-<Modal title="Terms of Service" form bind:open={defaultModal} onaction={({ action }) => alert(`Handle "${action}"`)} >
+<Modal title="Terms of Service" form bind:open={defaultModal} onaction={({ action }) => alert(`Handle "${action}"`)} c>
   
   {#snippet footer()}
     <Button type="submit" value="success">I accept</Button>
