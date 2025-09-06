@@ -3,7 +3,10 @@
   import "../../app.css";
 
 
-  
+  // ✅ Perbaiki format base URL
+  const base = import.meta.env.VITE_API_BASE || 'localhost';
+  // Remove http:// or https:// if present
+  const cleanBase = base.replace(/^https?:\/\//, '');
 
   let defaultModal = $state(false);
 
