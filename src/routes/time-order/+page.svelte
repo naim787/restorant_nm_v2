@@ -17,7 +17,7 @@
   onMount(async () => {
      try {
       // ✅ Perbaiki URL fetch
-      const res = await fetch(`http://${cleanBase}/menu`);
+      const res = await fetch(`http://${cleanBase}/orders`);
       if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
 
       let result = await res.json();
