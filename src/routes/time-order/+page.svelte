@@ -38,7 +38,7 @@
               <TableBodyCell>00:00</TableBodyCell>
               <!-- <TableBodyCell>$2999</TableBodyCell> -->
               <TableBodyCell>
-                <Button onclick={() => (defaultModal = true)} class=>Default modal</Button>
+                <Button onclick={() => (defaultModal = true)} class="">Default modal</Button>
 
               </TableBodyCell>
             </TableBodyRow>
