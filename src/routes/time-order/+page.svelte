@@ -47,7 +47,7 @@
     </div>
 </div>
 
-<Modal form bind:open={defaultModal} onaction={({ action }) => alert(`Yakin mau "${action}"`)} class="bg-black text-white">
+<Modal form bind:open={defaultModal} onaction={({ action }) => alert(`ber"${action}"`)} class="bg-black text-white">
 
   <h1 class="text-2xl mb-[2vh]">Lorem ipsum dolor sit amet.</h1>
   
