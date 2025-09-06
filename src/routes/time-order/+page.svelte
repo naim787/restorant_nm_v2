@@ -1,6 +1,8 @@
 <script>
   import { Table, TableBody, TableBodyCell, TableBodyRow, TableHead, TableHeadCell,Input, InputAddon, ButtonGroup, Button, Modal, P } from "flowbite-svelte";
-  import "../../app.css"
+  import "../../app.css";
+
+  
 </script>
 
 <div class="w-[100vw] h-[100vh] flex flex-col items-center justify-start p-4 bg-black">
