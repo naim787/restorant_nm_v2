@@ -54,7 +54,7 @@
           <TableBody>
             <TableBodyRow class="bg-gray-600 text-white hover:bg-tranparent">
               {#each data as dat, index}
-                <TableBodyCell>da</TableBodyCell>
+                <TableBodyCell>dat</TableBodyCell>
                 <TableBodyCell>
                   <Button onclick={() => (defaultModal = true)} class="text-yellow-600 dark:text-yellow-500 font-medium p-2 rounded-full bg-yellow-500/10 border border-yellow-500 hover:bg-yellow-500/20">LIHAT</Button>
 
