@@ -55,6 +55,5 @@
   <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus dolor quia dolorum neque aliquid, magnam at fuga. Aspernatur quidem dicta cumque libero ad ducimus distinctio odit ipsam minus vel obcaecati perspiciatis quod, necessitatibus numquam minima laborum qui exercitationem ea, voluptas blanditiis. Sed, tempore. Non recusandae nulla nobis quia eum similique labore quo assumenda sint ex. Nisi aliquam nemo voluptatibus expedita?</p>
   {#snippet footer()}
     <Button type="submit" value="hapus">Hapus</Button>
-    <Button type="submit" value="decline" color="alternative">Decline</Button>
   {/snippet}
 </Modal>
