@@ -55,7 +55,7 @@
           <TableBody>
             {#each data as dat}
             <TableBodyRow class="bg-gray-600 text-white hover:bg-tranparent">
-              <TableBodyCell>Rahel</TableBodyCell>
+              <TableBodyCell></TableBodyCell>
               <TableBodyCell>Apple MacBook Pro 17</TableBodyCell>
               <TableBodyCell>Lorem ipsum dolor sit amet </TableBodyCell>
               <TableBodyCell>1</TableBodyCell>
