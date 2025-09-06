@@ -40,6 +40,7 @@
               <TableBodyCell>
                 <a href="/tables" class="text-primary-600 dark:text-primary-500 font-medium hover:underline p-2 rounded-full bg-red-500/10 border border-red-500">Delete</a>
                 <Button onclick={() => (defaultModal = true)}>Default modal</Button>
+
               </TableBodyCell>
             </TableBodyRow>
           </TableBody>
