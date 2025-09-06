@@ -38,7 +38,6 @@
               <TableBodyCell>00:00</TableBodyCell>
               <!-- <TableBodyCell>$2999</TableBodyCell> -->
               <TableBodyCell>
-                <a href="/tables" class="">Delete</a>
                 <Button onclick={() => (defaultModal = true)}>Default modal</Button>
 
               </TableBodyCell>
