@@ -47,7 +47,7 @@
     </div>
 </div>
 
-<Modal title="Terms of Service" form bind:open={defaultModal} onaction={({ action }) => alert(`Handle "${action}"`)} class="bg-black ">
+<Modal title="Terms of Service" form bind:open={defaultModal} onaction={({ action }) => alert(`Handle "${action}"`)} class="bg-black text-w">
   
   <p class=""></p>
   {#snippet footer()}
