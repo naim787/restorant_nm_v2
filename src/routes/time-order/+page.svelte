@@ -11,7 +11,7 @@
   let defaultModal = $state(false);
 
 
-  let data
+  let data;
 
   onMount(async () => {
      try {
