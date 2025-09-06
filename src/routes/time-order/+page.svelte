@@ -66,7 +66,6 @@
 
               </TableBodyCell>
             </TableBodyRow>
-              
             {/each}
           </TableBody>
         </Table>
