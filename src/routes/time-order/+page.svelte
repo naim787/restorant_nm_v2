@@ -56,7 +56,7 @@
             {#each data as dat}
             <TableBodyRow class="bg-gray-600 text-white hover:bg-tranparent">
               <TableBodyCell>{dat.id}</TableBodyCell>
-              <TableBodyCell>{dat.waiter}</TableBodyCell>
+              <TableBodyCell>{dat.waiter_name}</TableBodyCell>
               <TableBodyCell>{dat.time}</TableBodyCell>
               <TableBodyCell>1</TableBodyCell>
               <TableBodyCell>00:00</TableBodyCell>
