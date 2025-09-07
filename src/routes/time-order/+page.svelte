@@ -11,8 +11,8 @@
   let defaultModal = $state(false);
 
 
-  // data orderan
-  let data;
+  // data orderlet data = $state([]);
+let data;
 
   onMount(async () => {
      try {
