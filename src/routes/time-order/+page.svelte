@@ -44,7 +44,7 @@
           <TableHead class="bg-gray-900 text-white">
             <TableHeadCell>Id</TableHeadCell>
             <TableHeadCell>Name</TableHeadCell>
-            <TableHeadCell>description</TableHeadCell>
+            <TableHeadCell></TableHeadCell>
             <TableHeadCell>Table</TableHeadCell>
             <TableHeadCell>Time</TableHeadCell>
             <TableHeadCell>Action</TableHeadCell>
