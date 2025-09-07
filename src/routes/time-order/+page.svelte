@@ -43,7 +43,7 @@
         <Table hoverable={true} >
           <TableHead class="bg-gray-900 text-white">
             <TableHeadCell>Id</TableHeadCell>
-            <TableHeadCell>Namae</TableHeadCell>
+            <TableHeadCell>Name</TableHeadCell>
             <TableHeadCell>description</TableHeadCell>
             <TableHeadCell>Table</TableHeadCell>
             <TableHeadCell>Time</TableHeadCell>
