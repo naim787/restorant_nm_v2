@@ -58,7 +58,7 @@
               <TableBodyCell>{dat.id}</TableBodyCell>
               <TableBodyCell>{dat.waiter_name}</TableBodyCell>
               <TableBodyCell>{dat.time}</TableBodyCell>
-              <TableBodyCell>1</TableBodyCell>
+              <TableBodyCell>{dat.table}</TableBodyCell>
               <TableBodyCell>00:00</TableBodyCell>
               <!-- <TableBodyCell>$2999</TableBodyCell> -->
               <TableBodyCell>
