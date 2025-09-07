@@ -22,7 +22,7 @@
 
       let result = await res.json();
       data = result.data;
-      data = [...dat]
+      data = [...data, ]
     } catch (error) {
       console.error("❌ Error fetching menu:", error);
     }
