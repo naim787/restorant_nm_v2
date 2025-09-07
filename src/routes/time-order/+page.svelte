@@ -42,7 +42,7 @@
     <div class="w-full p-2">
         <Table hoverable={true} >
           <TableHead class="bg-gray-900 text-white">
-            <TableHeadCell>Name</TableHeadCell>
+            <TableHeadCell>Id</TableHeadCell>
             <TableHeadCell>Product</TableHeadCell>
             <TableHeadCell>description</TableHeadCell>
             <TableHeadCell>Table</TableHeadCell>
