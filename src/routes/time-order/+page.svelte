@@ -14,7 +14,6 @@
   // data orderan
   let data = $state([]);
 
-
   onMount(async () => {
      try {
       // ✅ Perbaiki URL fetch
