@@ -12,7 +12,8 @@
 
 
   // data orderan
-  let data;
+  let data = $state([]);
+
 
   onMount(async () => {
      try {
