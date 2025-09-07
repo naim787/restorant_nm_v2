@@ -21,7 +21,7 @@
       if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
 
       let result = await res.json();
-      data = [...data, result.data;]
+      data = [...data, result.data]
     } catch (error) {
       console.error("❌ Error fetching menu:", error);
     }
