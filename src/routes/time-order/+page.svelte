@@ -46,7 +46,6 @@
             <TableHeadCell>Name</TableHeadCell>
             <TableHeadCell>time</TableHeadCell>
             <TableHeadCell>Table</TableHeadCell>
-            <TableHeadCell>Time</TableHeadCell>
             <TableHeadCell>Action</TableHeadCell>
             <!-- <TableHeadCell>
             <span class="sr-only">Edit</span>
