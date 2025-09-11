@@ -75,7 +75,7 @@
   <h1 class="text-2xl mb-[2vh]">Lorem ipsum dolor sit amet.</h1>
   
 
-  <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus dolor quia dolorum neque aliquid, magnam at fuga. Aspernatur quidem dicta cumque libero ad ducimus distinctio odit ipsam minus vel obcaecati perspiciatis quod, necessitatibus numquam minima laborum qui exercitationem ea, voluptas blanditiis. Sed, tempore. Non recusandae nulla nobis quia eum similique labore quo assumenda sint ex. Nisi aliquam nemo voluptatibus expedita?</p>
+  <p class="">Lorem, ipsum dolor sit amet consectetur adipisicing</p>
   {#snippet footer()}
     <Button type="submit" value="hapus">Hapus</Button>
   {/snippet}
