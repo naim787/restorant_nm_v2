@@ -1,5 +1,5 @@
 <script>
-  import NavPanel from "$lib/component/Nav_Panel.svelte";
+   import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from "flowbite-svelte";
 </script>
 
 <NavPanel />
