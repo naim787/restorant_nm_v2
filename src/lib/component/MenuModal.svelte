@@ -41,7 +41,6 @@
 
 {#if showModal}
   <div class="modal modal-open backdrop-blur-3xl" role="dialog">
-    
       <article class="rounded-xl bg-black shadow shadow-white/20 modal-box ">
         <button class="absolute top-0 right-0 bg-transparent text-red-500" on:click={onClose}>
           <CircleX size={40}/>
