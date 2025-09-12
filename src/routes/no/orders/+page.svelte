@@ -98,7 +98,8 @@
     if (socket && socket.readyState === WebSocket.OPEN && checkoutData.length > 0 ) {
       if ( namaWaiters == "") {
         alert("❌ mohon masukan dulu nama waiters!!")
-      } else {
+      } 
+      else {
         // Masukkan total ke setiap objek ordersArray
         const orderArray = checkoutData.map(item => ({
             products_id: item.products.id,
