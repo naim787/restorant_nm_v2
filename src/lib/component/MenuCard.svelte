@@ -2,6 +2,15 @@
   export let item;
   export let onClick;
   const base = import.meta.env.VITE_API_BASE || '';
+
+  / Fungsi untuk memangkas deskripsi
+  function truncateDescription(description, maxLength = 15) {
+    if (description.length <= maxLength) {
+      return description;
+    } else {
+      return description.slice(0, maxLength) + '...';
+    }
+  }
 </script>
 
 <div class="card bg-base-100 w-100 shadow-sm h-auto">
