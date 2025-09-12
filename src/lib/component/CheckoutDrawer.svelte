@@ -29,12 +29,12 @@
   let no ;
   let type ;
 
-    onMount(async () => {
-      const res = await fetch(`http://${base}/users`);
-      let result = await res.json();
-      
-      users = result.data
-    });
+  onMount(async () => {
+    const res = await fetch(`http://${base}/users`);
+    let result = await res.json();
+    
+    users = result.data
+  });
 
   $: dispatch("waitersChange", namaWaiters);
 </script>
