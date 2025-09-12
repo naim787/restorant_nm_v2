@@ -19,9 +19,9 @@
     ? checkoutData.reduce((acc, item) => acc + item.subtotal, 0)
     : 0;
     
-    // kirim total ke parent setiap kali berubah
+  // kirim total ke parent setiap kali berubah
   $: dispatch("totalChange", total);
-  
+
   //  api data uses
   let users;
 
