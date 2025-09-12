@@ -164,7 +164,6 @@
       on:totalChange={(e) => totalFromDrawer = e.detail}
       on:formName={(e) => namaWaiters = e.detail}
       on:formNo={(e) => formNo = e.detail}
-      on:formType={(e) => formType = e.detail}
       on:formOpsi={(e) => formOpsi = e.detail}
       />
   </div>
