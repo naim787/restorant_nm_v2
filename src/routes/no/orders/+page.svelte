@@ -113,8 +113,7 @@
           // object pembugkus pesanan websoket
           const ordersDone = {
             product_orders : orderArray,
-            table_id: formNo,
-  let formOpsi;
+            table_id: formNo,formOpsi;
             opsi : 
             waiter_name: namaWaiters,
             time: tanggal +"/"+ waktu,
