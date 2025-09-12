@@ -41,45 +41,7 @@
 
 {#if showModal}
   <div class="modal modal-open backdrop-blur-3xl" role="dialog">
-      
-      <!-- <button class="absolute top-0 right-0 bg-transparent text-red-500" on:click={onClose}>
-        <CircleX size={40}/>
-      </button>
-
-      <img class="w-[100%] absolute top-0 h-60 object-cover z-[-5]" src={`${base}${showData.image_url}`} alt={showData.name} loading="lazy" />
-
-      <div class="shadow-[0_-50px_40px_-0px_rgba(255,255,255,100)]">
-        <div class="p-3 border-b-2 border-dashed border-white mt-[45%]">
-          <h3 class="font-bold text-3xl">{showData.name}</h3>
-          <h1>pajak : <span class="text-green-500">{pajak}%</span></h1>
-          <h1>discount : <span class="text-green-500">{showData.discount}%</span></h1>
-          <h1>product : Rp <span class="text-green-500">{showData.price}</span></h1>
-        </div>
-  
-        <h1 class="text-2xl p-3 my-2 border-b-2 border-dashed border-white">Rp: <span class="text-green-500">{subtotal}</span></h1>
-  
-        <div class="w-full h-20 flex justify-center items-center">
-          <div class="p-2 bg-gray-900 rounded-full flex justify-center items-center">
-            <button type="button" class="py-2 px-4 bg-red-500 rounded-full"
-              on:click={() => onValueChange(Math.max(1, Value - 1))}>-</button>
-  
-            <div class="mx-2 py-2 px-5">
-              <input class="w-15 text-center" type="number" bind:value={Value} min="1"
-                on:input={e => onValueChange(Math.max(1, +e.target.value))} />
-            </div>
-  
-            <button type="button" class="py-2 px-4 bg-green-500 rounded-full"
-              on:click={() => onValueChange(Value + 1)}>+</button>
-          </div>
-        </div>
-  
-        <div class="w-full h-20 flex justify-center items-center">
-          <button class="w-60 h-12 rounded-md bg-green-500 flex" on:click={onCheckout}>
-            <h1 class="text-2xl m-auto">Checkout</h1>
-          </button>
-        </div>
-      </div> -->
-
+    
       <article class="rounded-xl bg-black shadow shadow-white/20 modal-box ">
         <button class="absolute top-0 right-0 bg-transparent text-red-500" on:click={onClose}>
           <CircleX size={40}/>
