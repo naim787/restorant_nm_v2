@@ -1,5 +1,5 @@
 export function ConfigurateData() {
     let data = {
-        name : "RM "
+        name : "RM TEDU MA"
     }
 }
