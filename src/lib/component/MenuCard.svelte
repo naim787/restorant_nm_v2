@@ -21,7 +21,7 @@
     <div class="flex items-start h-10">
       <h2 class="card-title text-3xl uppercase">{item.name}</h2>
     </div>
-    <div class="w-full flex flex-col justify-between items-center">
+    <div class="w-full flex flex-col justify-start items-center">
       <p class="">{truncateDescription(item.description)}</p>
       <p class="text-2xl">Rp: <span class="text-yellow-400">{item.price}</span></p>
       <div class="card-actions justify-end">
