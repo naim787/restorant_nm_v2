@@ -44,6 +44,7 @@
            <h1 class="text-white">Orders</h1>
            <li><a class="text-gray-300" href="/ceker">Ceker</a></li>
            <li><a class="text-gray-300" href="/time-order">Status Order</a></li>
+           <li><a class="text-gray-300" href="/time-order">Status Order</a></li>
          </div>
       </ul>
     </div>
