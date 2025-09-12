@@ -1,6 +1,6 @@
 <script>
   import "../../../app.css"
-  import SearchBar from "$lib/component/SearchBar.svelte";
+  // import SearchBar from "$lib/component/SearchBar.svelte";
   import MenuCard from "$lib/component/MenuCard.svelte";
   import CheckoutDrawer from "$lib/component/CheckoutDrawer.svelte";
   import { onMount } from "svelte";
