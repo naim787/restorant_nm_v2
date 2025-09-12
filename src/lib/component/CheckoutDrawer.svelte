@@ -107,9 +107,9 @@
             <!-- opsi pesanan -->
              <div class="flex w-full justify-evenly items-center mt-2">
               <h1 class="text-yellow-500">TYPE </h1>
-               <h1 class="text-[10px]">NO        :<input re type="radio" name="radio-1" class="" value="NO" bind:group={OPSI}/></h1>
-               <h1 class="text-[10px]">BUGKUS    :<input re type="radio" name="radio-1" class="" value="BUGKUS" bind:group={OPSI}/></h1>
-               <h1 class="text-[10px]">RESERFASI :<input re type="radio" name="radio-1" class="" value="RESERVASI" bind:group={OPSI}/></h1>
+               <h1 class="text-[10px]">NO        :<input required type="radio" name="radio-1" class="" value="NO" bind:group={OPSI}/></h1>
+               <h1 class="text-[10px]">BUGKUS    :<input required type="radio" name="radio-1" class="" value="BUGKUS" bind:group={OPSI}/></h1>
+               <h1 class="text-[10px]">RESERFASI :<input required type="radio" name="radio-1" class="" value="RESERVASI" bind:group={OPSI}/></h1>
              </div>
         </div>
         <div class="w-78 md:w-full bg-black rounded-2xl p-3">
