@@ -36,5 +36,4 @@
       </Button>
     </div>
   </Card>
-  <Toggle bind:checked={vCard} class="italic dark:text-gray-500">Reverse</Toggle>
 </div>
