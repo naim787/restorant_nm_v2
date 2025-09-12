@@ -30,7 +30,7 @@
     </a>
   <div class="px-5 pb-5">
     <a href="/">
-      <h5 class="text-xl font-semibold tracking-tight dark:text-white">A</a>
+      <h5 class="text-xl font-semibold tracking-tight dark:text-white"></a>
     <Rating rating={4} size={24} class="mt-2.5 mb-5">
       {#snippet text()}
         <Badge class="ms-3">4</Badge>
