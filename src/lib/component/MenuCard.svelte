@@ -31,7 +31,6 @@
   <div class="px-5 pb-5">
     <a href="/">
     <h5 class="text-3xl font-bold font-semibold tracking-tight dark:text-white">{item.name}
-      
     </a>
     <Rating rating={5} size={24} class="mb-5">
       {#snippet text()}
