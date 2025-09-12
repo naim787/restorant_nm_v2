@@ -3,7 +3,7 @@
   import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from "flowbite-svelte";
   import ConfigurateData from "$lib/component/conf.js";
   import { onMount } from "svelte";
-  onMount(async)
+  onMount(async )
   let data = ConfigurateData();
 </script>
 
