@@ -98,31 +98,31 @@
       if ( namaWaiters == "") {
         alert("mohon masukan dulu nama waiters!!")
       } else {
+        // Masukkan total ke setiap objek ordersArray
+        const orderArray = checkoutData.map(item => ({
+            products_id: item.products.id,
+            products_name: item.products.name,
+            product_price: item.products.price,
+            value : item.value,
+            total : item.subtotal,
+          }));
+          
+          // object pembugkus pesanan websoket
+          const ordersDone = {
+            product_orders : orderArray,
+            table_id: noTABLE,
+            waiter_name: namaWaiters,
+            time: tanggal +"/"+ waktu,
+            status: "pendig",
+            total: totalFromDrawer,
+          }
+  
         
-      }
-      // Masukkan total ke setiap objek ordersArray
-      const orderArray = checkoutData.map(item => ({
-          products_id: item.products.id,
-          products_name: item.products.name,
-          product_price: item.products.price,
-          value : item.value,
-          total : item.subtotal,
-        }));
-        
-        // object pembugkus pesanan websoket
-        const ordersDone = {
-          product_orders : orderArray,
-          table_id: noTABLE,
-          waiter_name: namaWaiters,
-          time: tanggal +"/"+ waktu,
-          status: "pendig",
-          total: totalFromDrawer,
-        }
+        socket.send(JSON.stringify(ordersDone));
+        checkoutData = [];
+        // console.log("📤 Sent orders:", ordersDone);
 
-      
-      socket.send(JSON.stringify(ordersDone));
-      checkoutData = [];
-      // console.log("📤 Sent orders:", ordersDone);
+      }
     } else {
       if (!socket || socket.readyState !== WebSocket.OPEN) {
         console.warn("⚠️ WebSocket belum siap. ReadyState:", socket?.readyState);
