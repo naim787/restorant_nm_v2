@@ -8,10 +8,8 @@
 
   const dispatch = createEventDispatcher();
 
-  // opsi
-  let  OPSI = "NO"
-
-
+  
+  
   const base = import.meta.env.VITE_API_BASE || '';
   let total = 0;
 
@@ -28,6 +26,8 @@
   let namaWaiters;
   let formNo ;
   let formType ;
+  // opsi
+  let  OPSI = "NO"
 
   onMount(async () => {
     const res = await fetch(`http://${base}/users`);
