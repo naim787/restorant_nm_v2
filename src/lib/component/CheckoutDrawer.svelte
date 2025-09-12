@@ -95,7 +95,7 @@
               <!-- OPSI -->
                 <label class="select w-full">
                   <span class="label bg-black">NO</span>
-                  <select>
+                  <select required>
                     <option value=""></option>
                     <option value="">none</option>
                     {#each Array.from({ length: 100 }) as _, i}
