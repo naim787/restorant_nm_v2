@@ -43,8 +43,8 @@
          <div class="p-2 bg-gray-900 rounded-2xl">
            <h1 class="text-white">Orders Panel</h1>
            <li><a class="text-gray-300" href="/time-order">Set Oders</a></li>
-           <li><a class="text-gray-300" href="/ceker">Ceker</a></li>
            <li><a class="text-gray-300" href="/time-order">Status Order</a></li>
+           <li><a class="text-gray-300" href="/ceker">Ceker</a></li>
          </div>
       </ul>
     </div>
