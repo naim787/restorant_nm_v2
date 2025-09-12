@@ -1,6 +1,6 @@
 <script>
   import "../../app.css";
-  import { Card, Button, Toggle } from "flowbite-svelte";
+  import { Card, Button, Rating, Badge } from "flowbite-svelte";
 
   export let item;
   export let onClick;
