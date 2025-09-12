@@ -36,7 +36,7 @@
       {/snippet}
     </Rating>
     <div class="flex items-center justify-between bg-green-500 p-2">
-      <span class="text-3xl font-bold text-gray-900 dark:text-white">599</span>
+      <span class="text-3xl font-bold text-gray-900 dark:text-white">Rp:599</span>
       <button class="btn text-[20px] bg-green-900 text-white p-2 rounded-xl" on:click={onClick}>pesan</button>
     </div>
   </div>
