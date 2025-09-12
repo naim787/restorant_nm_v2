@@ -37,7 +37,7 @@
     </Rating>
     <div class="flex items-center justify-between p-2">
       <span class="text-3xl font-bold text-gray-900 dark:text-white">Rp:{item.price}</span>
-      <button class="btn text-[25px] bg-green-900 text-white p-2 rounded-xl" on:click={onClick}>pesan</button>
+      <button class="btn text-[23px] bg-green-900 text-white p-2 rounded-xl" on:click={onClick}>pesan</button>
     </div>
   </div>
 </Card>
