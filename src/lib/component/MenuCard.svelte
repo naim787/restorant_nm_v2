@@ -1,8 +1,8 @@
 <script>
+  import "../../app.css";
    import { Card, Button, Toggle } from "flowbite-svelte";
   import { ArrowRightOutline } from "flowbite-svelte-icons";
   let vCard = false;
-   import "../../app.css";
   export let item;
   export let onClick;
   const base = import.meta.env.VITE_API_BASE || '';
