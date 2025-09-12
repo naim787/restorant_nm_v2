@@ -1,7 +1,7 @@
 <script>
   import "../../app.css";
   import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from "flowbite-svelte";
-  import dat from "conf"
+  import dat from ""
 </script>
 
 <Navbar>
