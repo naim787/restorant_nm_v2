@@ -105,7 +105,7 @@
                   <select required bind:value={formNo}>
                     <option value=""></option>
                     {#each Array.from({ length: 100 }) as _, i}
-                      <option value={}>{String(i + 1).padStart(2, '0')}</option>
+                      <option value={i}>{String(i + 1).padStart(2, '0')}</option>
                     {/each}
                   </select>
                 </label>
