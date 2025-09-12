@@ -79,7 +79,7 @@
 
       checkoutData = [...checkoutData, checkoutItem];
     } else {
-      alert("❌ Mohon Pilih ");
+      alert("❌ Mohon Pilih Menu ");
     }
     
     showModal = false;
