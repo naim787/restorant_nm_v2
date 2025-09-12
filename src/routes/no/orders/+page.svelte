@@ -114,7 +114,7 @@
           const ordersDone = {
             product_orders : orderArray,
             table_id: formNo,
-            opsi : fo
+            opsi : formOpsi
             waiter_name: namaWaiters,
             time: tanggal +"/"+ waktu,
             status: "pendig",
