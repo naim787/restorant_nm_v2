@@ -36,7 +36,7 @@
     users = result.data
   });
 
-  $: dispatch("waitersChange", );
+  $: dispatch("waitersChange", no);
   $: dispatch("waitersChange", namaWaiters);
 </script>
 
