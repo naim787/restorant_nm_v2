@@ -13,7 +13,7 @@
       <h2 class="card-title text-3xl uppercase">{item.name}</h2>
     </div>
     <div class="w-full flex justify-between items-center">
-      <p class="">{showData.description}</p>
+      <p class="">{item.description}</p>
       <p class="text-2xl">Rp: <span class="text-yellow-400">{item.price}</span></p>
       <div class="card-actions justify-end">
         <button class="btn bg-green-500 text-black uppercase" on:click={onClick}>pesan</button>
