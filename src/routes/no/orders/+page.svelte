@@ -100,7 +100,6 @@
       } else if(formOpsi == "RESERVASI" || formOpsi == "NO") {
         if(formNo == "") {
           aler("wajib meggisi no tabel pemesan!!")
-
         }
       }
       else {
