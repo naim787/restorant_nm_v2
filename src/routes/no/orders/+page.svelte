@@ -9,7 +9,7 @@
   import NavPanel from '$lib/component/Nav_Panel.svelte';
   import { page } from '$app/stores';
 
-  // fr
+  // form drawer checkout
   let namaWaiters = "";
   let totalFromDrawer;
 
