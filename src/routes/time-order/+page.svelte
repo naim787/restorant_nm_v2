@@ -3,7 +3,6 @@
   import "../../app.css";
   import { onMount } from "svelte";
   import NavPanel from "$lib/component/Nav_Panel.svelte";
-  NavPanel
 
 
   // ✅ Perbaiki format base URL
