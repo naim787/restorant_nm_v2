@@ -24,7 +24,7 @@
   </div>
 </div> -->
 
-  <Card class="p-0 bg-gray-300 text-white">
+  <Card class="p-0 bg-gray-400 text-white">
     <a href="#" class="w-full h-50">
       <img class="rounded-t-lg w-full h-50 object-cover" src={`http://${base}/${item.image_url}`} alt="product 1" />
     </a>
