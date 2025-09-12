@@ -40,7 +40,7 @@
       <label for="my-drawer-3" aria-label="close sidebar" class="drawer-overlay"></label>
       <ul class="menu bg-black min-h-full w-80 p-4 shadow-2xl shadow-white/20">
         <!-- Sidebar content here -->
-         <h1 class="">Order</h1>
+         <h1 class="">Orders</h1>
         <li><a href="/">Ceker</a></li>
         <li><a href="/">Status Order</a></li>
       </ul>
