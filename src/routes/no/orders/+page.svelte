@@ -14,7 +14,7 @@
   let totalFromDrawer;
   let formNo;
   let formType;
-  let form
+  let formOpsi
 
   // mengambil no meja dari parameter url
   let noTABLE = 1
