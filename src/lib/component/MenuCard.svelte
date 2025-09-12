@@ -29,7 +29,7 @@
       <img class="rounded-t-lg w-full h-50 object-cover" src={`http://${base}/${item.image_url}`} alt="product 1" />
     </a>
   <div class="px-5 pb-5">
-    <a href="/">
+    >
     <h5 class="text-3xl font-bold font-semibold tracking-tight dark:text-white">{item.name}</a>
     <Rating rating={5} size={24} class="mb-5">
       {#snippet text()}
