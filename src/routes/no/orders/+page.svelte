@@ -16,7 +16,7 @@
   let formType;
   let formOpsi;
 
-  // mengambil no meja dari parameter url
+  
   let noTABLE = 1
 
   // ✅ Perbaiki format base URL
