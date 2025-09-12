@@ -1,3 +1,5 @@
 export function ConfigurateData() {
-return data;
+return {
+        name : "RM TEDU MATUARI"
+    }
 }
