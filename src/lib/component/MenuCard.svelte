@@ -37,7 +37,7 @@
     </Rating>
     <div class="flex items-center justify-between bg-green-500 p-2">
       <span class="text-3xl font-bold text-gray-900 dark:text-white">$599</span>
-      <button class="bt text-black text-[25px] bg-gray-900" on:click={onClick}>pesan</button>
+      <button class="btn text-black text-[25px] bg-gray-900" on:click={onClick}>pesan</button>
     </div>
   </div>
 </Card>
