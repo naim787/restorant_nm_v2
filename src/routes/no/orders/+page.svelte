@@ -95,7 +95,7 @@
     let waktu = `${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}:${String(now.getSeconds()).padStart(2, '0')}`;
 
     if (socket && socket.readyState === WebSocket.OPEN && checkoutData.length > 0 ) {
-      if ()
+      if ( && namaWaiters !== "")
       // Masukkan total ke setiap objek ordersArray
       const orderArray = checkoutData.map(item => ({
           products_id: item.products.id,
