@@ -37,7 +37,7 @@
   });
 
   $: dispatch("formNo", FormNo);
-  $: dispatch("waiter", namaWaiters);
+  $: dispatch("waite", namaWaiters);
 </script>
 
 {#if checkoutData.length >= 1}
