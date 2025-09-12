@@ -13,6 +13,7 @@
   let namaWaiters = "";
   let totalFromDrawer;
   let formNo;
+  let formType
 
   // mengambil no meja dari parameter url
   let noTABLE = 1
