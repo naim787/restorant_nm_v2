@@ -70,7 +70,7 @@
 
   // fungsi pesanan
   function Checkout() {
-    if (Value >= 1 && namaWaiters !== "") {
+    if (Value >= 1) {
       const checkoutItem = {
         products: showData,
         value: Value,
