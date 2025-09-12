@@ -84,7 +84,7 @@
             <!-- // nama pemesan -->
               <label class="select w-full">
                 <span class="label bg-black">Name</span>
-                <select bind:value={namaWaiters}>
+                <select bind:value={namaWaiters} required>
                   <option value=""></option>
                   {#each users as d}
                   <option value={d.name}>{d.name}</option>
