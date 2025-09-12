@@ -12,6 +12,7 @@
   // form drawer checkout
   let namaWaiters = "";
   let totalFromDrawer;
+  let 
 
   // mengambil no meja dari parameter url
   let noTABLE = 1
