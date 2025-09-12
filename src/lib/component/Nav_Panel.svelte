@@ -2,7 +2,7 @@
   import "../../app.css";
   import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from "flowbite-svelte";
   import ConfigurateData from "$lib/component/conf.js";
-  
+  ConfigurateData
 </script>
 
 <Navbar>
