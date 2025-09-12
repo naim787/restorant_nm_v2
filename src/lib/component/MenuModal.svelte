@@ -110,7 +110,7 @@
                     on:click={() => onValueChange(Math.max(1, Value - 1))}>-</button>
         
                   <div class="flex justify-center items-center w-20">
-                    <input class="text-2xl font-bold w-full text-center bg-" type="number" bind:value={Value} min="1"
+                    <input class="text-2xl font-bold w-full text-center bg-transparent" type="number" bind:value={Value} min="1"
                       on:input={e => onValueChange(Math.max(1, +e.target.value))} />
                   </div>
         
