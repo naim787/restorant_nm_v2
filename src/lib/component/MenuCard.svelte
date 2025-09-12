@@ -25,8 +25,7 @@
 </div>
 
   <Card class="p-0">
-    <img class="rounded-t-lg p-8" src={`http://${base}/${item.image_url}`} alt="product 1" />
-  </a>
+    <img class="rounded-t-lg p-8" src={`http://${base}/${item.image_url}`} alt="product 1" /
   <div class="px-5 pb-5">
     <a href="/">
       <h5 class="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">Apple Watch Series 7 GPS, Aluminium Case, Starlight Sport</h5>
