@@ -25,8 +25,8 @@
 </div>
 
   <Card class="p-0">
-  <a href="/"></a>
-    <img class="rounded-t-lg p-8" src={`http://${base}/${item.image_url}`} alt="product 1" />
+  <a href="/">
+    <img class="rounded-t-lg p-8" src= alt="product 1" />
   </a>
   <div class="px-5 pb-5">
     <a href="/">
