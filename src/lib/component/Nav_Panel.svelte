@@ -1,6 +1,6 @@
 <script>
   import "../../app.css";
-  import { AlignJustify, Moon, Sun } from "@lucide/svelte";
+  import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from "flowbite-svelte";
 </script>
 
 
