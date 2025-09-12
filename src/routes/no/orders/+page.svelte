@@ -17,7 +17,7 @@
   let formOpsi;
 
   
-  let for = 1
+  let form = 1
 
   // ✅ Perbaiki format base URL
   const base = import.meta.env.VITE_API_BASE || 'localhost';
@@ -114,7 +114,7 @@
           // object pembugkus pesanan websoket
           const ordersDone = {
             product_orders : orderArray,
-            table_id: for,
+            table_id: form,
             waiter_name: namaWaiters,
             time: tanggal +"/"+ waktu,
             status: "pendig",
