@@ -102,7 +102,7 @@
               <!-- OPSI -->
                 <label class="select w-full">
                   <span class="label bg-black">NO</span>
-                  <select required bind:value={formName}>
+                  <select required bind:value={formNo}>
                     <option value=""></option>
                     {#each Array.from({ length: 100 }) as _, i}
                       <option value="">{String(i + 1).padStart(2, '0')}</option>
