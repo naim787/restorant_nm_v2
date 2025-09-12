@@ -26,7 +26,7 @@
 
   // form input checkout
   let namaWaiters;
-  let no ;
+  let formno ;
   let type ;
 
   onMount(async () => {
