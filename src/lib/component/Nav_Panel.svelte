@@ -6,7 +6,7 @@
   let data;
   onMount(async ()=> {
      data = ConfigurateData();
-     
+     console.lo
   })
 </script>
 
