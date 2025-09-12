@@ -7,7 +7,7 @@
 
 <Navbar>
   <NavBrand href="/">
-    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">{data.rm}</span>
+    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">{data.r}</span>
   </NavBrand>
   <NavHamburger />
   <NavUl>
