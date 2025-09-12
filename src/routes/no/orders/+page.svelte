@@ -98,7 +98,7 @@
     if (socket && socket.readyState === WebSocket.OPEN && checkoutData.length > 0 ) {
       if ( namaWaiters == "") {
         alert("❌ mohon masukan dulu nama waiters!!")
-      } else if(n) {
+      } else if() {
 
       }
       else {
