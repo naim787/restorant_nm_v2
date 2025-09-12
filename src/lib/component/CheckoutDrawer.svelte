@@ -24,7 +24,7 @@
 //  api data uses
   let users;
 
-  form input checkou
+  form input checkout
   let namaWaiters;
   let no ;
   let type ;
