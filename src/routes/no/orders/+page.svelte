@@ -163,7 +163,7 @@
       onCheckout={sendCheckoutData}
       on:totalChange={(e) => totalFromDrawer = e.detail}
       on:formName={(e) => namaWaiters = e.detail}
-      on:formNo={(e) => fo = e.detail}
+      on:formNo={(e) => formNo = e.detail}
       />
   </div>
 
