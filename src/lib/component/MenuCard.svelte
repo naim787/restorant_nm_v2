@@ -33,7 +33,7 @@
       <h5 class="text-3xl font-bold font-semibold tracking-tight dark:text-white">{item.name}</a>
     <Rating rating={4} size={24} class="mt-2.5 mb-5">
       {#snippet text()}
-        <Badge class="ms-3">4</Badge>
+        <Badge class="ms-3"></Badge>
       {/snippet}
     </Rating>
     <div class="flex items-center justify-between bg-green-500 p-2">
