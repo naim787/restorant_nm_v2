@@ -23,11 +23,11 @@
   let users;
 
   // form input checkout
+  // opsi
+  let  OPSI = "NO"
   let namaWaiters;
   let formNo ;
   let formType ;
-  // opsi
-  let  OPSI = "NO"
 
   onMount(async () => {
     const res = await fetch(`http://${base}/users`);
