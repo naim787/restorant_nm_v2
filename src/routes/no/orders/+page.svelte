@@ -111,7 +111,7 @@
           // object pembugkus pesanan websoket
           const ordersDone = {
             product_orders : orderArray,
-            table_id: parseformNo,
+            table_id: parseIntformNo,
             waiter_name: namaWaiters,
             time: tanggal +"/"+ waktu,
             status: "pendig",
