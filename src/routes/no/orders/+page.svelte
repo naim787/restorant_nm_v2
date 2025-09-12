@@ -9,6 +9,7 @@
   import NavPanel from '$lib/component/Nav_Panel.svelte';
   import { page } from '$app/stores';
 
+  
   let namaWaiters = "";
   let totalFromDrawer;
 
