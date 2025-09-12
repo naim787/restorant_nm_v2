@@ -4,9 +4,9 @@
   import ConfigurateData from "$lib/component/conf.js";
   import { onMount } from "svelte";
   onMount(async ()=> {
-    
+    let data = ConfigurateData();
+
   })
-  let data = ConfigurateData();
 </script>
 
 <Navbar>
