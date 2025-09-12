@@ -1,13 +1,27 @@
 <script>
-  import "../../app.css";
-  import { Card, Button, Rating, Badge } from "flowbite-svelte";
-
   export let item;
   export let onClick;
   const base = import.meta.env.VITE_API_BASE || '';
 </script>
+<!-- 
+<div class="card bg-base-100 image-full w-72 h-42 shadow-sm m-2">
+  <figure>
+    <img src={`${base}${item.image_url}`} alt={item.name} loading="lazy" class="w-full h-full object-cover">
+  </figure>
+  <div class="card-body">
+    <h2 class="card-title text-2xl">{item.name}</h2>
+    <p>{item.description}</p>
+    <div class="card-actions justify-end">
+       <div class="card-actions justify-end">
+      <button class="btn bg-green-500 text-black" on:click={onClick}>
+        Rp: <span>{item.price}</span>
+      </button>
+    </div>
+    </div>
+  </div>
+</div> -->
 
-<!-- <div class="card bg-base-100 w-70 shadow-sm h-auto">
+<div class="card bg-base-100 w-70 shadow-sm h-auto">
   <figure>
     <img class="w-full h-60 object-cover" src={`http://${base}/${item.image_url}`} alt={item.name} loading="lazy" />
   </figure>
@@ -15,6 +29,13 @@
     <div class="flex items-start h-20">
       <h2 class="card-title text-3xl uppercase">{item.name}</h2>
     </div>
+    <!-- <div class="rating">
+      <div class="mask mask-star bg-yellow-500" aria-label="1 star"></div>
+      <div class="mask mask-star bg-yellow-500" aria-label="2 star"></div>
+      <div class="mask mask-star bg-yellow-500" aria-label="3 star"></div>
+      <div class="mask mask-star bg-yellow-500" aria-label="4 star"></div>
+      <div class="mask mask-star bg-yellow-500" aria-label="5 star" aria-current="true"></div>
+    </div> -->
     <div class="w-full flex justify-between items-center">
       <p class="text-2xl">Rp: <span class="text-yellow-400">{item.price}</span></p>
       <div class="card-actions justify-end">
@@ -22,22 +43,4 @@
       </div>
     </div>
   </div>
-</div> -->
-
-  <Card class="p-0 bg-gray-400 text-black">
-    <a href="#" class="w-full h-50 p-1">
-      <img class="rounded-t-lg w-full h-50 object-cover" src={`http://${base}/${item.image_url}`} alt="product 1" />
-    </a>
-  <div class="px-5 pb-5">
-    <h5 class="text-3xl font-bold font-semibold tracking-tight dark:text-white mt-8">{item.name}
-    <Rating rating={5} size={24} class="mb-5">
-      {#snippet text()}
-        <Badge class="ms-3">5</Badge>
-      {/snippet}
-    </Rating>
-    <div class="flex items-center justify-between p-2">
-      <span class="text-3xl font-bold text-gray-900 dark:text-white">Rp:{item.price}</span>
-      <button class="btn text-[23px] bg-green-900 text-white p-2 rounded-xl" on:click={onClick}>pesan</button>
-    </div>
-  </div>
-</Card>
+</div>
