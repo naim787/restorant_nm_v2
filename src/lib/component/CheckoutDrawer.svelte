@@ -21,9 +21,9 @@
     
     // kirim total ke parent setiap kali berubah
   $: dispatch("totalChange", total);
-
+ api data uses
   let users;
-  
+
   let namaWaiters;
   let no ;
   let type ;
