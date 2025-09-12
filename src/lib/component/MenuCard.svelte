@@ -37,7 +37,7 @@
         <Badge class="ms-3">4</Badge>
       {/snippet}
     </Rating>
-    <div class="flex items-center justify-between">
+    <div class="flex items-center justify-between bg-gree">
       <span class="text-3xl font-bold text-gray-900 dark:text-white">$599</span>
       <Button href="/">Buy now</Button>
     </div>
