@@ -1,1 +1,1 @@
-export function Configurate
+export function ConfigurateData 
