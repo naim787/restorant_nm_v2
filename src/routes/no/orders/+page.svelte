@@ -98,7 +98,7 @@
       if ( namaWaiters == "") {
         alert("❌ mohon masukan dulu nama waiters!!")
       } else if(formOpsi == "RESERVASI" || formOpsi == "NO") {
-        
+        form
         aler("wajib meggisi no tabel pemesan!!")
       }
       else {
