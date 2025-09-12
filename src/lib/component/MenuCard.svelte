@@ -7,7 +7,7 @@
   const base = import.meta.env.VITE_API_BASE || '';
 </script>
 
-<div class="card bg-base-100 w-70 shadow-sm h-auto">
+<!-- <div class="card bg-base-100 w-70 shadow-sm h-auto">
   <figure>
     <img class="w-full h-60 object-cover" src={`http://${base}/${item.image_url}`} alt={item.name} loading="lazy" />
   </figure>
@@ -22,7 +22,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
   <Card class="p-0 bg-gray-900 text-white">
     <a href="/" class="w-full h-50">
