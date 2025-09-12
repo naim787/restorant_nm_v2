@@ -79,7 +79,7 @@
 
       checkoutData = [...checkoutData, checkoutItem];
     } else {
-      alert("❌ Mohon pilih nama waiters terlebih dahulu.");
+      alert("❌ Mohon ");
     }
     
     showModal = false;
