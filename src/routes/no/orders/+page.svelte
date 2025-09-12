@@ -98,7 +98,7 @@
       if ( namaWaiters == "") {
         alert("❌ mohon masukan dulu nama waiters!!")
       } else if(formNo == "" && formOpsi == "RESERVASI" || formOpsi == "NO") {
-        alert("")
+        alert("❌ mohon masukan dulu nama waiters!!")
       }
       else {
         // Masukkan total ke setiap objek ordersArray
