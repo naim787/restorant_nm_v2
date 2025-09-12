@@ -112,7 +112,7 @@
             <!-- opsi pesanan -->
              <div class="flex w-full justify-evenly items-center mt-2">
               <h1 class="text-yellow-500">TYPE : </h1>
-               <h1 class="">NO        <input required type="radio" name="radio-1" class="" value="NO" bind:group={op}/></h1>
+               <h1 class="">NO        <input required type="radio" name="radio-1" class="" value="NO" bind:group={opsi}/></h1>
                <h1 class="">BUGKUS    <input required type="radio" name="radio-1" class="" value="BUGKUS" bind:group={OPSI}/></h1>
                <h1 class="">RESERFASI <input required type="radio" name="radio-1" class="" value="RESERVASI" bind:group={OPSI}/></h1>
              </div>
