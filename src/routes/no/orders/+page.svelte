@@ -143,7 +143,7 @@
   }
 </script>
 
-<NavPanel />
+
 
 <div class="w-[100vw] h-[100vh] pt-15 bg-linear-to-r from-black to-gray-950">
   <div class="w-full h-20 flex justify-around items-center p-2 bg-black">
