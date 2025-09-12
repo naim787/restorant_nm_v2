@@ -41,11 +41,11 @@
       <ul class="menu bg-black min-h-full w-80 p-4 shadow-2xl shadow-white/20">
         <!-- Sidebar content here -->
          <div class="p-2 bg-gray-900">
-          
+           <h1 class="text-white">Orders</h1>
+           <li><a class="text-gray-300" href="/">Ceker</a></li>
+           <li><a class="text-gray-300" href="/">Status Order</a></li>
+
          </div>
-        <h1 class="text-white">Orders</h1>
-        <li><a class="text-gray-300" href="/">Ceker</a></li>
-        <li><a class="text-gray-300" href="/">Status Order</a></li>
       </ul>
     </div>
   </div>
