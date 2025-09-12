@@ -5,7 +5,6 @@
   import { onMount } from "svelte";
   onMount(async ()=> {
     let data = ConfigurateData();
-
   })
 </script>
 
