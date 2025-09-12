@@ -41,7 +41,7 @@
       <ul class="menu bg-black min-h-full w-80 p-4 shadow-2xl shadow-white/20">
         <!-- Sidebar content here -->
         <li><a href="/">Ceker</a></li>
-        <li><a href="/"></a></li>
+        <li><a href="/">Status</a></li>
       </ul>
     </div>
   </div>
