@@ -6,7 +6,7 @@
 
 <Navbar>
   <NavBrand href="/">
-    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">{data.}</span>
+    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">{data.name}</span>
   </NavBrand>
   <NavHamburger />
   <NavUl>
