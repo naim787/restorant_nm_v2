@@ -4,7 +4,7 @@
   const base = import.meta.env.VITE_API_BASE || '';
 
   // Fungsi untuk memangkas deskripsi
-  function truncateDescription(description, maxLength = 1) {
+  function truncateDescription(description, maxLength = 100) {
     if (description.length <= maxLength) {
       return description;
     } else {
