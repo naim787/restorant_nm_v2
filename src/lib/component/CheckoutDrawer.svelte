@@ -23,6 +23,7 @@
   $: dispatch("totalChange", total);
 
   let users;
+  
   let namaWaiters;
   let no ;
   let type ;
