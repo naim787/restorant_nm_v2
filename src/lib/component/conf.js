@@ -1,1 +1,3 @@
-export function ConfigurateData()
+export function ConfigurateData() {
+    
+}
