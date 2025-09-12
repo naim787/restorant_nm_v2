@@ -165,7 +165,7 @@
       on:formName={(e) => namaWaiters = e.detail}
       on:formNo={(e) => formNo = e.detail}
       on:formType={(e) => formType = e.detail}
-      on:formOp={(e) => formType = e.detail}
+      on:formOpsi={(e) => formType = e.detail}
       />
   </div>
 
