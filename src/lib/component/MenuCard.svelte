@@ -31,7 +31,7 @@
   <div class="px-5 pb-5">
     <a href="/">
       <h5 class="text-3xl font-bold font-semibold tracking-tight dark:text-white">{item.name}</a>
-    <Rating rating={4} size={24} class="mt-2.5 mb-5">
+    <Rating rating={5} size={24} class="mt-2.5 mb-5">
       {#snippet text()}
         <Badge class="ms-3">5</Badge>
       {/snippet}
