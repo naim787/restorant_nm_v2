@@ -1,6 +1,6 @@
 <script>
    import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from "flowbite-svelte";
-   let data
+   let data 
 </script>
 
 <Navbar>
