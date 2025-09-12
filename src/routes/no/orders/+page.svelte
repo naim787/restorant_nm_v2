@@ -97,7 +97,7 @@
     if (socket && socket.readyState === WebSocket.OPEN && checkoutData.length > 0 ) {
       if ( namaWaiters == "") {
         alert("❌ mohon masukan dulu nama waiters!!")
-      } else if(formNo == "" && formOpsi == "RESERVASI" || formOpsi == "NO") {
+      } else if(formOpsi == "RESERVASI" || formOpsi == "NO") {
         aler("wajib meggisi no tabel pemesan!!")
       }
       else {
