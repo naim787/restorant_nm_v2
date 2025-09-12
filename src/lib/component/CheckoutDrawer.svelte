@@ -37,6 +37,7 @@
   });
 
   $: dispatch("waitersChange", namaWaiters);
+  $: dispatch("waitersChange", namaWaiters);
 </script>
 
 {#if checkoutData.length >= 1}
