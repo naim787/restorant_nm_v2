@@ -2,9 +2,7 @@
 
 @plugin 'flowbite/plugin';
 
-@plugin "daisyui" {
-   
-}
+@plugin "daisyui";
 
 
 @custom-variant dark (&:where(.dark, .dark *));
