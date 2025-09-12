@@ -25,6 +25,8 @@
 
   // pajak yang akan dikenakan
   const pajak = 10;
+
+  
   let data = [];
   let loadingMenu = true;
   let showModal = false;
