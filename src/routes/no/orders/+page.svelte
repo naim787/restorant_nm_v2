@@ -1,6 +1,6 @@
 <script>
   import "../../../app.css"
-  // import SearchBar from "$lib/component/SearchBar.svelte";
+  import SearchBar from "$lib/component/SearchBar.svelte";
   import MenuCard from "$lib/component/MenuCard.svelte";
   import CheckoutDrawer from "$lib/component/CheckoutDrawer.svelte";
   import { onMount } from "svelte";
@@ -26,7 +26,7 @@
   // pajak yang akan dikenakan
   const pajak = 10;
 
-
+  let searchTerm = '';
   let data = [];
   let loadingMenu = true;
   let showModal = false;
@@ -147,6 +147,7 @@
 
 <div class="w-[100vw] h-[100vh] pt-15 bg-linear-to-r from-black to-gray-950">
   <div class="w-full h-20 flex justify-around items-center p-2 bg-black">
+    <SearchBar {searchTerm} {loadingMenu} onInput={e => searchTerm = e.target.value} />
     <!-- menu checkout ketika selesai klik tombol menu -->
     <CheckoutDrawer
       {checkoutData}
