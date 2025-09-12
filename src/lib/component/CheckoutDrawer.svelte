@@ -27,7 +27,7 @@
   // form input checkout
   let namaWaiters;
   let formNo ;
-  let form ;
+  let formType ;
 
   onMount(async () => {
     const res = await fetch(`http://${base}/users`);
