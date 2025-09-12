@@ -3,7 +3,7 @@
   export let onClick;
   const base = import.meta.env.VITE_API_BASE || '';
 
-  / Fungsi untuk memangkas deskripsi
+  // Fungsi untuk memangkas deskripsi
   function truncateDescription(description, maxLength = 15) {
     if (description.length <= maxLength) {
       return description;
