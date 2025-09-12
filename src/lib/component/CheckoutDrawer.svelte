@@ -37,7 +37,7 @@
   });
 
   $: dispatch("formNo", FormNo);
-  $: dispatch("formNo", FormNo);
+  $: dispatch("f", FormNo);
   $: dispatch("waitersChange", namaWaiters);
 </script>
 
