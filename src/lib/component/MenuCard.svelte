@@ -34,4 +34,3 @@
       </Button>
     </div>
   </Card>
-</div>
