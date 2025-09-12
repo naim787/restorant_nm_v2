@@ -5,7 +5,7 @@
 
 <Navbar>
   <NavBrand href="/">
-    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Naf</span>
+    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Nav</span>
   </NavBrand>
   <NavHamburger />
   <NavUl>
