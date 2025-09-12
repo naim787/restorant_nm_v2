@@ -23,7 +23,7 @@
   let users;
 
   // form input checkout
-  let  op = "NO"
+  let  opsi = "NO"
   let namaWaiters;
   let formNo ;
   let formType ;
