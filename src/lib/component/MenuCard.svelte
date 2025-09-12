@@ -39,7 +39,7 @@
     </Rating>
     <div class="flex items-center justify-between bg-green-500 p-2">
       <span class="text-3xl font-bold text-gray-900 dark:text-white">$599</span>
-      <Button href="/">Buy now</Button>
+      <Button href="/" class=>Buy now</Button>
     </div>
   </div>
 </Card>
