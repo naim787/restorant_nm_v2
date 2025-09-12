@@ -116,7 +116,6 @@
             product_orders : orderArray,
             table_id: noTABLE,
             waiter_name: namaWaiters,
-            no
             time: tanggal +"/"+ waktu,
             status: "pendig",
             total: totalFromDrawer,
