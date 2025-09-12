@@ -13,7 +13,6 @@
   let namaWaiters = "";
   let totalFromDrawer;
   let formNo;
-  let formType;
   let formOpsi;
 
   // ✅ Perbaiki format base URL
