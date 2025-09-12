@@ -97,10 +97,8 @@
     if (socket && socket.readyState === WebSocket.OPEN && checkoutData.length > 0 ) {
       if ( namaWaiters == "") {
         alert("❌ mohon masukan dulu nama waiters!!")
-      } else if(formOpsi == "RESERVASI" || formOpsi == "NO") {
-        if(formNo == "") {
-          alert("wajib meggisi no tabel pemesan!!")
-        }
+      } else if(formNo == "" && formOpsi == "RESERVASI" || formOpsi == "NO") {
+        aler("wajib meggisi no tabel pemesan!!")
       }
       else {
         // Masukkan total ke setiap objek ordersArray
