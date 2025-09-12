@@ -36,8 +36,8 @@
     users = result.data
   });
 
-  $: dispatch("formNo", FormNo);
-  $: dispatch("waite", namaWaiters);
+  $: dispatch("formNo", Formo);
+  $: dispatch("waitersChange", namaWaiters);
 </script>
 
 {#if checkoutData.length >= 1}
