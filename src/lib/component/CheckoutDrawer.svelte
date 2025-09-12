@@ -38,7 +38,7 @@
   $: dispatch("formNo", FormNo);
   $: dispatch("formType", FormNo);
   $: dispatch("formName", namaWaiters);
-  $: dispatch("f", namaWaiters);
+  $: dispatch("form", namaWaiters);
 </script>
 
 {#if checkoutData.length >= 1}
