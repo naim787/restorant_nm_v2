@@ -18,7 +18,6 @@
   $: total = checkoutData.length >= 1
     ? checkoutData.reduce((acc, item) => acc + item.subtotal, 0)
     : 0;
-    
   // kirim total ke parent setiap kali berubah
   $: dispatch("totalChange", total);
 
