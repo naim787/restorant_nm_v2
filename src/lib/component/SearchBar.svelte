@@ -15,7 +15,7 @@
       placeholder="Search Menu"
       bind:value={searchTerm}
       on:input={onInput}
-    />
+    />z
     <Search class="p-2 rounded-r-md bg-yellow-500 text-black" size={40}/>
   </div>
 {/if}
