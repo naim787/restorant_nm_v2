@@ -24,7 +24,7 @@
 
   let users;
   let namaWaiters;
-  let type
+  let no 
     onMount(async () => {
       const res = await fetch(`http://${base}/users`);
       let result = await res.json();
