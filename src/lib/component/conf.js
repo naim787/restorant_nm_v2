@@ -1,3 +1,3 @@
 export function ConfigurateData() {
-    data
+    let data 
 }
