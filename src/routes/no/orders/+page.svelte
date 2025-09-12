@@ -121,7 +121,6 @@
         socket.send(JSON.stringify(ordersDone));
         checkoutData = [];
         // console.log("📤 Sent orders:", ordersDone);
-
       }
     } else {
       if (!socket || socket.readyState !== WebSocket.OPEN) {
