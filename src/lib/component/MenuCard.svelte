@@ -2,6 +2,7 @@
   export let item;
   export let onClick;
   const base = import.meta.env.VITE_API_BASE || '';
+  
 </script>
 
 <div class="card bg-base-100 w-70 shadow-sm h-auto">
