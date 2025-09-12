@@ -158,7 +158,7 @@
       {removeCheckout}
       onCheckout={sendCheckoutData}
       on:totalChange={(e) => totalFromDrawer = e.detail}
-      on:form={(e) => namaWaiters = e.detail}/>
+      on:formName={(e) => namaWaiters = e.detail}/>
   </div>
 
   <div class="w-full h-[80vh] flex flex-wrap justify-evenly items-center overflow-auto gap-2">
