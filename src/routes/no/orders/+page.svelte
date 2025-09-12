@@ -98,7 +98,7 @@
       if ( namaWaiters == "") {
         alert("❌ mohon masukan dulu nama waiters!!")
       } else if(formNo == "" && formOpsi == "RESERVASI" || formOpsi == "NO") {
-        alert("❌ mohon memilih NO table")
+        alert("❌ mohon memilih NO table, NO table tidak boleh none")
       }
       else {
         // Masukkan total ke setiap objek ordersArray
