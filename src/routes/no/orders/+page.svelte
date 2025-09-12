@@ -17,8 +17,6 @@
   let formOpsi;
 
   
-  let noTABLE = 1
-
   // ✅ Perbaiki format base URL
   const base = import.meta.env.VITE_API_BASE || 'localhost';
   // Remove http:// or https:// if present
