@@ -102,7 +102,7 @@
                 <label class="select w-full">
                   <span class="label bg-black">NO</span>
                   <select required bind:value={formNo}>
-                    <option value=""></option>
+                    <option value="">none</option>
                     {#each Array.from({ length: 100 }) as _, i}
                       <option value={i + 1}>{String(i + 1).padStart(2, '0')}</option>
                     {/each}
