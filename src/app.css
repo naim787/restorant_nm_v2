@@ -2,6 +2,11 @@
 
 @plugin 'flowbite/plugin';
 
+@plugin "daisyui" {
+    themes: dark --default;
+}
+
+
 @custom-variant dark (&:where(.dark, .dark *));
 
 /* @theme {
