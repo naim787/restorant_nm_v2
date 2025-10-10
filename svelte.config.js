@@ -1,30 +1,13 @@
-import adapter from '@sveltejs/adapter-static';
-import preprocess from 'svelte-preprocess';
-import path from 'path';
+import adapter from '@sveltejs/adapter-auto';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-    preprocess: preprocess({
-        postcss: true,
-        typescript: false
-    }),
-
-    kit: {
-        adapter: adapter({
-            pages: path.resolve('../resto_nm_api/frontend'),
-            assets: path.resolve('../resto_nm_api/frontend'),
-            fallback: 'index.html',
-            precompress: false
-        }),
-        paths: {
-            base: '',
-            relative: false // ✅ tambahkan koma setelah ini jika ada config lanjutan
-        },
-        prerender: {
-            entries: ['*']
-        }
-        // trailingSlash: 'always' ← kalau ini masih ada, HAPUS
-    }
+	kit: {
+		// adapter-auto only supports some environments, see https://svelte.dev/docs/kit/adapter-auto for a list.
+		// If your environment is not supported, or you settled on a specific environment, switch out the adapter.
+		// See https://svelte.dev/docs/kit/adapters for more information about adapters.
+		adapter: adapter()
+	}
 };
 
 export default config;

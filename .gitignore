@@ -13,16 +13,11 @@ node_modules
 Thumbs.db
 
 # Env
-comit.js
 .env
-# .env.*
-# !.env.example
-# !.env.test
-# /.history
+.env.*
+!.env.example
+!.env.test
 
 # Vite
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
-
-#/src/generated/prisma
-.db
