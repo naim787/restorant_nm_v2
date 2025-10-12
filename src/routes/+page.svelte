@@ -6,13 +6,14 @@
     
     async function Verivication() {
      	try {
-			const res = await fetch("http://localhost:3000/passwordResto", {
-				method: "POST",
-				headers: {
-					"Content-Type": "application/json"
-				},
-				body: JSON.stringify({ password: ps })
-			});
+			const res = await fetch("http://localhost:3001/passwordResto", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ password: ps }),
+        credentials: "include" // ini penting jika kamu pakai cookie JWT
+      });
       const data = await res.json();
       console.log("Server response:", data);
       } catch (err) {
