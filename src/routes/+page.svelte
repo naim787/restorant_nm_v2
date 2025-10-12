@@ -12,7 +12,6 @@
           "Content-Type": "application/json"
         },
         body: JSON.stringify({ password: ps }),
-        credentials: "include" // ini penting jika kamu pakai cookie JWT
       });
       const data = await res.json();
       console.log("Server response:", data);
