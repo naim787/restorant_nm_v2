@@ -14,8 +14,8 @@
         body: JSON.stringify({ password: ps })
 
       });
-      const data = await res.json();
-      console.log("Server response:", data);
+        const data = await res.json();
+        console.log("Server response:", data);
       } catch (err) {
         console.error("Fetch error:", err);
       }
