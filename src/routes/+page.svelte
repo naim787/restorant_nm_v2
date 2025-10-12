@@ -11,8 +11,8 @@
         headers: {
           "Content-Type": "application/json"
         },
-        body: JSON.stringify({ password: ps })
-
+        body: JSON.stringify({ password: ps }),
+        credentials: 'include'
       });
         const data = await res.json();
         console.log("Server response:", data);
