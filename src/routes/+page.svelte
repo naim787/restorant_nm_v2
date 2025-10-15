@@ -1,7 +1,8 @@
 <script>
 	import LockSolid from './../../node_modules/flowbite-svelte-icons/dist/LockSolid.svelte';
     import { Label, Input, InputAddon, ButtonGroup } from "flowbite-svelte";
-
+    import { goto } from '$app/navigation';
+	
     let ps = '';
     
     async function Verivication() {
@@ -16,6 +17,9 @@
       });
         const data = await res.json();
         console.log("Server response:", data);
+        if(data.message === "valid") {
+          goto('/front/waiters');
+        }
       } catch (err) {
         console.error("Fetch error:", err);
       }
