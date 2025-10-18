@@ -1,27 +1,35 @@
 <script>
-	import { AccordionItem } from 'flowbite-svelte';
-	import { Accordion } from 'flowbite-svelte';
-    export let Bars;
+	import NavvDash from './../../lib/components/NavvDash.svelte';
+  import Footer from "$lib/components/Footer.svelte";
+  import Nav from "$lib/components/Nav.svelte";
+  import "../../app.css";
+  import PaannelDash from '$lib/components/PaannelDash.svelte';
 
-    import { DarkMode } from "flowbite-svelte";
+  import { AccordionItem, Accordion } from "flowbite-svelte";
+
+/////////
+  let Bars = true;
+
+
+  let message = 'Memuat...';
 </script>
 
-<div class={`w-82 h-full bg-white dark:bg-gray-800 flex justify-center items-start md:static absolute left-0 md:translate-none md:transform-none transform transition-transform duration-300 ease-in-out ${Bars ? "translate-x-[-100%]" : "translate-x-[0%]"} `}>
-            <ul class="w-[85%] h-2/3 p-2">
-                <Accordion flush>
-                    <AccordionItem>
-                        {#snippet header()}Guru & Staff{/snippet}
-                        <a href="/ppdb/berita" class="ml-5 mb-2 text-blue-700 dark:text-gray-400">Berita</a>
-                    </AccordionItem>
-                    <AccordionItem>
-                        
-                        {#snippet header()}Layout{/snippet}
-                        <a class="ml-5 mb-2 text-blue-700 dark:text-gray-400">Logo</a>
-                    </AccordionItem>
-                    <a href="/" class="w-full h-16 flex justify-start items-center text-gray-500">
-                        <h1 class="">Siswa</h1>
-                    </a>
-                    <DarkMode />
-                </Accordion>
-            </ul>
-</div>
+<!-- <Nav /> -->
+ <NavvDash on:panelDash={() => {Bars = !Bars}} />
+    <div class="w-full h-[90vh] flex bg-gray-200">
+        <!-- navbar -->
+       <PaannelDash Bars={Bars} />
+        <!-- <h1 class="text-3xl tcext-red-500 m-auto">{message}</h1> -->
+         <div class="w-full bg-gray-200 dark:bg-gray-900 flex flex-col justify-start items-start p-2"
+          role="button"
+          tabindex="0"
+          on:click={() => Bars = true}
+          on:keypress={(e) => { if (e.key === 'Enter') Bars = true; }}
+         >
+            <div class="w-full p-3"><h1 class="text-4xl font-bold gloria ">Dashbord</h1></div>
+            <div class="p-3 bg-white rounded-2xl">
+                <!-- <canvas bind:this={chartCanvas} id="myChart"></canvas> -->
+            </div>
+         </div>
+    </div>
+<Footer />
