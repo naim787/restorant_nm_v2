@@ -7,7 +7,7 @@
     
     async function Verivication() {
      	try {
-			const res = await fetch("http://localhost:3001/passwordResto", {
+			const res = await fetch("/passwordResto", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
