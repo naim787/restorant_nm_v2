@@ -5,7 +5,7 @@
 
 <Navbar>
   <NavBrand href="/">
-    <img src="/images/flowbite-svelte-icon-logo.svg" class="me-3 h-6 sm:h-9" alt="Flowbite Logo" />
+    <!-- <h1 class=""><OpenSidebarAltSolid class="shrink-0 h-6 w-6" /></h1> -->
     <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
   </NavBrand>
   <NavHamburger />
