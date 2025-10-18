@@ -1,11 +1,12 @@
 <script>
   import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from "flowbite-svelte";
   import { fly } from "svelte/transition";
+  import { OpenSidebarAltSolid } from "flowbite-svelte-icons";
 </script>
 
 <Navbar>
   <NavBrand href="/">
-    <!-- <h1 class=""><OpenSidebarAltSolid class="shrink-0 h-6 w-6" /></h1> -->
+    <h1 class=""><OpenSidebarAltSolid class="shrink-0 h-6 w-6" /></h1>
     <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
   </NavBrand>
   <NavHamburger />
