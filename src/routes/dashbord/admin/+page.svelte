@@ -1,27 +1,27 @@
 <script>
-  import { page } from "$app/state";
-  import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from "flowbite-svelte";
-  import { LayersSolid } from "flowbite-svelte-icons";
-  import { createEventDispatcher } from "svelte";
+	import { AccordionItem } from 'flowbite-svelte';
+	import { Accordion } from 'flowbite-svelte';
+    export let Bars;
 
-  const dispatch = createEventDispatcher();
-  let activeUrl = $derived(page.url.pathname);
+    import { DarkMode } from "flowbite-svelte";
 </script>
 
-<Navbar class="border-b-1 dark:border-white/20 shadow-2xl shadow-white/15 dark:bg-gray-800 ">
-  <NavBrand href="/">
-    <img src="./favicon.webp" class="me-3 h-6 sm:h-9" alt="Flowbite Logo" />
-    <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">SMANDIM</span>
-  </NavBrand>
-  <button class="p-2 bg-gray-400 rounded-md md:hidden" on:click={() => {dispatch('panelDash');}}>
-    <LayersSolid class="shrink-0 h-6 w-6" />
-  </button>
-  <NavUl {activeUrl}>
-    <NavLi href="/">Home</NavLi>
-    <NavLi href="/docs/components/navbar">Navbar</NavLi>
-    <NavLi href="/docs/components/accordion">Accordion</NavLi>
-    <NavLi href="/docs/components/alert">Alert</NavLi>
-    <NavLi href="/docs/components/avatar">Avatar</NavLi>
-  </NavUl>
-  
-</Navbar>
+<div class={`w-82 h-full bg-white dark:bg-gray-800 flex justify-center items-start md:static absolute left-0 md:translate-none md:transform-none transform transition-transform duration-300 ease-in-out ${Bars ? "translate-x-[-100%]" : "translate-x-[0%]"} `}>
+            <ul class="w-[85%] h-2/3 p-2">
+                <Accordion flush>
+                    <AccordionItem>
+                        {#snippet header()}Guru & Staff{/snippet}
+                        <a href="/ppdb/berita" class="ml-5 mb-2 text-blue-700 dark:text-gray-400">Berita</a>
+                    </AccordionItem>
+                    <AccordionItem>
+                        
+                        {#snippet header()}Layout{/snippet}
+                        <a class="ml-5 mb-2 text-blue-700 dark:text-gray-400">Logo</a>
+                    </AccordionItem>
+                    <a href="/" class="w-full h-16 flex justify-start items-center text-gray-500">
+                        <h1 class="">Siswa</h1>
+                    </a>
+                    <DarkMode />
+                </Accordion>
+            </ul>
+</div>
