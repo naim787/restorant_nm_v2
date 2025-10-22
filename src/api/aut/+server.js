@@ -6,6 +6,6 @@ export async function POST({request, cookies}) {
     console.log(body.password)
     return json({
 		// get a specific field's value
-		name: body.get('name') ?? 'world'
+		name: body.get('password')
 	});
 }
