@@ -12,9 +12,7 @@
         headers: {
           "Content-Type": "application/json"
         },
-        body: JSON.stringify({ password: ps }),
-        credentials: 'include'
-      });
+        body: JSON.stringify({ password: ps })});
         const data = await res.json();
         console.log("Server response:", data);
         if(data.message === "valid") {
