@@ -1,5 +1,5 @@
 <script>
-
+  import Cart from "$lib/components/Cart.svelte";
 </script>
 
 
@@ -9,7 +9,7 @@
 
     <!-- content -->
     <div class="w-full h-[100vh]">
-
+        <Cart/>
     </div>
-    
+
 </div>
