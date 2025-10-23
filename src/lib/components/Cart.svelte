@@ -116,7 +116,7 @@
       </div>
     </div>
     <div>
-      <Button color="light" class="px-3 py-2">Last week<ChevronDownOutline class="ms-1.5 h-2.5 w-2.5" /></Button>
+      <Button color="light" class="px-3 py-2">Last<ChevronDownOutline class="ms-1.5 h-2.5 w-2.5" /></Button>
       <Dropdown simple class="w-40">
         <DropdownItem>Yesterday</DropdownItem>
         <DropdownItem>Today</DropdownItem>
