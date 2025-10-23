@@ -75,9 +75,9 @@
   };
 </script>
 
-<Card class="p-4 md:p-6">
+<Card class="w-full">
   <div class="mb-5 flex justify-between">
-    <div class="grid grid-cols-2 gap-4">
+    <div class="">
       <div>
         <h5 class="mb-2 inline-flex items-center leading-none font-normal text-gray-500 dark:text-gray-400">
           Clicks
