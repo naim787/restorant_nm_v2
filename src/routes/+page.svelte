@@ -1,4 +1,5 @@
 <script>
+  import Footer from "$lib/components/user/Footer.svelte";
   import MenuCard from "$lib/components/user/MenuCard.svelte";
   import MenuNav from "$lib/components/user/MenuNav.svelte";
 </script>
@@ -9,3 +10,4 @@
   <MenuCard />
   <MenuCard />
 </div>
+<Footer/>
