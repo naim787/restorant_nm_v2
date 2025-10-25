@@ -6,7 +6,7 @@
 
 <Navbar>
   <NavBrand href="/">
-    <img src="https://cdn.kibrispdr.org/data/430/gambar-logo-makanan-kosong-55.jpg" class="me-3 h-6 sm:h-9" alt="Flow" />
+    <img src="https://mocipay.com/blog/wp-content/uploads/2022/12/20221208_161631_0000-768x768.png" class="me-3 h-6 sm:h-9" alt="Flow" />
     <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
   </NavBrand>
   <NavHamburger />
