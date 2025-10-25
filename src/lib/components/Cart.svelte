@@ -76,8 +76,8 @@
 </script>
 
 
-<Card class="w-full">
-  <div class="w-full flex justify-between">
+<Card class="w-[100vw]">
+  <div class="w-[100vw] flex justify-between">
     <div class="w-full">
       <div>
         <h5 class="mb-2 inline-flex items-center leading-none font-normal text-gray-500 dark:text-gray-400">
