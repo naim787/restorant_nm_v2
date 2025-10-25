@@ -77,7 +77,7 @@
 
 
 <Card class="w-full">
-  <div class="mb-5 flex justify-between">
+  <div class="flex justify-between">
     <div class="w-full">
       <div>
         <h5 class="mb-2 inline-flex items-center leading-none font-normal text-gray-500 dark:text-gray-400">
