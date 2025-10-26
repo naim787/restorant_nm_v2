@@ -4,7 +4,7 @@
   let activeUrl = $derived(page.url.pathname);
 </script>
 
-<Navbar class="fixed top-0 left-0 backdrop-blur">
+<Navbar class="fixed top-0 left-0 backdrop-blur-xl">
   <NavBrand href="/">
     <img src="https://mocipay.com/blog/wp-content/uploads/2022/12/20221208_161631_0000-768x768.png" class="me-3 h-9 sm:h-20" alt="Flow" />
     <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">RM stark</span>

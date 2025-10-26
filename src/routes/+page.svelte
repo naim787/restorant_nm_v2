@@ -5,7 +5,7 @@
 </script>
 
 <MenuNav />
-<div class="w-[100vw] h-[100vh] flex flex-wrap justify-evenly items-center pt-2">
+<div class="w-[100vw] h-[100vh] flex flex-wrap justify-evenly items-center pt-15">
   <MenuCard />
   <MenuCard />
   <MenuCard />
