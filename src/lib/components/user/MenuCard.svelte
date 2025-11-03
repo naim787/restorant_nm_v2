@@ -8,7 +8,7 @@
     <div class="m-6">
       <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
       <p class="mb-3 leading-tight font-normal text-gray-700 dark:text-gray-400">porsi : 12</p>
-      <p class="mb-3 leading-tight font-normal text-gray-700 dark:text-gray-400">15</p>
+      <p class="mb-3 leading-tight font-normal text-gray-700 dark:text-gray-400">tendo : 15</p>
       <Button class="w-full bg-amber-600">
         Read more <ArrowRightOutline class="ms-2 h-6 w-6 text-white" />
       </Button>
