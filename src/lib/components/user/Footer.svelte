@@ -6,7 +6,7 @@
 <Footer footerType="socialmedia">
   <div class="md:flex md:justify-between bg-gray-100 p-2 rounded-md">
     <div class="mb-6 md:mb-0">
-      <FooterBrand href="https://flowbite.com" src="/images/flowbite-svelte-icon-logo.svg" alt="Flowbite Logo" name="Flowbite" />
+      <FooterBrand href="https://flowbite.com" src="/" alt="Flowbite Logo" name="Flowbite" />
     </div>
     <div class="grid grid-cols-2 gap-8 sm:grid-cols-3 sm:gap-6">
       <div>
