@@ -11,7 +11,6 @@
       <p class="mb-3 leading-tight font-normal text-gray-700 dark:text-gray-400">tendo : 15</p>
       <Button class="w-full bg-amber-600">
         Read more <ArrowRightOutline class="ms-2 h-6 w-6 text-white" />
-        
       </Button>
     </div>
   </Card>
