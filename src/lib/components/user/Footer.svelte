@@ -4,6 +4,7 @@
 </script>
 
 <Footer footerType="socialmedia">
+  
   <div class="md:flex md:justify-between bg-gray-100 p-2 rounded-md">
     <div class="mb-6 md:mb-0">
       <FooterBrand href="https://flowbite.com" src="/" alt="Flowbite Logo" name="Flowbite" />
