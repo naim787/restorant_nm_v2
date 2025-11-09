@@ -6,12 +6,20 @@
 </script>
 
 
+
 <div class="text-center">
   <Button onclick={() => (open4 = true)}>Show drawer form</Button>
   <CardPlaceholder size="2xl" class="mt-6" />
 </div>
 <Drawer form bind:open={open4} classes={{ form: "space-y-6 mb-6" }}>
-  <h5 class="mb-6 inline-flex items-center text-base font-semibold text-gray-500 uppercase dark:text-gray-400">
+  <h5 class="mb-6 inline-flex items-center text-base font-semibold text-gray-500 upp192.
+192.
+192.
+192.
+192.
+192.
+192.
+192.ercase dark:text-gray-400">
     <InfoCircleSolid class="me-2.5 h-5 w-5" />New event
   </h5>
   <Label>
