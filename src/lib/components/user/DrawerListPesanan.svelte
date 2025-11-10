@@ -3,6 +3,7 @@
   import { InfoCircleSolid, UserAddOutline, CalendarEditSolid } from "flowbite-svelte-icons";
 
   let open4 = $state(false);
+  
 </script>
 
 <div class="text-center">
