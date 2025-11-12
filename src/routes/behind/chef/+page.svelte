@@ -8,7 +8,9 @@
     "tinutuan.webp",
     "soto ayam.webp",
     "nasi_ayam_goreg_mentega.webp",
-    ""
+    "rawon.webp",
+    "nasi goreg kawan baru.webp",
+    "nasi goreg kambig.webp"
   ]
 </script>
 
