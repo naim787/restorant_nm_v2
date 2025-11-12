@@ -9,20 +9,47 @@
   import {Modal, P } from "flowbite-svelte";
   let defaultModal = $state(false);
 
-  let data = [
-    "tinutuan.webp",
-    "soto ayam.webp",
-    "nasi_ayam_goreg_mentega.webp",
-    "rawon.webp",
-    "nasi goreg kawan baru.webp",
-    "nasi goreg kambig.webp",
-    "nasi ayam isi bulu.webp",
-    "nasi ayam rempah.webp",
-    "nasi campur nusantara.webp",
-    "nasi capcay.webp",
-    "nasi goreg ayam.webp",
-    "nasi goreg cakalag.webp"
-  ]
+//   let data = [
+//     "tinutuan.webp",
+//     "soto ayam.webp",
+//     "nasi_ayam_goreg_mentega.webp",
+//     "rawon.webp",
+//     "nasi goreg kawan baru.webp",
+//     "nasi goreg kambig.webp",
+//     "nasi ayam isi bulu.webp",
+//     "nasi ayam rempah.webp",
+//     "nasi campur nusantara.webp",
+//     "nasi capcay.webp",
+//     "nasi goreg ayam.webp",
+//     "nasi goreg cakalag.webp"
+//   ]
+let dat = [
+    {
+      url : "tinutuan.webp",
+      name : "tiutuan",
+      bahan : [""]
+    },
+    {
+      url : "soto ayam.webp",
+      name : "soto ayam",
+      bahan : [""]
+    },
+    {
+      url : "nasi_ayam_goreg_mentega.webp",
+      name : "tiutuan",
+      bahan : [""]
+    },
+    {
+      url : "asi goreg kawan baru.webp",
+      name : "tiutuan",
+      bahan : [""]
+    },
+    {
+      url : "nasi goreg kambig.webp",
+      name : "tiutuan",
+      bahan : [""]
+    },
+]
 </script>
 
 <MenuNav />
