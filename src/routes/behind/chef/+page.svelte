@@ -5,24 +5,24 @@
   import { ArrowRightOutline } from "flowbite-svelte-icons";
 
   let data = [
-   "tinutuan.webp",
-    "soto_ayam.webp",
+    "tinutuan.webp",
+    "soto ayam.webp",
     "nasi_ayam_goreg_mentega.webp",
     "rawon.webp",
-    "nasi_goreg_kawan_baru.webp",
-    "nasi_goreg_kambig.webp",
-    "nasi_ayam_isi_bulu.webp",
-    "nasi_ayam_rempah.webp",
-    "nasi_campur_nusantara.webp",
-    "nasi_capcay.webp",
-    "nasi_goreg_ayam.webp",
-    "nasi_goreg_cakalag.webp"
+    "nasi goreg kawan baru.webp",
+    "nasi goreg kambig.webp",
+    "nasi ayam isi bulu.webp",
+    "nasi ayam rempah.webp",
+    "nasi campur nusantara.webp",
+    "nasi capcay.webp",
+    "nasi goreg ayam.webp",
+    "nasi goreg cakalag.webp"
   ]
 </script>
 
 <MenuNav />
 <div class="w-[100vw] h-[100vh] overflow-scroll flex flex-wrap justify-evenly items-center pt-15">
-    <div class="space-y-4 m-2">
+    <div class="space-y-4 m-2 flex flex-wrap justify-evenly items-center mt-10">
         {#each data as d}
             <Card img={`/${d}`}>
                 <!-- <img src="/nasi_ayam_goreg_mentega.webp" alt="" class="w-full object-cover"> -->
