@@ -23,6 +23,7 @@
 //     "nasi goreg ayam.webp",
 //     "nasi goreg cakalag.webp"
 //   ]
+
 let dat = [
     {
       url : "tinutuan.webp",
@@ -34,7 +35,7 @@ let dat = [
       name : "soto ayam",
       bahan : [""]
     },
-    {
+    { 
       url : "nasi_ayam_goreg_mentega.webp",
       name : "tiutuan",
       bahan : [""]
