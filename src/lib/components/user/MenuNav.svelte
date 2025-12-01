@@ -5,6 +5,7 @@
 </script>
 
 
+
 <Navbar class="fixed top-0 left-0 bg-gray-300">
   <NavBrand href="/">
     <img src="https://mocipay.com/blog/wp-content/uploads/2022/12/20221208_161631_0000-768x768.png" class="me-3 h-15 sm:h-20" alt="Flow" />
@@ -14,7 +15,7 @@
   <NavUl {activeUrl}>
     <NavLi href="/">Home</NavLi>
     <NavLi href="/docs/components/navbar">Navbar</NavLi>
-    <NavLi href="/docs/components/accordion">Accordion</NavLi>
+    <NavLi href="">Accordion</NavLi>
     <NavLi href="/docs/components/alert">Alert</NavLi>
     <NavLi href="/docs/components/avatar">Avatar</NavLi>
   </NavUl>
