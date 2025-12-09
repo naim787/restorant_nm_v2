@@ -6,6 +6,19 @@
   import {Modal, P } from "flowbite-svelte";
 
   let defaultModal = $state(false);
+
+  let data = [
+    "nasi ayam isi bulu.webp",
+    "nasi ayam rempah.webp",
+    "nasi campur nusantara.webp",
+    "nasi goreg ayam.webp",
+    "nasi goreg cakalag.webp",
+    "nasi_ayam_goreg_mentega.webp",
+    "New Project.webp",
+    "rawon.webp",
+    "soto ayam",
+    "tinutuan"
+  ]
 </script>
 
 <Modal title="Nama Menu" form bind:open={defaultModal} onaction={({ action }) => alert(`Handle "${action}"`)}>
@@ -22,7 +35,7 @@
 
 
 <div class="space-y-4 m-2">
-  <Card img="https://assets.telkomsel.com/public/2024-12/makanan-khas-indonesia.png?VersionId=TfbS8hN3yl4fLIANXfbipwkFx1Fq.KKU">
+  <Card img={data}>
     <div class="m-6">
       <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
       <p class="mb-3 leading-tight font-normal text-gray-700 dark:text-gray-400">porsi : 12</p>
